@@ -397,6 +397,6 @@
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" />
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
-  <!-- <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-master" /> -->
+  <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-master" />
   <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="mw" revision="aosp-master" />
 </manifest>
