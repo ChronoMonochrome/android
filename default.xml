@@ -8,11 +8,11 @@
   <remote  name="mw"
            fetch="https://github.com/MWisBest/" />
 
-  <default revision="master"
+  <default revision="lollipop-release"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk" >
+  <project path="build" name="android_build" remote="mw" revision="aosp-5.0" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -41,9 +41,9 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <!-- <project path="device/samsung/maguro" name="android_device_samsung_maguro" remote="mw" revision="aosp-master" /> -->
-  <project path="device/samsung/toro" name="android_device_samsung_toro" remote="mw" revision="aosp-master" />
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="mw" revision="aosp-master" />
+  <!-- <project path="device/samsung/maguro" name="android_device_samsung_maguro" remote="mw" revision="aosp-5.0" /> -->
+  <project path="device/samsung/toro" name="android_device_samsung_toro" remote="mw" revision="aosp-5.0" />
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="mw" revision="aosp-5.0" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" />
@@ -59,7 +59,7 @@
   <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
-  <project path="external/busybox" name="android_external_busybox" remote="mw" revision="aosp-master" />
+  <project path="external/busybox" name="android_external_busybox" remote="mw" revision="aosp-5.0" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" groups="pdk" />
@@ -288,7 +288,7 @@
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
-  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="mw" revision="aosp-master" />
+  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="mw" revision="aosp-5.0" />
   <project path="libcore" name="platform/libcore" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
@@ -390,6 +390,6 @@
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" />
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
-  <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-master" />
-  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="mw" revision="aosp-master" />
+  <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-5.0" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="mw" revision="aosp-5.0" />
 </manifest>
