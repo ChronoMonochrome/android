@@ -43,7 +43,7 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <!-- <project path="device/samsung/maguro" name="android_device_samsung_maguro" remote="mw" revision="aosp-5.0" /> -->
+  <project path="device/samsung/maguro" name="android_device_samsung_maguro" remote="mw" revision="aosp-5.0" />
   <project path="device/samsung/toro" name="android_device_samsung_toro" remote="mw" revision="aosp-5.0" />
   <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="mw" revision="aosp-5.0" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
