@@ -330,6 +330,7 @@
   <project path="external/libsepol" name="android_external_libsepol" groups="pdk" />
   <project path="external/libssh2" name="platform/external/libssh2" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
   <project path="external/libtar" name="android_external_libtar" />
+  <project path="external/libtruezip" name="android_external_libtruezip" />
   <project path="external/libusb" name="android_external_libusb" />
   <project path="external/libusbx" name="android_external_libusbx" />
   <project path="external/libusb-compat" name="android_external_libusb-compat" />
