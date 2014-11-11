@@ -28,6 +28,9 @@
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform/development" groups="pdk-cw-fs" />
+  <project path="device/amazon/bowser-common" name="android_device_amazon_bowser-common" remote="mw" revision="aosp-5.0" />
+  <project path="device/amazon/omap4-common" name="android_device_amazon_omap4-common" remote="mw" revision="aosp-5.0" />
+  <project path="device/amazon/tate" name="android_device_amazon_tate" remote="mw" revision="aosp-5.0" />
   <project path="device/common" name="device/common" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
@@ -317,6 +320,7 @@
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="mw" revision="aosp-5.0" groups="omap4" />
+  <project path="kernel/amazon/bowser-common" name="android_kernel_amazon_bowser-common" remote="mw" revision="aosp-5.0" />
   <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="mw" revision="aosp-5.0" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
@@ -426,6 +430,7 @@
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" />
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
+  <project path="vendor/amazon" name="prprietary_vendor_amazon" remote="mw" revision="aosp-5.0" />
   <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-5.0" />
   <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="mw" revision="aosp-5.0" />
 </manifest>
