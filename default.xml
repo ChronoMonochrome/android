@@ -430,7 +430,7 @@
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" />
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
-  <project path="vendor/amazon" name="prprietary_vendor_amazon" remote="mw" revision="aosp-5.0" />
+  <project path="vendor/amazon" name="proprietary_vendor_amazon" remote="mw" revision="aosp-5.0" />
   <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-5.0" />
   <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="mw" revision="aosp-5.0" />
 </manifest>
