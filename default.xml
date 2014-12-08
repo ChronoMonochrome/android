@@ -14,14 +14,10 @@
           review="review.cyanogenmod.com" />
   <remote name="github"
           fetch="https://github.com/" />
-  <remote name="sudosurootdev"
-          fetch="https://github.com/sudosurootdev" />
   <remote name="omni"
           fetch="https://github.com/omnirom/" />
   <remote name="linaro"
           fetch="http://android.git.linaro.org/git-ro/" />
-  <remote name="horn3t"
-          fetch="https://github.com/horn3t/" />
   <default revision="cm-11.0"
           sync-j="12"
           remote="cm" />
