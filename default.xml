@@ -323,7 +323,7 @@
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="mw" revision="aosp-5.0" groups="omap4" />
   <project path="kernel/amazon/bowser-common" name="android_kernel_amazon_bowser-common" remote="mw" revision="aosp-5.0" />
   <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="mw" revision="aosp-5.0" />
-  <project path="libcore" name="platform/libcore" groups="pdk" />
+  <project path="libcore" name="android_libcore" remote="mw" revision="aosp-5.0" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
