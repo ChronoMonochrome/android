@@ -311,6 +311,7 @@
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/ril" name="android_hardware_ril" remote="mw" revision="aosp-5.1" groups="pdk" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
+  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="mw" revision="aosp-5.1" groups="omap4" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="mw" revision="aosp-5.1" groups="omap4" />
   <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="mw" revision="aosp-5.1" />
