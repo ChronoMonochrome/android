@@ -481,4 +481,15 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
+  <!-- kernels & bootables -->
+  <project path="kernel/codina/chrono" name="ChronoMonochrome/Chrono_Kernel" remote="github" revision="ROM" />
+  <project path="bootable/codinaramfs" name="nieltg/codina-initramfs-sdboot" remote="github" revision="master" />
+
+  <!-- cm11 base -->
+  <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" remote="github" revision="lp5.1" />
+
+  <!-- cm12 custom -->
+  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="omni-5.1"/>
+  <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" remote="github" revision="cm-12.0"/>
+
 </manifest>
