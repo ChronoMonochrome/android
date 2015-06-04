@@ -19,6 +19,12 @@ case $1 in
         export remoterevision="kk44"
         export kernelsource="Team-Exhibit/android_kernel_samsung_u8500"
     ;;
+    codina)
+        export remote="github"
+        export remoterevision="stable"
+        export kernelsource="ChronoMonochrome/Chrono_kernel"
+
+    ;;
     codinalte)
         export remote="github"
         export remoterevision="kk44"
