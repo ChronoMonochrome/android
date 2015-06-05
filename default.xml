@@ -25,9 +25,10 @@
 
   <project path="manifest" name="platform_manifest" remote="vanir" revision="kk44" /> <!-- DO NOT MOVE - whine to Nuclearmistake -->
   <project path="build" name="build" remote="vanir" revision="kk44" groups="pdk">
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <copyfile src="tools/BUILD_COMMAND_README" dest="BUILD_COMMAND_README" />
+     <copyfile src="core/root.mk" dest="Makefile" />
+     <copyfile src="tools/BUILD_COMMAND_README" dest="BUILD_COMMAND_README" />
   </project>
+
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
   <project path="art" name="art"  groups="aosp44" remote="vanir" revision="kk44" />
   <project path="bionic" name="bionic" remote="vanir" revision="kk44" groups="pdk" />
@@ -39,7 +40,7 @@
   <project path="development" name="android_development" />
   <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="vanir-kk44"/> 
   <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" remote="github" revision="cm-12.0"/>
-  <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" remote="github" revision="cm-11.0" />
+  <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" remote="github" revision="lp5.1" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
   <project path="external/aac" name="android_external_aac" groups="pdk" />
   <project path="external/android-clat" name="android_external_android-clat" />
