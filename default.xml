@@ -18,6 +18,8 @@
           fetch="https://github.com/omnirom/" />
   <remote name="linaro"
           fetch="http://android.git.linaro.org/git-ro/" />
+  <remote name="local" 
+	  fetch="file:///home/chrono/" />
   <default revision="cm-11.0"
           sync-j="12"
           remote="cm" />
@@ -37,8 +39,9 @@
   <project path="bootable/recovery-twrp" name="bootable_recovery_TWRP" groups="pdk" remote="vanir" revision="kk44" />
   <project path="cts" name="platform/cts"  remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
   <project path="dalvik" name="dalvik" remote="vanir" revision="kk44" />
-  <project path="development" name="android_development" />
-  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="vanir-kk44"/> 
+  <project path="development" name="android_development" />  
+  <project path="device/samsung/u8500-common" name="ChronoMonochrome/android_device_samsung_u8500-common" remote="github" revision="vanir-kk44" groups="ste" />
+  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="vanir-kk44" groups="ste" />
   <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" remote="github" revision="cm-12.0"/>
   <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" remote="github" revision="lp5.1" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
@@ -442,19 +445,9 @@
   <project path="prebuilts/clang/linux-x86/host/msm-3.4" name="prebuilts_clang_linux-x86_host_msm-3.4" remote="vanir" revision="kk44" />
   <project path="prebuilts/devtools" name="platform/prebuilts/devtools" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
   <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
-  <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.7" groups="notdefault,pdk,darwin,x86" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" groups="notdefault,darwin,arm" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" remote="aosp" groups="notdefault,pdk,darwin,arm" revision="refs/tags/android-4.4.4_r2.0.1" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" groups="notdefault,darwin,arm" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" groups="notdefault,pdk,darwin,arm" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
-  <project path="prebuilts/gcc/darwin-x86/host/headers" name="platform/prebuilts/gcc/darwin-x86/host/headers" groups="notdefault,pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
-  <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" groups="notdefault,pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
-  <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" groups="notdefault,darwin,mips" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
-  <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7" groups="notdefault,pdk,darwin,mips" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
-  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" groups="notdefault,darwin,x86" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
-  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" groups="notdefault,pdk,darwin,x86" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" groups="linux,arm" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.1" name="kernel_build/arm-eabi-5.1" remote="local" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" groups="linux,arm" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" groups="linux" remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" />
