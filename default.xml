@@ -314,6 +314,7 @@
   <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="mw" revision="aosp-5.1" groups="omap4" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="mw" revision="aosp-5.1" groups="omap4" />
+  <project path="kernel/omap" name="omap" remote="mw" revision="p-android-omap-3.4" groups="omap4" />
   <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="mw" revision="aosp-5.1" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
