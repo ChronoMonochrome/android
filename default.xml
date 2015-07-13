@@ -505,4 +505,8 @@
   <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" revision="cm-11.0" />
   <project path="kernel/samsung/u8500" name="ChronoMonochrome/Chrono_Kernel" revision="ROM" />
   <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" revision="cm-11.0" />
+
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="aosp" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="aosp" revision="master" /> 
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="linux" remote="aosp" revision="master" />
 </manifest>
