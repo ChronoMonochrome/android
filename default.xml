@@ -569,4 +569,16 @@
   <project path="external/ffmpeg" name="SlimRoms/android_external_ffmpeg" remote="github" revision="lp5.1" />
   <project path="external/stagefright-plugins" name="SlimRoms/android_external_stagefright-plugins" remote="github" revision="lp5.1" />
 
+
+  <!-- kernels & bootables -->
+  <project path="kernel/codina/chrono" name="ChronoMonochrome/Chrono_Kernel-1" remote="github" revision="android-3.0" />
+
+  <!-- cm11 base -->
+  <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" remote="github" revision="lp5.1" />
+
+  <!-- cm12 custom -->
+  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="slim-lp5.1"/>
+  <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" remote="github" revision="cm-12.0"/>
+
+
 </manifest>
