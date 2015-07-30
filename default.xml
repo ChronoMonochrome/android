@@ -500,6 +500,7 @@
     <copyfile src="bootimage/Android.mk" dest="kernel/Android.mk" />
   </project>
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" />
+  <project path="vendor/vanir" name="ChronoMonochrome/vendor_vanir" revision="kk44" />
   <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" revision="cm-11.0" />
   <project path="device/samsung/u8500-common" name="ChronoMonochrome/android_device_samsung_u8500-common" revision="cm-11.0" />
   <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" revision="cm-11.0" />
