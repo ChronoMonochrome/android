@@ -21,11 +21,11 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="CyanogenMod/android_build" groups="pdk" >
+  <project path="build" name="ChronoMonochrome/android_build revision="cm11-vanir" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="CyanogenMod/android" />
+  <project path="android" name="ChronoMonochrome/android" revision="cm11-vanir" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" />
@@ -377,7 +377,7 @@
   <project path="packages/apps/Contacts" name="CyanogenMod/android_packages_apps_Contacts" />
   <project path="packages/apps/ContactsCommon" name="CyanogenMod/android_packages_apps_ContactsCommon" />
   <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock" />
-  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="vanir" revision="kk44" />
+  <!--<project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="vanir" revision="kk44" />-->
   <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" />
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" />
   <project path="packages/apps/Exchange" name="CyanogenMod/android_packages_apps_Exchange" />
@@ -500,7 +500,7 @@
   </project>
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" />
   <project path="vendor/vanir" name="ChronoMonochrome/vendor_vanir" revision="kk44" />
-  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" revision="cm-11.0" />
+  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" revision="cm11-vanir" />
   <project path="device/samsung/u8500-common" name="ChronoMonochrome/android_device_samsung_u8500-common" revision="cm-11.0" />
   <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" revision="cm-11.0" />
   <project path="kernel/samsung/u8500" name="ChronoMonochrome/Chrono_Kernel" revision="ROM" />
