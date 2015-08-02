@@ -21,7 +21,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="ChronoMonochrome/android_build revision="cm11-vanir" >
+  <project path="build" name="ChronoMonochrome/android_build" revision="cm11-vanir" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -495,8 +495,6 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-    <copyfile src="bootimage/Android.mk" dest="kernel/Android.mk" />
-  </project>
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" />
   <project path="vendor/vanir" name="ChronoMonochrome/vendor_vanir" revision="kk44" />
   <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" revision="cm11-vanir" />
