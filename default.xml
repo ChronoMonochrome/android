@@ -6,7 +6,7 @@
            review="android-review.googlesource.com" />
 
 <remote name="vanir" fetch="https://github.com/VanirAOSP/" review="gerrit.vanir.co:8080" />
-<remote name="cm" fetch="https://github.com/CyanogenMod" review="review.cyanogenmod.com" />
+<remote name="cm" fetch="https://github.com/CyanogenMod" review="review.cyanogenmod.com" revision="cm-11.0" />
 <remote name="ss" fetch="https://github.com/SlimSaber/" revision="kk4.4"/>
 <remote name="sr" fetch="https://github.com/SlimRoms/" revision="kk4.4"/>
 
@@ -35,7 +35,7 @@
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
   <project path="bootable/recovery-cm" name="CyanogenMod/android_bootable_recovery-cm" />
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.4.4_r2" groups="cts" />
-  <project path="dalvik" name="android_dalvik" remote="ss" />
+  <project path="dalvik" name="android_dalvik" remote="cm" />
   <project path="developers/build" name="platform/developers/build" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="developers/demos" name="platform/developers/demos" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="developers/docs" name="platform/developers/docs" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
@@ -261,7 +261,7 @@
   <project path="external/sepolicy" name="CyanogenMod/android_external_sepolicy" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="external/sil-fonts" name="platform/external/sil-fonts" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="external/skia" name="android_external_skia" remote="ss" />
+  <project path="external/skia" name="android_external_skia" remote="cm" />
   <project path="external/smack" name="platform/external/smack" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="external/smali" name="CyanogenMod/android_external_smali" />
   <project path="external/sonivox" name="CyanogenMod/android_external_sonivox" groups="pdk" />
