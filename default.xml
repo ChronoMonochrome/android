@@ -101,8 +101,6 @@
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="prebuilts/clang/linux-x86/arm/3.3" name="platform/prebuilts/clang/linux-x86/arm/3.3" groups="linux,arm" />
   <project path="prebuilts/clang/linux-x86/host/3.3" name="platform/prebuilts/clang/linux-x86/host/3.3" groups="linux" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="pdk,linux" />
   <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk" />
@@ -118,5 +116,6 @@
   <project path="system/vold" name="android_system_vold" remote="omnirom" revision="android-4.4" />
   <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" />
   <project path="vendor/omni" name="android_vendor_omni" remote="omnirom" revision="android-4.4" />
+  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="twrp" />
 
 </manifest>
