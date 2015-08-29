@@ -8,18 +8,18 @@
   <remote  name="mw"
            fetch="https://github.com/MWisBest/" />
 
-  <default revision="refs/tags/android-5.1.1_r5"
+  <default revision="refs/tags/android-5.1.1_r13"
            remote="aosp"
            sync-j="4"
            sync-c="true" />
 
-  <project path="build" name="android_build" remote="mw" revision="aosp-5.1" groups="pdk,tradefed" >
+  <project path="build" name="android_build" remote="mw" revision="aosp-5.1.x" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="android_art" remote="mw" revision="aosp-5.1" groups="pdk" />
-  <project path="bionic" name="android_bionic" remote="mw" revision="aosp-5.1" groups="pdk" />
+  <project path="art" name="android_art" remote="mw" revision="aosp-5.1.x" groups="pdk" />
+  <project path="bionic" name="android_bionic" remote="mw" revision="aosp-5.1.x" groups="pdk" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="mw" revision="aosp-5.1-twrp" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
@@ -39,7 +39,7 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="mw" revision="aosp-5.1" />
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="mw" revision="aosp-5.1.x" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
   <project path="external/ant-glob" name="platform/external/ant-glob" groups="pdk-cw-fs" />
@@ -54,7 +54,7 @@
   <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
-  <project path="external/busybox" name="android_external_busybox" remote="mw" revision="aosp-5.1" />
+  <project path="external/busybox" name="android_external_busybox" remote="mw" revision="aosp-5.1.x" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" groups="pdk" />
@@ -154,8 +154,8 @@
   <project path="external/junit" name="platform/external/junit" groups="pdk-cw-fs,tradefed" />
   <project path="external/ksoap2" name="platform/external/ksoap2" groups="pdk-cw-fs" />
   <project path="external/kernel-headers" name="platform/external/kernel-headers" groups="pdk-cw-fs" />
-  <project path="external/koush/Superuser" name="Superuser" remote="mw" revision="aosp-5.1" />
-  <project path="external/koush/Widgets" name="Widgets" remote="mw" revision="aosp-5.1" />
+  <project path="external/koush/Superuser" name="Superuser" remote="mw" revision="aosp-5.1.x" />
+  <project path="external/koush/Widgets" name="Widgets" remote="mw" revision="aosp-5.1.x" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" groups="pdk-cw-fs" />
   <project path="external/libcxx" name="platform/external/libcxx" groups="pdk" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" />
@@ -240,11 +240,11 @@
   <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
-  <project path="external/speex" name="android_external_speex" remote="mw" revision="aosp-5.1" groups="pdk" />
+  <project path="external/speex" name="android_external_speex" remote="mw" revision="aosp-5.1.x" groups="pdk" />
   <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/srec" name="platform/external/srec" groups="pdk-cw-fs" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs" />
-  <project path="external/stlport" name="android_external_stlport" remote="mw" revision="aosp-5.1" groups="pdk" />
+  <project path="external/stlport" name="android_external_stlport" remote="mw" revision="aosp-5.1.x" groups="pdk" />
   <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs" />
   <project path="external/stressapptest" name="platform/external/stressapptest" groups="pdk-cw-fs" />
   <project path="external/svox" name="platform/external/svox" groups="pdk-cw-fs" />
@@ -267,8 +267,8 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="mw" revision="aosp-5.1" groups="pdk" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="mw" revision="aosp-5.1" groups="pdk-cw-fs" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="mw" revision="aosp-5.1.x" groups="pdk" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="mw" revision="aosp-5.1.x" groups="pdk-cw-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -277,7 +277,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="mw" revision="aosp-5.1" groups="pdk" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="mw" revision="aosp-5.1.x" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
@@ -294,7 +294,7 @@
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="mw" revision="aosp-5.1" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="mw" revision="aosp-5.1.x" groups="pdk" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs" />
@@ -306,16 +306,16 @@
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
-  <project path="hardware/invensense" name="android_hardware_invensense" remote="mw" revision="aosp-5.1" groups="invensense" />
+  <project path="hardware/invensense" name="android_hardware_invensense" remote="mw" revision="aosp-5.1.x" groups="invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
-  <project path="hardware/ril" name="android_hardware_ril" remote="mw" revision="aosp-5.1" groups="pdk" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="mw" revision="aosp-5.1.x" groups="pdk" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
-  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="mw" revision="aosp-5.1" groups="omap4" />
+  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="mw" revision="aosp-5.1.x" groups="omap4" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
-  <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="mw" revision="aosp-5.1" groups="omap4" />
+  <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="mw" revision="aosp-5.1.x" groups="omap4" />
   <project path="kernel/omap" name="omap" remote="mw" revision="p-android-omap-3.4" groups="omap4" />
-  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="mw" revision="aosp-5.1" />
+  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="mw" revision="aosp-5.1.x" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
@@ -327,15 +327,15 @@
   <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs" />
-  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="mw" revision="aosp-5.1" />
-  <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="mw" revision="aosp-5.1" />
+  <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
+  <project path="packages/apps/ContactsCommon" name="platform/packages/apps/ContactsCommon" />
   <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="mw" revision="aosp-5.1" />
+  <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
-  <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="mw" revision="aosp-5.1" />
+  <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" />
@@ -347,7 +347,7 @@
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="mw" revision="aosp-5.1" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="mw" revision="aosp-5.1.x" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -372,7 +372,7 @@
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
   <project path="packages/services/Mms" name="platform/packages/services/Mms" />
   <project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="mw" revision="aosp-5.1" />
+  <project path="packages/services/Telephony" name="platform/packages/services/Telephony" />
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
   <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" />
@@ -387,7 +387,7 @@
   <project path="prebuilts/clang/linux-x86/host/3.4" name="platform/prebuilts/clang/linux-x86/host/3.4" groups="pdk,linux" />
   <project path="prebuilts/clang/linux-x86/host/3.5" name="platform/prebuilts/clang/linux-x86/host/3.5" groups="pdk,linux" />
   <project path="prebuilts/clang/linux-x86/x86/3.3" name="platform/prebuilts/clang/linux-x86/x86/3.3" groups="linux,pdk-cw-fs,x86" />
-  <project path="prebuilts/gcc/linux-x86/arm" name="android_arm_toolchains" remote="mw" revision="aosp-5.1" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm" name="android_arm_toolchains" remote="mw" revision="aosp-5.1.x" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
@@ -397,13 +397,13 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="system/core" name="android_system_core" remote="mw" revision="aosp-5.1" groups="pdk" />
-  <project path="system/extras" name="android_system_extras" remote="mw" revision="aosp-5.1" groups="pdk" />
+  <project path="system/core" name="android_system_core" remote="mw" revision="aosp-5.1.x" groups="pdk" />
+  <project path="system/extras" name="android_system_extras" remote="mw" revision="aosp-5.1.x" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
-  <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-5.1" />
-  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="mw" revision="aosp-5.1" />
+  <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-5.1.x" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="mw" revision="aosp-5.1.x" />
 </manifest>
