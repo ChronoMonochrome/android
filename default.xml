@@ -306,7 +306,7 @@
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
-  <project path="hardware/invensense" name="android_hardware_invensense" remote="mw" revision="aosp-5.1.x" groups="invensense" />
+  <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/ril" name="android_hardware_ril" remote="mw" revision="aosp-5.1.x" groups="pdk" />
