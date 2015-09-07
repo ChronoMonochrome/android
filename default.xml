@@ -38,8 +38,9 @@
   <project path="device/generic/qemu" name="device/generic/qemu" />
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
+  <project path="device/moto/shamu" name="android_device_moto_shamu" remote="mw" revision="aosp-5.1.x" groups="device,shamu" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="mw" revision="aosp-5.1.x" />
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="mw" revision="aosp-5.1.x" groups="device,tuna" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
   <project path="external/ant-glob" name="platform/external/ant-glob" groups="pdk-cw-fs" />
@@ -315,7 +316,8 @@
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="mw" revision="aosp-5.1.x" groups="omap4" />
   <project path="kernel/omap" name="omap" remote="mw" revision="p-android-omap-3.4" groups="omap4" />
-  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="mw" revision="aosp-5.1.x" />
+  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" remote="mw" revision="aosp-5.1.x" groups="kernel,shamu" />
+  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="mw" revision="aosp-5.1.x" groups="kernel,tuna" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
@@ -405,5 +407,5 @@
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-5.1.x" />
-  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="mw" revision="aosp-5.1.x" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="mw" revision="aosp-5.1.x" groups="vendor,tuna" />
 </manifest>
