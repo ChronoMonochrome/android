@@ -20,7 +20,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="android_build" remote="omnirom" revision="android-4.4" groups="pdk" >
+  <project path="build" name="ChronoMonochrome/android_build" remote="github" revision="omni-4.4" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -282,7 +282,7 @@
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" />
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="omnirom" revision="android-4.4" />
-  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="omnirom" revision="android-4.4" />
+  <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="omnirom" revision="android-4.4" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="omnirom" revision="android-4.4" />
@@ -451,10 +451,10 @@
   <project path="vendor/omni" name="android_vendor_omni" remote="omnirom" revision="android-4.4" />
   <project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" revision="android-4.4" />
 
-  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" revision="omni-4.4" />
-  <project path="device/samsung/u8500-common" name="ChronoMonochrome/android_device_samsung_u8500-common" revision="omni-4.4" />
-  <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" revision="cm-11.0" />
-  <project path="kernel/samsung/u8500" name="ChronoMonochrome/Chrono_Kernel" revision="ROM" />
-  <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" revision="cm-11.0" />
+  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="omni-4.4" />
+  <project path="device/samsung/u8500-common" name="ChronoMonochrome/android_device_samsung_u8500-common" remote="github" revision="omni-4.4" />
+  <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" remote="github" revision="cm-11.0" />
+  <project path="kernel/samsung/u8500" name="ChronoMonochrome/Chrono_Kernel" remote="github" revision="ROM" />
+  <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" remote="github" revision="cm-11.0" />
 
 </manifest>
