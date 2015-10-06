@@ -12,7 +12,7 @@
            sync-j="4"
            sync-c="true" />
 
-  <project path="build" name="platform/build" groups="pdk" >
+  <project path="build" name="android_build" remote="mw" revision="aosp-6.0" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -37,7 +37,7 @@
   <project path="device/generic/qemu" name="device/generic/qemu" />
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
-  <project path="device/moto/shamu" name="android_device_moto_shamu" remote="mw" revision="aosp-6.0" groups="device,shamu" />
+  <!-- <project path="device/moto/shamu" name="android_device_moto_shamu" remote="mw" revision="aosp-6.0" groups="device,shamu" /> -->
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="mw" revision="aosp-6.0" groups="device,tuna" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -312,7 +312,7 @@
   <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="mw" revision="aosp-6.0" groups="omap4" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
-  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" remote="mw" revision="aosp-6.0" groups="kernel,shamu" />
+  <!-- <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" remote="mw" revision="aosp-6.0" groups="kernel,shamu" /> -->
   <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="mw" revision="aosp-6.0" groups="kernel,tuna" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
@@ -411,6 +411,6 @@
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-6.0" />
-  <project path="vendor/motorola" name="proprietary_vendor_motorola" remote="mw" revision="aosp-6.0" groups="vendor,shamu" />
+  <!-- <project path="vendor/motorola" name="proprietary_vendor_motorola" remote="mw" revision="aosp-6.0" groups="vendor,shamu" /> -->
   <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="mw" revision="aosp-6.0" groups="vendor,tuna" />
 </manifest>
