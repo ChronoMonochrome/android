@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch="https://android.googlesource.com/"
-           review="https://android-review.googlesource.com/" />
+  <remote  name="xda"
+           fetch=".." />
 
   <remote  name="github"
-           fetch="https://github.com/"
-           review="review.cyanogenmod.org" />
+           fetch="https://github.com/" />
+
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com" />
+
+  <remote  name="omnirom"
+           review="gerrit.omnirom.org"
+           fetch="https://github.com/omnirom" />
 
   <default revision="refs/tags/android-l-preview_r2"
            remote="aosp"
+           sync-c="true"
            sync-j="4" />
 
   <project path="build" name="platform/build" groups="pdk" >
