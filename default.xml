@@ -463,7 +463,7 @@
   <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="omni-4.4" />
   <project path="device/samsung/u8500-common" name="ChronoMonochrome/android_device_samsung_u8500-common" remote="github" revision="omni-4.4" />
   <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" remote="github" revision="cm-11.0" />
-  <project path="kernel/samsung/u8500" name="ChronoMonochrome/Chrono_Kernel" remote="github" revision="ROM" />
+  <project path="kernel/samsung/u8500" name="ChronoMonochrome/Chrono_Kernel-1" remote="github" revision="omni-4.4" />
   <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" remote="github" revision="cm-11.0" />
 
 </manifest>
