@@ -4,9 +4,18 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
 
-  <remote  name="github"
+  <remote name="github" 
            fetch="git://github.com/"
            review="https://gerrit.slimroms.net/"/>
+
+  <remote  name="CyanogenMod"
+           fetch="https://github.com/CyanogenMod" />
+
+
+<remote name="vanir" fetch="https://github.com/VanirAOSP/" review="gerrit.vanir.co:8080" />
+<remote name="cm" fetch="https://github.com/CyanogenMod" review="review.cyanogenmod.com" revision="cm-11.0" />
+<remote name="ss" fetch="https://github.com/SlimSaber/" revision="kk4.4"/>
+<remote name="sr" fetch="https://github.com/SlimRoms/" revision="kk4.4"/>
 
   <default revision="refs/tags/android-4.4.4_r2"
            remote="aosp"
@@ -88,7 +97,7 @@
   <project path="external/chromium_org/tools/grit" name="platform/external/chromium_org/tools/grit" />
   <project path="external/chromium_org/tools/gyp" name="platform/external/chromium_org/tools/gyp" />
   <project path="external/chromium_org/v8" name="platform/external/chromium_org/v8" />
-  <project path="external/clang" name="SlimRoms/android_external_clang" remote="github" revision="kk4.4"  />
+  <project path="external/clang" name="android_external_clang" groups="pdk" remote="ss" />
   <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" />
   <project path="external/dexmaker" name="platform/external/dexmaker" />
   <project path="external/dhcpcd" name="platform/external/dhcpcd" />
@@ -170,7 +179,7 @@
   <project path="external/libyuv" name="platform/external/libyuv" groups="libyuv" />
   <project path="external/linux-tools-perf" name="platform/external/linux-tools-perf" />
   <project path="external/littlemock" name="platform/external/littlemock" />
-  <project path="external/llvm" name="SlimRoms/android_external_llvm" remote="github" revision="kk4.4" />
+  <project path="external/llvm" name="android_external_llvm" groups="pdk" remote="ss" />
   <project path="external/lzma" name="platform/external/lzma" />
   <project path="external/marisa-trie" name="platform/external/marisa-trie" />
   <project path="external/markdown" name="platform/external/markdown" />
@@ -216,10 +225,10 @@
   <project path="external/smali" name="platform/external/smali" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
   <project path="external/speex" name="platform/external/speex" groups="pdk" />
-  <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/srec" name="SlimRoms/android_external_srec" remote="github" revision="kk4.4" />
+  <project path="external/sqlite" name="android_external_sqlite" groups="pdk" remote="ss" />
   <project path="external/srtp" name="platform/external/srtp" />
-  <project path="external/stlport" name="platform/external/stlport" groups="pdk" />
+  <project path="external/stlport" name="android_external_stlport" groups="pdk" remote="ss" />
   <project path="external/strace" name="platform/external/strace" />
   <project path="external/stressapptest" name="platform/external/stressapptest" />
   <project path="external/svox" name="platform/external/svox" />
@@ -231,7 +240,7 @@
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
   <project path="external/tremolo" name="platform/external/tremolo" groups="pdk" />
-  <project path="external/v8" name="platform/external/v8" />
+  <project path="external/v8" name="android_external_v8" remote="ss" />
   <project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
@@ -479,5 +488,13 @@
   <!-- CyanogenMod ffmpeg -->
   <project path="external/ffmpeg" name="SlimRoms/android_external_ffmpeg" remote="github" revision="kk4.4" />
   <project path="external/stagefright-plugins" name="SlimRoms/android_external_stagefright-plugins" remote="github" revision="kk4.4" />
+
+  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="slim-4.4" />
+  <project path="device/samsung/u8500-common" name="ChronoMonochrome/android_device_samsung_u8500-common" remote="github" revision="omni-4.4" />
+  <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" remote="github" revision="cm-11.0" />
+  <project path="kernel/samsung/u8500" name="ChronoMonochrome/Chrono_Kernel-1" remote="github" revision="omni-4.4" />
+  <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" remote="github" revision="cm-11.0" />
+
+<project remote="aosp" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="pdk,linux,arm" revision="refs/tags/android-6.0.0_r1" />
 
 </manifest>
