@@ -7,6 +7,9 @@
   <remote  name="mw"
            fetch="https://github.com/MWisBest/" />
 
+  <remote  name="omap4-aosp"
+           fetch="https://github.com/OMAP4-AOSP/" />
+
   <default revision="refs/tags/android-6.0.0_r26"
            remote="aosp"
            sync-j="4"
@@ -39,7 +42,7 @@
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
   <!-- <project path="device/moto/shamu" name="android_device_moto_shamu" remote="mw" revision="aosp-6.0" groups="device,shamu" /> -->
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="mw" revision="aosp-6.0" groups="device,tuna" />
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="omap4-aosp" revision="aosp-6.0" groups="device,tuna" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/android-mock" name="platform/external/android-mock" groups="pdk-cw-fs,pdk-fs" />
