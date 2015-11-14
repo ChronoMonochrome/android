@@ -311,10 +311,7 @@
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
-  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="omap4-aosp" revision="aosp-6.0" groups="omap4" />
-  <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
-  <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
   <!-- <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" remote="mw" revision="aosp-6.0" groups="kernel,shamu" /> -->
   <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="omap4-aosp" revision="aosp-6.0" groups="kernel,tuna" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
