@@ -413,5 +413,6 @@
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-6.0" />
   <!-- <project path="vendor/motorola" name="proprietary_vendor_motorola" remote="mw" revision="aosp-6.0" groups="vendor,shamu" /> -->
-  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="mw" revision="aosp-6.0" groups="vendor,tuna" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="omap4-aosp" revision="aosp-6.0" groups="vendor,tuna" />
+  <project path="vendor/ti" name="proprietary_vendor_ti" remote="omap4-aosp" revision="aosp-6.0" groups="vendor,tuna" />
 </manifest>
