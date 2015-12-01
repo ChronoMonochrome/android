@@ -493,4 +493,11 @@
   <project path="packages/apps/ThemeChooser" name="Mahdi-Rom/android_packages_apps_ThemeChooser" remote="github" revision="kk-4.4.3" clone-depth="1" />
   <project path="packages/providers/ThemesProvider" name="Mahdi-Rom/android_packages_providers_ThemesProvider" remote="github" revision="kk-4.4.3" clone-depth="1" />
 
+
+  <project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="omni-4.4" />
+  <project path="device/samsung/u8500-common" name="android_device_samsung_u8500-common" remote="chrono" revision="omni-4.4" />
+  <project path="hardware/u8500" name="android_hardware_u8500" remote="chrono" revision="cm-11.0" />
+<!--  <project path="kernel/samsung/u8500" name="Chrono_Kernel-1" remote="chrono" revision="omni-4.4" />  -->
+  <project path="vendor/samsung/u8500-common" name="android_vendor_samsung_u8500-common" remote="chrono" revision="cm-11.0" />
+
 </manifest>
