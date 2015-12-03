@@ -414,9 +414,8 @@
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin" clone-depth="1" />
 -->
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux" clone-depth="1" />
-<!--
+
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
--->
   <project path="prebuilts/runtime" name="platform/prebuilts/runtime" clone-depth="1" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" clone-depth="1" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" clone-depth="1" />
@@ -469,7 +468,7 @@
   <project path="external/rsync" name="Mahdi-Rom/android_external_rsync" remote="github" revision="kk-4.4.3" clone-depth="1" />
   <project path="external/stagefright-plugins" name="Mahdi-Rom/android_external_stagefright-plugins" remote="github" revision="kk-4.4.3" clone-depth="1" />
 
-  <project path="external/koush/ion" name="Mahdi-Rom/android_external_koush_ion" remote="github" revision="kk-4.4.3" clone-depth="1" />
+<!--  <project path="external/koush/ion" name="Mahdi-Rom/android_external_koush_ion" remote="github" revision="kk-4.4.3" clone-depth="1" />-->
   <project path="external/koush/AndroidAsync" name="Mahdi-Rom/android_external_koush_AndroidAsync" remote="github" revision="kk-4.4.3" clone-depth="1" />
   <project path="external/koush/Superuser" name="Mahdi-Rom/android_external_koush_Superuser" remote="github" revision="kk-4.4.3" clone-depth="1" />
   <project path="external/koush/Widgets" name="Mahdi-Rom/android_external_koush_Widgets" remote="github" revision="kk-4.4.3" clone-depth="1" />
