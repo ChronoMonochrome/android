@@ -318,6 +318,7 @@
   <project path="frameworks/volley" name="CyanogenMod/android_frameworks_volley"  clone-depth="1" />
   <project path="frameworks/webview" name="CyanogenMod/android_frameworks_webview"  clone-depth="1" />
   <project path="frameworks/wilhelm" name="CyanogenMod/android_frameworks_wilhelm"  clone-depth="1" />
+  <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" groups="broadcom_wlan" />
   <project path="hardware/cm" name="CyanogenMod/android_hardware_cm"  clone-depth="1" />
   <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" groups="invensense"  clone-depth="1" />
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" groups="pdk"  clone-depth="1" />
@@ -411,7 +412,7 @@
   <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" revision="cm11-vanir"  clone-depth="1" />
   <project path="device/samsung/u8500-common" name="ChronoMonochrome/android_device_samsung_u8500-common" revision="cm-11.0"  clone-depth="1" />
   <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" revision="cm-11.0"  clone-depth="1" />
-  <project path="kernel/samsung/u8500" name="ChronoMonochrome/Chrono_Kernel" revision="ROM"  clone-depth="1" />
+  <project path="kernel/codina/chrono" name="ChronoMonochrome/Chrono_Kernel-1" revision="master"  clone-depth="1" />
   <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" revision="cm-11.0"  clone-depth="1" />
 
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
