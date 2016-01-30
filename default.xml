@@ -415,7 +415,11 @@
   <project path="kernel/codina/chrono" name="ChronoMonochrome/Chrono_Kernel-1" revision="master"  clone-depth="1" />
   <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" revision="cm-11.0"  clone-depth="1" />
 
+
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" name="ArchiDroid/Toolchain" remote="github" revision="linaro-5.2" />
+  <project path="prebuilts/gcc/linux-x86/arm/armv7a-linux-gnueabihf-5.2" name="ChronoMonochrome/Toolchain" remote="github" revision="armv7a-linux-gnueabihf-5.2" />
 
 
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.4.4_r2" groups="cts" />
