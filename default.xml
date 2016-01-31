@@ -27,7 +27,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="Chronomonochrome/android" />
+  <project path="android" name="Chronomonochrome/android" remote="github" revision="cm12.1-omni" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk"  clone-depth="1" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk"  clone-depth="1" />
@@ -201,7 +201,6 @@
   <project path="external/kernel-headers" name="platform/external/kernel-headers" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
   <project path="external/kissfft" name="CyanogenMod/android_external_kissfft"  clone-depth="1" />
   <project path="external/koush/AndroidAsync" name="CyanogenMod/AndroidAsync"  clone-depth="1" />
-  <project path="external/koush/ion" name="CyanogenMod/ion"  clone-depth="1" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
   <project path="external/libcxx" name="platform/external/libcxx" groups="pdk" remote="aosp"  clone-depth="1" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" remote="aosp"  clone-depth="1" />
@@ -395,52 +394,52 @@
   <project path="libcore" name="CyanogenMod/android_libcore"  clone-depth="1" />
   <project path="libnativehelper" name="CyanogenMod/android_libnativehelper" groups="pdk-java"  clone-depth="1" />
   <project path="ndk" name="platform/ndk" remote="aosp"  clone-depth="1" />
- <project path="packages/apps/Apollo" name="android_packages_apps_Apollo" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
-  <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver"  clone-depth="1"  />
+  <project path="packages/apps/Apollo" name="android_packages_apps_Apollo" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
+  <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver"  clone-depth="1" remote="aosp"  />
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs"  clone-depth="1"  />
   <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
-  <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator"  clone-depth="1"  />
-  <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar"  clone-depth="1"  />
+  <project path="packages/apps/Calculator" name="CyanogenMod/android_packages_apps_Calculator" />
+  <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar"  clone-depth="1" remote="aosp"  />
   <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
-  <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver"  clone-depth="1"  />
-  <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs"  clone-depth="1"  />
+  <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver"  clone-depth="1" remote="aosp" />
+  <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs"  clone-depth="1" remote="aosp" />
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="packages/apps/Email" name="android_packages_apps_Email" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
-  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange"  clone-depth="1"  />
-  <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio"  clone-depth="1"  />
+  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange"  clone-depth="1" remote="aosp"  />
+ <!-- <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio"  clone-depth="1" remote="aosp" /> -->
   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
-  <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer"  clone-depth="1"  />
+  <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer"  clone-depth="1" remote="aosp" />
   <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
-  <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain"  clone-depth="1"  />
+  <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain"  clone-depth="1" remote="aosp" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
-  <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera"  clone-depth="1"  />
-  <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning"  clone-depth="1"  />
+  <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera"  clone-depth="1"  remote="aosp" />
+  <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning"  clone-depth="1" remote="aosp"  />
   <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
-  <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX"  clone-depth="1"  />
+  <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX"  clone-depth="1" remote="aosp" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="packages/apps/OmniGears" name="android_packages_apps_OmniGears" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="packages/apps/OmniTorch" name="android_packages_apps_OmniTorch" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
-  <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer"  clone-depth="1"  />
+  <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer"  clone-depth="1" remote="aosp"  />
   <project path="packages/apps/OpenDelta" name="android_packages_apps_OpenDelta" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="packages/apps/PerformanceControl" name="android_packages_apps_PerformanceControl" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
-  <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon"  clone-depth="1"  />
-  <project path="packages/apps/Provision" name="platform/packages/apps/Provision"  clone-depth="1"  />
+  <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon"  clone-depth="1" remote="aosp" />
+  <project path="packages/apps/Provision" name="platform/packages/apps/Provision"  clone-depth="1" remote="aosp"  />
   <project path="packages/apps/QuickSearchBox" name="android_packages_apps_QuickSearchBox" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
-  <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService"  clone-depth="1"  />
-  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder"  clone-depth="1"  />
-  <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts"  clone-depth="1"  />
-  <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder"  clone-depth="1"  />
-  <project path="packages/apps/Stk" name="platform/packages/apps/Stk"  clone-depth="1"  />
-  <project path="packages/apps/Tag" name="platform/packages/apps/Tag"  clone-depth="1"  />
-  <project path="packages/apps/Terminal" name="platform/packages/apps/Terminal"  clone-depth="1"  />
-  <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings"  clone-depth="1"  />
+  <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService"  clone-depth="1" remote="aosp" />
+  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder"  clone-depth="1" remote="aosp" />
+  <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts"  clone-depth="1" remote="aosp" />
+  <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder"  clone-depth="1" remote="aosp" />
+  <project path="packages/apps/Stk" name="platform/packages/apps/Stk"  clone-depth="1" remote="aosp" />
+  <project path="packages/apps/Tag" name="platform/packages/apps/Tag"  clone-depth="1" remote="aosp" />
+  <project path="packages/apps/Terminal" name="platform/packages/apps/Terminal"  clone-depth="1" remote="aosp" />
+ <!-- <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings"  clone-depth="1" remote="aosp" /> -->
   <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="packages/apps/VoiceDialer" name="android_packages_apps_VoiceDialer" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="packages/experimental" name="CyanogenMod/android_packages_experimental"  clone-depth="1" />
@@ -454,10 +453,9 @@
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider"  clone-depth="1"  />
 -->
   <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
-  <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider"  clone-depth="1"  />
-  <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs"  clone-depth="1"  />
+  <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider"  clone-depth="1" remote="aosp" />
+  <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs"  clone-depth="1" remote="aosp" />
 
-  <project path="packages/services/Mms" name="platform/packages/services/Mms"  clone-depth="1"  />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp"  clone-depth="1" />
@@ -477,16 +475,16 @@
   <project path="prebuilts/clang/linux-x86/3.1" name="platform/prebuilts/clang/linux-x86/3.1" groups="pdk,linux"  clone-depth="1"  />
   <project path="prebuilts/clang/linux-x86/3.2" name="platform/prebuilts/clang/linux-x86/3.2" groups="pdk,linux"  clone-depth="1"  />
 -->
-  <project path="prebuilts/clang/linux-x86/arm/3.3" name="platform/prebuilts/clang/linux-x86/arm/3.3" groups="arm,linux,pdk-cw-fs"  clone-depth="1"  />
+  <project path="prebuilts/clang/linux-x86/arm/3.3" name="platform/prebuilts/clang/linux-x86/arm/3.3" groups="arm,linux,pdk-cw-fs"  clone-depth="1" remote="aosp" />
 <!--
   <project path="prebuilts/clang/linux-x86/host/3.4" name="platform/prebuilts/clang/linux-x86/host/3.4" groups="pdk,linux"  clone-depth="1"  />
 -->
-  <project path="prebuilts/clang/linux-x86/host/3.5" name="platform/prebuilts/clang/linux-x86/host/3.5" groups="pdk,linux"  clone-depth="1"  />
+  <project path="prebuilts/clang/linux-x86/host/3.5" name="platform/prebuilts/clang/linux-x86/host/3.5" groups="pdk,linux"  clone-depth="1" remote="aosp" />
 <!--
   <project path="prebuilts/clang/linux-x86/mips/3.3" name="platform/prebuilts/clang/linux-x86/mips/3.3" groups="linux,mips,pdk-cw-fs"  clone-depth="1"  />
   <project path="prebuilts/clang/linux-x86/x86/3.3" name="platform/prebuilts/clang/linux-x86/x86/3.3" groups="linux,pdk-cw-fs,x86"  clone-depth="1"  />
 -->
-  <project path="prebuilts/devtools" name="platform/prebuilts/devtools"  clone-depth="1"  />
+  <project path="prebuilts/devtools" name="platform/prebuilts/devtools"  clone-depth="1" remote="aosp" />
 <!--
   <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" groups="pdk"  clone-depth="1"  />
   <project path="prebuilts/eclipse-build-deps" name="platform/prebuilts/eclipse-build-deps" groups="notdefault,eclipse"  clone-depth="1"  />
@@ -503,9 +501,9 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm"  clone-depth="1"  />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3" name="android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.4.3" groups="pdk,linux,arm" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
 -->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm"  clone-depth="1"  />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm"  clone-depth="1"  />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" groups="pdk,linux"  clone-depth="1"  />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm"  clone-depth="1" remote="aosp" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm"  clone-depth="1" remote="aosp"  />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" groups="pdk,linux" clone-depth="1" remote="aosp" />
 <!--
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux"  clone-depth="1"  />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8"  clone-depth="1"  />
@@ -515,11 +513,11 @@
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.8" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.8" groups="pdk,linux,x86"  clone-depth="1"  />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="pdk,linux,x86"  clone-depth="1"  />
 -->
-  <project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" groups="pdk-cw-fs"  clone-depth="1"  />
-  <project path="prebuilts/libs/libedit" name="platform/prebuilts/libs/libedit" groups="pdk-cw-fs"  clone-depth="1"  />
-  <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs"  clone-depth="1"  />
-  <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk,tradefed"  clone-depth="1"  />
-  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk"  clone-depth="1"  />
+  <project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" groups="pdk-cw-fs"  clone-depth="1" remote="aosp" />
+  <project path="prebuilts/libs/libedit" name="platform/prebuilts/libs/libedit" groups="pdk-cw-fs"  clone-depth="1" remote="aosp" />
+  <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs" clone-depth="1" remote="aosp" />
+  <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk,tradefed"  clone-depth="1" remote="aosp"  />
+  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk"  clone-depth="1" remote="aosp"  />
 <!--
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin,pdk,pdk-cw-fs"  clone-depth="1"  />
 -->
