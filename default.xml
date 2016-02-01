@@ -10,6 +10,10 @@
            fetch=".."
            review="review.cyanogenmod.org" />
 
+ <remote  name="omnirom"
+           review="gerrit.omnirom.org"
+           fetch="https://github.com/omnirom" />
+
   <remote  name="Euphoria-OS"
            fetch="https://github.com" />
 
@@ -63,6 +67,7 @@
   <project path="external/ant-wireless/ant_service" name="CyanogenMod/android_external_ant-wireless_ant_service"  clone-depth="1" />
   <project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library"  clone-depth="1" />
   <project path="external/bash" name="CyanogenMod/android_external_bash"  clone-depth="1" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox"  clone-depth="1" />
   <project path="external/android-mock" name="CyanogenMod/android_external_android-mock"  clone-depth="1" />
   <project path="external/ant-glob" name="CyanogenMod/android_external_ant-glob" groups="pdk-cw-fs"  clone-depth="1" />
   <project path="external/antlr" name="platform/external/antlr" groups="pdk-cw-fs,tradefed" remote="aosp"  clone-depth="1" />
@@ -332,7 +337,7 @@
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk"  clone-depth="1" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
-  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk"  clone-depth="1" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="omnirom" revision="android-5.0" groups="pdk"  clone-depth="1" />
   <project path="frameworks/base" name="Euphoria-OS-Legacy/android_frameworks_base" groups="pdk-cw-fs" remote="github" revision="lollipop-5.0"  clone-depth="1" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk"  clone-depth="1" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk"  clone-depth="1" />
@@ -354,13 +359,14 @@
   <project path="frameworks/opt/hardware" name="CyanogenMod/android_frameworks_opt_hardware"  clone-depth="1" />
   <project path="frameworks/opt/inputmethodcommon" name="CyanogenMod/android_frameworks_opt_inputmethodcommon"  clone-depth="1" />
   <project path="frameworks/opt/mms" name="CyanogenMod/android_frameworks_opt_mms"  clone-depth="1" />
-  <project path="frameworks/opt/net/ims" name="Euphoria-OS-Legacy/android_frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs" remote="github" revision="lollipop-5.0"  clone-depth="1" />
-  <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
-  <project path="frameworks/opt/net/wifi" name="Euphoria-OS-Legacy/android_frameworks_opt_net_wifi" groups="pdk" remote="github" revision="lollipop-5.0"  clone-depth="1" />
-  <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" remote="aosp"  clone-depth="1" />
+<!--  <project path="frameworks/opt/net/ims" name="CyanogenMod/android_frameworks_opt_ims" groups="frameworks_ims,pdk-cw-fs" remote="github" revision="lollipop-5.0"  clone-depth="1" /> -->
+  <project path="frameworks/opt/net/ims" name="Euphoria-OS-Legacy/android_frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs" remote="github" revision="lollipop-5.0" />
+  <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs"  remote="aosp" />
+  <project path="frameworks/opt/net/wifi" name="Euphoria-OS-Legacy/android_frameworks_opt_net_wifi" groups="pdk" remote="github" revision="lollipop-5.0" />
+  <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" remote="aosp" />
   <project path="frameworks/opt/photoviewer" name="CyanogenMod/android_frameworks_opt_photoviewer"  clone-depth="1" />
   <project path="frameworks/opt/setupwizard" name="CyanogenMod/android_frameworks_opt_setupwizard" groups="pdk-cw-fs"  clone-depth="1" />
-  <project path="frameworks/opt/telephony" name="CyanogenMod/android_frameworks_opt_telephony" groups="pdk"  clone-depth="1" />
+  <project path="frameworks/opt/telephony" name="Euphoria-OS-Legacy/android_frameworks_opt_telephony" groups="pdk"  clone-depth="1" remote="github" revision="lollipop-5.0"  />
   <project path="frameworks/opt/timezonepicker" name="CyanogenMod/android_frameworks_opt_timezonepicker"  clone-depth="1" />
   <project path="frameworks/opt/vcard" name="CyanogenMod/android_frameworks_opt_vcard"  clone-depth="1" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" remote="aosp"  clone-depth="1" />
@@ -613,6 +619,9 @@
   <project path="external/ant-wireless/ant_service" name="Euphoria-OS-Legacy/android_external_ant-wireless_ant_service" remote="github" revision="lollipop-5.0"  clone-depth="1" />
   <project path="external/bash" name="Euphoria-OS-Legacy/android_external_bash" remote="github" revision="lollipop-5.0"  clone-depth="1" />
   <project path="external/busybox" name="Euphoria-OS-Legacy/android_external_busybox" remote="github" revision="lollipop-5.0"  clone-depth="1" />
+
+-->
+<!--
   <project path="external/connectivity" name="Euphoria-OS-Legacy/android_external_connectivity" remote="github" revision="lollipop-5.0"  clone-depth="1" />
   <project path="external/exfat" name="Euphoria-OS-Legacy/android_external_exfat" remote="github" revision="lollipop-5.0"  clone-depth="1" />
   <project path="external/fuse" name="Euphoria-OS-Legacy/android_external_fuse" remote="github" revision="lollipop-5.0"  clone-depth="1" />
