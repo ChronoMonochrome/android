@@ -444,9 +444,9 @@
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" remote="aosp"  clone-depth="1" />
   <project path="packages/apps/Bluetooth" name="Euphoria-OS-Legacy/android_packages_apps_Bluetooth" groups="pdk-cw-fs" remote="github" revision="lollipop-5.0"  clone-depth="1" />
   <project path="packages/apps/Browser" name="Euphoria-OS/android_packages_apps_Browser" remote="Euphoria-OS" revision="lollipop-5.0"  clone-depth="1" />
-  <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator"  clone-depth="1" />
+  <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator"  clone-depth="1"  remote="aosp"/>
   <project path="packages/apps/Calendar" name="Euphoria-OS/android_packages_apps_Calendar" remote="Euphoria-OS" revision="lollipop-5.0"  clone-depth="1" />
-  <project path="packages/apps/Camera" name="platform/packages/apps/Camera"  clone-depth="1" />
+  <project path="packages/apps/Camera" name="platform/packages/apps/Camera"  clone-depth="1" remote="aosp" />
   <project path="packages/apps/Camera2" name="Euphoria-OS-Legacy/android_packages_apps_Camera2" remote="github" revision="lollipop-5.0"  clone-depth="1" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" remote="aosp"  clone-depth="1" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
