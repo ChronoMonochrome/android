@@ -308,7 +308,7 @@
   <project path="external/square/javawriter" name="CyanogenMod/android_external_square_javawriter"  clone-depth="1" />
   <project path="external/srec" name="platform/external/srec" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
-  <project path="external/stagefright-plugins" name="CyanogenMod/android_external_stagefright-plugins"  clone-depth="1" />
+<!--  <project path="external/stagefright-plugins" name="CyanogenMod/android_external_stagefright-plugins"  clone-depth="1" /> -->
   <project path="external/stlport" name="platform/external/stlport" groups="pdk" remote="aosp"  clone-depth="1" />
   <project path="external/strace" name="CyanogenMod/android_external_strace" groups="pdk-cw-fs"  clone-depth="1" />
   <project path="external/stressapptest" name="platform/external/stressapptest" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
@@ -501,7 +501,7 @@
   <project path="packages/providers/ContactsProvider" name="Euphoria-OS-Legacy/android_packages_providers_ContactsProvider" groups="pdk-cw-fs" remote="github" revision="lollipop-5.0"  clone-depth="1" />
   <project path="packages/providers/DownloadProvider" name="Euphoria-OS/android_packages_providers_DownloadProvider" groups="pdk-cw-fs" remote="Euphoria-OS" revision="lollipop-5.0"  clone-depth="1" />
   <project path="packages/providers/MediaProvider" name="Euphoria-OS/android_packages_providers_MediaProvider" groups="pdk-cw-fs" remote="Euphoria-OS" revision="lollipop-5.0"  clone-depth="1" />
-  <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" remote="aosp"  clone-depth="1" />
+<!--  <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" remote="aosp"  clone-depth="1" /> -->
   <project path="packages/providers/TelephonyProvider" name="Euphoria-OS-Legacy/android_packages_providers_TelephonyProvider" remote="github" revision="lollipop-5.0"  clone-depth="1" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" remote="aosp"  clone-depth="1" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
@@ -520,7 +520,7 @@
   <project path="packages/wallpapers/LivePicker" name="CyanogenMod/android_packages_wallpapers_LivePicker"  clone-depth="1" />
   <project path="packages/wallpapers/MagicSmoke" name="CyanogenMod/android_packages_wallpapers_MagicSmoke"  clone-depth="1" />
 -->
-  <project path="packages/wallpapers/MusicVisualization" name="CyanogenMod/android_packages_wallpapers_MusicVisualization"  clone-depth="1" />
+  <project path="packages/wallpapers/MusicVisualization" name="CyanogenMod/android_packages_wallpapers_MusicVisualization"  clone-depth="1" /> 
 <!--
   <project path="packages/wallpapers/NoiseField" name="CyanogenMod/android_packages_wallpapers_NoiseField"  clone-depth="1" />
   <project path="packages/wallpapers/PhaseBeam" name="CyanogenMod/android_packages_wallpapers_PhaseBeam"  clone-depth="1" />
@@ -609,7 +609,7 @@
   <!-- Custom projects -->
 
   <!-- Euphoria-OS vendor -->
-  <project path="vendor/eos" name="Euphoria-OS-Legacy/android_vendor_eos" remote="github" revision="lollipop-5.0"  clone-depth="1" />
+  <project path="vendor/eos" name="ChronoMonochrome/android_vendor" remote="github" revision="eos-5.0" />
 
   <!-- External -->
   <project path="external/android-visualizer" name="Euphoria-OS/android_external_android-visualizer" remote="Euphoria-OS" revision="lollipop-5.0"  clone-depth="1" />
@@ -633,7 +633,7 @@
 -->
 
   <!-- Su -->
-  <project path="system/extras/su" name="CyanogenMod/android_system_extras_su" remote="github" revision="cm-12.0"  clone-depth="1" />
+  <project path="system/extras/su" name="Euphoria-OS/android_system_extras_su" remote="github" revision="lollipop-5.0"  clone-depth="1" />
 
   <!-- CM Hardware -->
 <!--
@@ -648,7 +648,6 @@
   <project path="packages/apps/Eleven" name="Euphoria-OS/android_packages_apps_Eleven" remote="Euphoria-OS" revision="lollipop-5.0"  clone-depth="1" />
   <project path="packages/apps/LockClock" name="Euphoria-OS/android_packages_apps_LockClock" remote="Euphoria-OS" revision="lollipop-5.0"  clone-depth="1" />
   <project path="packages/apps/OTACenter" name="Euphoria-OS/android_packages_apps_OTACenter" remote="Euphoria-OS" revision="lollipop-5.0"  clone-depth="1" />
-  <project path="packages/apps/ScreenRecorder" name="Euphoria-OS/android_packages_apps_ScreenRecorder" remote="Euphoria-OS" revision="lollipop-5.0"  clone-depth="1" />
   <project path="packages/apps/ThemeChooser" name="Euphoria-OS/android_packages_apps_ThemeChooser" remote="Euphoria-OS" revision="lollipop-5.0"  clone-depth="1" />
 
   <project path="packages/providers/ThemesProvider" name="Euphoria-OS/android_packages_providers_ThemesProvider" remote="Euphoria-OS" revision="lollipop-5.0"  clone-depth="1" />
