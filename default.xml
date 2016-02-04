@@ -10,6 +10,9 @@
            fetch=".."
            review="review.cyanogenmod.org" />
 
+  <remote  name="chrono"
+           fetch="https://github.com/ChronoMonochrome" />
+
  <remote  name="omnirom"
            review="gerrit.omnirom.org"
            fetch="https://github.com/omnirom" />
@@ -25,7 +28,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="ChronoMonochome/android_build" groups="pdk,tradefed" remote="github" revision="eos-5.0" >
+  <project path="build" name="android_build" groups="pdk,tradefed" remote="chrono" revision="eos-5.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
