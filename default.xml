@@ -392,9 +392,9 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" remote="aosp"  clone-depth="1" revision="refs/tags/android-5.0.2_r1" />
 
   <project path="kernel/codina/chrono" name="ChronoMonochrome/Chrono_Kernel" remote="github" revision="ROM" />
-  <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" remote="github" revision="lp5.1"  clone-depth="1"  />
-  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="cm11-vanir"  />
-  <project path="device/samsung/u8500-common" name="ChronoMonochrome/android_device_samsung_u8500-common" revision="cm-11.0"  clone-depth="1" />
-  <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" remote="github" revision="cm-11.0"  clone-depth="1"  />
+  <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" remote="github" revision="cm-10.1"  clone-depth="1"  />
+  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="cm-10.1"  />
+  <project path="device/samsung/u8500-common" name="ChronoMonochrome/android_device_samsung_u8500-common" revision="cm-10.1"  clone-depth="1" />
+  <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" remote="github" revision="cm-10.1"  clone-depth="1"  />
 
 </manifest>
