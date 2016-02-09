@@ -310,7 +310,7 @@
   <project path="external/square/dagger" name="CyanogenMod/android_external_square_dagger"  clone-depth="1" />
   <project path="external/square/javawriter" name="CyanogenMod/android_external_square_javawriter"  clone-depth="1" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
-  <project path="external/stagefright-plugins" name="CyanogenMod/android_external_stagefright-plugins"  clone-depth="1" />
+ <!-- <project path="external/stagefright-plugins" name="CyanogenMod/android_external_stagefright-plugins"  clone-depth="1" /> -->
   <project path="external/stlport" name="platform/external/stlport" groups="pdk" remote="aosp"  clone-depth="1" />
   <project path="external/strace" name="CyanogenMod/android_external_strace" groups="pdk-cw-fs"  clone-depth="1" />
   <project path="external/stressapptest" name="platform/external/stressapptest" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
@@ -342,7 +342,7 @@
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk"  clone-depth="1" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
-  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk"  clone-depth="1" />
+  <project path="frameworks/av" name="android_frameworks_av"  remote="omnirom" revision="android-5.1" groups="pdk"  clone-depth="1" />
   <project path="frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs"  clone-depth="1"  />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk"  clone-depth="1" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk"  clone-depth="1" />
@@ -352,7 +352,7 @@
   <project path="frameworks/minikin" name="CyanogenMod/android_frameworks_minikin" groups="pdk-cw-fs"  clone-depth="1" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml"  clone-depth="1" />
   <project path="frameworks/multidex" name="CyanogenMod/android_frameworks_multidex" groups="pdk-cw-fs"  clone-depth="1" />
-  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk"  clone-depth="1" />
+  <project path="frameworks/native" name="android_frameworks_native"  remote="omnirom" revision="android-5.1" groups="pdk"  clone-depth="1" />
   <project path="frameworks/opt/bitmap" name="CyanogenMod/android_frameworks_opt_bitmap"  clone-depth="1" />
   <project path="frameworks/opt/bluetooth" name="CyanogenMod/android_frameworks_opt_bluetooth" groups="pdk-cw-fs"  clone-depth="1" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar"  clone-depth="1" />
