@@ -10,6 +10,9 @@
            fetch=".."
            review="review.cyanogenmod.org" />
 
+  <remote  name="chrono"
+           fetch="https://github.com/ChronoMonochrome" />
+
   <remote  name="omnirom"
            review="gerrit.omnirom.org"
            fetch="https://github.com/omnirom" />
@@ -31,7 +34,7 @@
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk"  clone-depth="1" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk"  clone-depth="1" />
-  <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk"  clone-depth="1" />
+  <project path="bionic" name="android_bionic" remote="omnirom" revision="android-5.1" groups="pdk"  clone-depth="1" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk"  clone-depth="1" />
   <project path="cts" name="CyanogenMod/android_cts" groups="cts,pdk-cw-fs"  clone-depth="1" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
@@ -352,7 +355,7 @@
   <project path="frameworks/minikin" name="CyanogenMod/android_frameworks_minikin" groups="pdk-cw-fs"  clone-depth="1" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml"  clone-depth="1" />
   <project path="frameworks/multidex" name="CyanogenMod/android_frameworks_multidex" groups="pdk-cw-fs"  clone-depth="1" />
-  <project path="frameworks/native" name="android_frameworks_native"  remote="omnirom" revision="android-5.1" groups="pdk"  clone-depth="1" />
+  <project path="frameworks/native" name="android_frameworks_native"  remote="chrono" revision="cm-12.1" groups="pdk"  clone-depth="1" />
   <project path="frameworks/opt/bitmap" name="CyanogenMod/android_frameworks_opt_bitmap"  clone-depth="1" />
   <project path="frameworks/opt/bluetooth" name="CyanogenMod/android_frameworks_opt_bluetooth" groups="pdk-cw-fs"  clone-depth="1" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar"  clone-depth="1" />
@@ -385,7 +388,7 @@
   <project path="hardware/cm" name="CyanogenMod/android_hardware_cm"  clone-depth="1" />
   <project path="hardware/cyanogen" name="CyanogenMod/android_hardware_cyanogen"  clone-depth="1" />
   <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" groups="invensense"  clone-depth="1" />
-  <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" groups="pdk"  clone-depth="1" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="chrono" revision="cm-12.1" groups="pdk"  clone-depth="1" />
   <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" groups="pdk"  clone-depth="1" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" groups="pdk"  clone-depth="1" />
   <project path="hardware/ril-caf" name="CyanogenMod/android_hardware_ril" groups="pdk" revision="cm-12.1-caf"  clone-depth="1" />
