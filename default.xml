@@ -303,7 +303,7 @@
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" remote="aosp"  clone-depth="1" />
   <project path="external/sepolicy" name="android_external_sepolicy" remote="omnirom" revision="android-5.1"  clone-depth="1" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk-cw-fs,qcom_msm8x26" remote="aosp"  clone-depth="1" />
-  <project path="external/skia" name="CyanogenMod/android_external_skia" groups="pdk-cw-fs,qcom_msm8x26"  clone-depth="1" />
+  <project path="external/skia" name="VividROM/android_external_skia" groups="pdk-cw-fs,qcom_msm8x26"  clone-depth="1" />
   <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fw" remote="aosp"  clone-depth="1" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
   <project path="external/sonivox" name="CyanogenMod/android_external_sonivox" groups="pdk"  clone-depth="1" />
@@ -313,7 +313,7 @@
   <project path="external/square/dagger" name="CyanogenMod/android_external_square_dagger"  clone-depth="1" />
   <project path="external/square/javawriter" name="CyanogenMod/android_external_square_javawriter"  clone-depth="1" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
- <!-- <project path="external/stagefright-plugins" name="CyanogenMod/android_external_stagefright-plugins"  clone-depth="1" /> -->
+  <project path="external/stagefright-plugins" name="CyanogenMod/android_external_stagefright-plugins"  clone-depth="1" />
   <project path="external/stlport" name="platform/external/stlport" groups="pdk" remote="aosp"  clone-depth="1" />
   <project path="external/strace" name="CyanogenMod/android_external_strace" groups="pdk-cw-fs"  clone-depth="1" />
   <project path="external/stressapptest" name="platform/external/stressapptest" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
@@ -345,7 +345,7 @@
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk"  clone-depth="1" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
-  <project path="frameworks/av" name="android_frameworks_av"  remote="omnirom" revision="android-5.1" groups="pdk"  clone-depth="1" />
+  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av"  remote="github" revision="cm-12.1" groups="pdk"  clone-depth="1" />
   <project path="frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs"  clone-depth="1"  />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk"  clone-depth="1" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk"  clone-depth="1" />
@@ -558,7 +558,6 @@
   <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" remote="github" revision="android-5.1"  clone-depth="1"  />
   <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="cm-12.1-omni"  clone-depth="1"  />
   <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" remote="github" revision="android-5.1"  clone-depth="1"  />
-
 <!--
  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" name="ArchiDroid/Toolchain" remote="github" revision="linaro-5.2" />
 -->
