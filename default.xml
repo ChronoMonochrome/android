@@ -35,7 +35,7 @@
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk"  clone-depth="1" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk"  clone-depth="1" />
   <project path="bionic" name="android_bionic" remote="omnirom" revision="android-5.1" groups="pdk"  clone-depth="1" />
-  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk"  clone-depth="1" />
+<!--  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk"  clone-depth="1" /> -->
   <project path="cts" name="CyanogenMod/android_cts" groups="cts,pdk-cw-fs"  clone-depth="1" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
   <project path="developers/build" name="platform/developers/build" remote="aosp"  clone-depth="1" />
@@ -505,8 +505,9 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm"  clone-depth="1" remote="aosp" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm"  clone-depth="1" remote="aosp"  />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" groups="pdk,linux" clone-depth="1" remote="aosp" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" remote="aosp" groups="pdk,linux"  clone-depth="1"  />
+
 <!--
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux"  clone-depth="1"  />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8"  clone-depth="1"  />
   <project path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" groups="pdk,linux,mips"  clone-depth="1"  />
   <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.8" name="platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.8" groups="pdk,linux,mips"  clone-depth="1"  />
