@@ -83,7 +83,7 @@
   <project path="external/bash" name="CyanogenMod/android_external_bash"  clone-depth="1" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" remote="aosp"  clone-depth="1" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
- <!-- <project path="external/bluetooth/bluedroid" name="CyanogenMod/android_external_bluetooth_bluedroid" groups="pdk"  clone-depth="1" /> -->
+  <project path="external/bluetooth/bluedroid" name="CyanogenMod/android_external_bluetooth_bluedroid" groups="pdk"  clone-depth="1" />
   <project path="external/bouncycastle" name="CyanogenMod/android_external_bouncycastle"  clone-depth="1" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" remote="aosp"  clone-depth="1" />
   <project path="external/bson" name="CyanogenMod/android_external_bson"  clone-depth="1" />
