@@ -566,8 +566,8 @@
 <!--
  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" name="ArchiDroid/Toolchain" remote="github" revision="linaro-5.2" />
 -->
- <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" name="arter97/arm-linux-androideabi-5.2" remote="github" revision="master" />
- <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="ChronoMonochrome/Toolchain" remote="github" revision="armv7a-linux-gnueabihf-5.2" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" name="arm-linux-androideabi-5.2" remote="chrono" revision="master" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="Toolchain" remote="chrono" revision="armv7a-linux-gnueabihf-5.2" />
 <!--
  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="arter97/arm-linux-androideabi-5.2" remote="github" revision="master" />
 -->
