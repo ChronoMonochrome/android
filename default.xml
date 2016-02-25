@@ -36,7 +36,8 @@
   <project path="android" name="Chronomonochrome/android" remote="github" revision="cm12.1-omni" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk"  clone-depth="1" />
-  <project path="art" name="art" remote="optipop" revision="opti-5.1" groups="pdk"  clone-depth="1" />
+<!--  <project path="art" name="art" remote="optipop" revision="opti-5.1" groups="pdk"  clone-depth="1" /> -->
+  <project path="art" name="CyanogenMod/android_art" remote="github" revision="cm-12.1" groups="pdk"  clone-depth="1" />
   <project path="bionic" name="android_bionic" remote="omnirom" revision="android-5.1" groups="pdk"  clone-depth="1" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk"  clone-depth="1" />
   <project path="cts" name="CyanogenMod/android_cts" groups="cts,pdk-cw-fs"  clone-depth="1" />
@@ -250,7 +251,7 @@
   <project path="external/lldb" name="platform/external/lldb" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
   <project path="external/llvm" name="platform/external/llvm" groups="pdk" remote="aosp"  clone-depth="1" />
   <project path="external/lohit-fonts" name="platform/external/lohit-fonts" remote="aosp"  clone-depth="1" />
-  <!--<project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />-->
+  <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
   <project path="external/lsof" name="CyanogenMod/android_external_lsof"  clone-depth="1" />
   <project path="external/lz4" name="CyanogenMod/android_external_lz4"  clone-depth="1" />
   <project path="external/lzma" name="CyanogenMod/android_external_lzma"  clone-depth="1" />
@@ -322,7 +323,7 @@
   <project path="external/stressapptest" name="platform/external/stressapptest" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
   <project path="external/svox" name="platform/external/svox" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,tradefed" remote="aosp"  clone-depth="1" />
-  <!--<project path="external/tcpdump" name="CyanogenMod/android_external_tcpdump" groups="pdk,pdk-cw-fs"  clone-depth="1" />-->
+  <project path="external/tcpdump" name="CyanogenMod/android_external_tcpdump" groups="pdk,pdk-cw-fs"  clone-depth="1" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" remote="aosp"  clone-depth="1" />
   <project path="external/tinyalsa" name="CyanogenMod/android_external_tinyalsa" groups="pdk"  clone-depth="1" />
   <project path="external/tinycompress" name="CyanogenMod/android_external_tinycompress" groups="pdk"  clone-depth="1" />
@@ -462,7 +463,7 @@
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs"  clone-depth="1" remote="aosp" />
 
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="optipop" revision="opti-5.1"  clone-depth="1"  />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="omnirom" revision="android-5.1"  clone-depth="1"  />
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp"  clone-depth="1" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" clone-depth="1" remote="aosp" />
   <project path="frameworks/testing" name="platform/frameworks/testing" remote="aosp" revision="android-support-test"  clone-depth="1" />
