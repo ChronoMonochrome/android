@@ -349,8 +349,8 @@
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk"  clone-depth="1" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
-<!--  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av"  remote="github" revision="cm-12.1" groups="pdk"  clone-depth="1" /> -->
-  <project path="frameworks/av" name="android_frameworks_av"  remote="omnirom" revision="android-5.1" groups="pdk"  clone-depth="1" /> 
+  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av"  remote="github" revision="cm-12.1" groups="pdk"  clone-depth="1" />
+<!--  <project path="frameworks/av" name="android_frameworks_av"  remote="omnirom" revision="android-5.1" groups="pdk"  clone-depth="1" />  -->
   <project path="frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs"  clone-depth="1"  />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk"  clone-depth="1" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk"  clone-depth="1" />
@@ -360,7 +360,7 @@
   <project path="frameworks/minikin" name="CyanogenMod/android_frameworks_minikin" groups="pdk-cw-fs"  clone-depth="1" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml"  clone-depth="1" />
   <project path="frameworks/multidex" name="CyanogenMod/android_frameworks_multidex" groups="pdk-cw-fs"  clone-depth="1" />
-  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native"  remote="github" revision="cm-12.1" groups="pdk"  clone-depth="1" />
+  <project path="frameworks/native" name="android_frameworks_native"  remote="chrono" revision="cm-12.1" groups="pdk"  clone-depth="1" />
   <project path="frameworks/opt/bitmap" name="CyanogenMod/android_frameworks_opt_bitmap"  clone-depth="1" />
   <project path="frameworks/opt/bluetooth" name="CyanogenMod/android_frameworks_opt_bluetooth" groups="pdk-cw-fs"  clone-depth="1" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar"  clone-depth="1" />
@@ -378,7 +378,7 @@
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="omnirom" revision="android-5.1" clone-depth="1" /> 
   <project path="frameworks/opt/photoviewer" name="CyanogenMod/android_frameworks_opt_photoviewer"  clone-depth="1" />
   <project path="frameworks/opt/setupwizard" name="CyanogenMod/android_frameworks_opt_setupwizard" groups="pdk-cw-fs"  clone-depth="1" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="optipop" revision="opti-5.1" groups="pdk" clone-depth="1" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="omnirom" revision="android-5.1" groups="pdk" clone-depth="1" />
   <project path="frameworks/opt/timezonepicker" name="CyanogenMod/android_frameworks_opt_timezonepicker"  clone-depth="1" />
   <project path="frameworks/opt/vcard" name="CyanogenMod/android_frameworks_opt_vcard"  clone-depth="1" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" remote="aosp"  clone-depth="1" />
