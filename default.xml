@@ -6,6 +6,9 @@
            review="android-review.googlesource.com"
            revision="refs/tags/android-5.1.1_r33" />
 
+  <remote name="bitbucket"
+	fetch="https://bitbucket.org" />
+
   <remote  name="github"
            fetch=".."
            review="review.cyanogenmod.org" />
@@ -38,7 +41,7 @@
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk"  clone-depth="1" />
 <!--  <project path="art" name="art" remote="optipop" revision="opti-5.1" groups="pdk"  clone-depth="1" /> -->
   <project path="art" name="CyanogenMod/android_art" remote="github" revision="cm-12.1" groups="pdk"  clone-depth="1" />
-  <project path="bionic" name="android_bionic" remote="omnirom" revision="android-5.1" groups="pdk"  clone-depth="1" />
+  <project path="bionic" name="android_bionic" remote="chrono" revision="android-5.1" groups="pdk"  clone-depth="1" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk"  clone-depth="1" />
   <project path="cts" name="CyanogenMod/android_cts" groups="cts,pdk-cw-fs"  clone-depth="1" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" remote="aosp"  clone-depth="1" />
@@ -569,6 +572,7 @@
  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arter97/arm-linux-androideabi-4.9" remote="github" revision="cm-12.0" />
  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" name="arm-linux-androideabi-5.2" remote="chrono" revision="master" />
  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="Toolchain" remote="chrono" revision="armv7a-linux-gnueabihf-5.2" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.3" name="UBERTC/arm-linux-androideabi-5.3" remote="bitbucket" revision="master" />
 <!--
  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="arter97/arm-linux-androideabi-5.2" remote="github" revision="master" />
 -->
