@@ -369,7 +369,6 @@
   <project path="packages/apps/Messaging" name="platform/packages/apps/Messaging" groups="pdk-fs"  clone-depth="1" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs"  clone-depth="1" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="pdk-fs"  clone-depth="1" />
-  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="omap4-aosp" revision="aosp-6.0" groups="apps_nfc,pdk-fs"  clone-depth="1" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs"  clone-depth="1" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" groups="pdk-fs"  clone-depth="1" />
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
@@ -452,9 +451,10 @@
   <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-6.0"  clone-depth="1" />
 
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" remote="aosp" revision="jb-dev" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm"  clone-depth="1" remote="aosp" />
+<!--
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm"  clone-depth="1" remote="aosp" revision="android-5.1.1_r34" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm"  clone-depth="1" remote="aosp"  />
-
+-->
 
   <project path="kernel/codina/chrono" name="ChronoMonochrome/Chrono_Kernel-1" remote="github" revision="omni-5.1"  clone-depth="1"  />
 <!--
