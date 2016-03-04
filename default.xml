@@ -675,8 +675,8 @@
 -->
 
   <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" remote="github" revision="android-5.1"  clone-depth="1"  />
-  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="aosp-6.0"  clone-depth="1"  />
-  <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" remote="github" revision="android-5.1"  clone-depth="1"  />
+  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="fml-6.0"  clone-depth="1"  />
+  <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" remote="github" revision="android-6.0"  clone-depth="1"  />
 <!-- <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.9" /> -->
  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arter97/arm-linux-androideabi-4.9" remote="github" revision="cm-12.0" />
  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" name="arm-linux-androideabi-5.2" remote="chrono" revision="master" />
