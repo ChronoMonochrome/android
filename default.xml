@@ -4,6 +4,24 @@
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
 
+  <remote name="bitbucket"
+	fetch="https://bitbucket.org" />
+
+  <remote  name="github"
+           fetch=".."
+           review="review.cyanogenmod.org" />
+
+  <remote  name="chrono"
+           fetch="https://github.com/ChronoMonochrome" />
+
+  <remote  name="omnirom"
+           review="gerrit.omnirom.org"
+           fetch="https://github.com/omnirom" />
+
+  <remote  name="optipop"
+           fetch="https://github.com/optipop" />
+
+
   <remote  name="mw"
            fetch="https://github.com/MWisBest/" />
 
@@ -417,7 +435,7 @@
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="pdk,linux,x86"  clone-depth="1" />
 -->
   <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk"  clone-depth="1" />
-  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk"  clone-depth="1" />
+<!--  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk"  clone-depth="1" /> -->
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs"  clone-depth="1" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk"  clone-depth="1" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools"  clone-depth="1" />
@@ -432,4 +450,28 @@
   <project path="system/security" name="platform/system/security" groups="pdk"  clone-depth="1" />
   <project path="system/vold" name="platform/system/vold" groups="pdk"  clone-depth="1" />
   <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-6.0"  clone-depth="1" />
+
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" remote="aosp" revision="jb-dev" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm"  clone-depth="1" remote="aosp" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm"  clone-depth="1" remote="aosp"  />
+
+
+  <project path="kernel/codina/chrono" name="ChronoMonochrome/Chrono_Kernel-1" remote="github" revision="omni-5.1"  clone-depth="1"  />
+<!--
+  <project path="kernel/codina/chrono" name="ChronoMonochrome/Chrono_Kernel" remote="github" revision="ROM"  clone-depth="1"  />
+-->
+
+  <project path="vendor/samsung/u8500-common" name="ChronoMonochrome/android_vendor_samsung_u8500-common" remote="github" revision="android-5.1"  clone-depth="1"  />
+  <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" remote="github" revision="aosp-6.0"  clone-depth="1"  />
+  <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" remote="github" revision="android-5.1"  clone-depth="1"  />
+<!-- <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.9" /> -->
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arter97/arm-linux-androideabi-4.9" remote="github" revision="cm-12.0" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" name="arm-linux-androideabi-5.2" remote="chrono" revision="master" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="Toolchain" remote="chrono" revision="armv7a-linux-gnueabihf-5.2" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.3" name="UBERTC/arm-linux-androideabi-5.3" remote="bitbucket" revision="master" />
+<!--
+ <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="arter97/arm-linux-androideabi-5.2" remote="github" revision="master" />
+-->
+ <project path="prebuilts/ndk" name="temasek/android_prebuilt_ndk" remote="github" revision="cm-12.1" />
+
 </manifest>
