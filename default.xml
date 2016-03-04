@@ -274,7 +274,8 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk"  clone-depth="1" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs"  clone-depth="1" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs"  clone-depth="1" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="mw" revision="aosp-6.0" groups="pdk"  clone-depth="1" />
+<!--  <project path="frameworks/av" name="android_frameworks_av" remote="mw" revision="aosp-6.0" groups="pdk"  clone-depth="1" /> -->
+  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="github" revision="cm-13.0" groups="pdk"  clone-depth="1" /> 
   <project path="frameworks/base" name="android_frameworks_base" remote="mw" revision="aosp-6.0" groups="pdk-cw-fs,pdk-fs"  clone-depth="1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk"  clone-depth="1" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk"  clone-depth="1" />
@@ -284,7 +285,10 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs"  clone-depth="1" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs"  clone-depth="1" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs"  clone-depth="1" />
+<!--
   <project path="frameworks/native" name="android_frameworks_native" remote="mw" revision="aosp-6.0" groups="pdk"  clone-depth="1" />
+-->
+  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" remote="github" revision="cm-13.0" groups="pdk"  clone-depth="1" /> 
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs"  clone-depth="1" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs"  clone-depth="1" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs"  clone-depth="1" />
@@ -434,14 +438,18 @@
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="pdk,linux,x86"  clone-depth="1" />
 -->
   <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk"  clone-depth="1" />
-<!--  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk"  clone-depth="1" /> -->
+  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk"  clone-depth="1" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs"  clone-depth="1" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk"  clone-depth="1" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools"  clone-depth="1" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs"  clone-depth="1" />
   <project path="system/bt" name="platform/system/bt" groups="pdk"  clone-depth="1" />
+  <project path="system/core" name="CyanogenMod/android_system_core" remote="github" revision="cm-13.0" groups="pdk"  clone-depth="1" />
+  <project path="system/extras" name="CyanogenMod/android_system_extras" remote="github" revision="cm-13.0" groups="pdk"  clone-depth="1" />
+<!--
   <project path="system/core" name="android_system_core" remote="mw" revision="aosp-6.0" groups="pdk"  clone-depth="1" />
   <project path="system/extras" name="platform/system/extras" groups="pdk"  clone-depth="1" />
+-->
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk"  clone-depth="1" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk"  clone-depth="1" />
   <project path="system/media" name="platform/system/media" groups="pdk"  clone-depth="1" />
@@ -472,6 +480,7 @@
 <!--
  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="arter97/arm-linux-androideabi-5.2" remote="github" revision="master" />
 -->
+<!--
  <project path="prebuilts/ndk" name="temasek/android_prebuilt_ndk" remote="github" revision="cm-12.1" />
-
+-->
 </manifest>
