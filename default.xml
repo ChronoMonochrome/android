@@ -22,14 +22,14 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="ChronoMonochrome/android_build" revision="cm11-vanir" >
+  <project path="build" name="android_build" remote="sr" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
   <project path="android" name="ChronoMonochrome/android" revision="cm11-vanir"  clone-depth="1" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk"  clone-depth="1" />
-  <project path="art" name="CyanogenMod/android_art"  clone-depth="1" />
+  <project path="art" name="android_art" remote="sr"  clone-depth="1" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk"  clone-depth="1" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller"  clone-depth="1" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery"  clone-depth="1" />
@@ -287,7 +287,10 @@
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk"  clone-depth="1" />
   <project path="external/zxing" name="CyanogenMod/android_external_zxing"  clone-depth="1" />
   <project path="frameworks/av" name="ChronoMonochrome/android_frameworks_av" remote="github" revision="cm-11.0"  clone-depth="1" />
+<!--
   <project path="frameworks/base" name="frameworks_base" remote="vanir" revision="kk44"  clone-depth="1" />
+-->
+<project path="frameworks/base" name="SlimRoms/frameworks_base" remote="github" revision="kk4.4" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk"  clone-depth="1" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk"  clone-depth="1" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk"  clone-depth="1" />
@@ -304,8 +307,14 @@
   <project path="frameworks/opt/hardware" name="CyanogenMod/android_frameworks_opt_hardware"  clone-depth="1" />
   <project path="frameworks/opt/inputmethodcommon" name="CyanogenMod/android_frameworks_opt_inputmethodcommon"  clone-depth="1" />
   <project path="frameworks/opt/mailcommon" name="CyanogenMod/android_frameworks_opt_mailcommon"  clone-depth="1" />
+
+<!--
   <project path="frameworks/opt/mms" name="CyanogenMod/android_frameworks_opt_mms"  clone-depth="1" />
   <project path="frameworks/opt/net/voip" name="CyanogenMod/android_frameworks_opt_net_voip"  clone-depth="1" />
+-->
+  <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms" remote="aosp" />
+  <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" remote="aosp" />
+
   <project path="frameworks/opt/photoviewer" name="CyanogenMod/android_frameworks_opt_photoviewer"  clone-depth="1" />
   <project path="frameworks/opt/timezonepicker" name="CyanogenMod/android_frameworks_opt_timezonepicker"  clone-depth="1" />
   <project path="frameworks/opt/telephony" name="CyanogenMod/android_frameworks_opt_telephony" groups="pdk"  clone-depth="1" />
@@ -319,13 +328,14 @@
   <project path="frameworks/webview" name="CyanogenMod/android_frameworks_webview"  clone-depth="1" />
   <project path="frameworks/wilhelm" name="CyanogenMod/android_frameworks_wilhelm"  clone-depth="1" />
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" groups="broadcom_wlan" />
-  <project path="hardware/cm" name="CyanogenMod/android_hardware_cm"  clone-depth="1" />
+ <!-- <project path="hardware/cm" name="CyanogenMod/android_hardware_cm"  clone-depth="1" />-->
   <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" groups="invensense"  clone-depth="1" />
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" groups="pdk"  clone-depth="1" />
   <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" groups="pdk"  clone-depth="1" />
   <project path="libcore" name="CyanogenMod/android_libcore"  clone-depth="1" />
   <project path="libnativehelper" name="CyanogenMod/android_libnativehelper" groups="pdk-java"  clone-depth="1" />
   <project path="ndk" name="platform/ndk" remote="aosp" revision="refs/tags/android-4.4.4_r2"  clone-depth="1" />
+<!--
   <project path="packages/apps/Apollo" name="CyanogenMod/android_packages_apps_Apollo"  clone-depth="1" />
   <project path="packages/apps/BasicSmsReceiver" name="CyanogenMod/android_packages_apps_BasicSmsReceiver"  clone-depth="1" />
   <project path="packages/apps/Bluetooth" name="CyanogenMod/android_packages_apps_Bluetooth"  clone-depth="1" />
@@ -340,7 +350,6 @@
   <project path="packages/apps/Contacts" name="CyanogenMod/android_packages_apps_Contacts"  clone-depth="1" />
   <project path="packages/apps/ContactsCommon" name="CyanogenMod/android_packages_apps_ContactsCommon"  clone-depth="1" />
   <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock"  clone-depth="1" />
-  <!--<project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="vanir" revision="kk44"  clone-depth="1" />-->
   <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager"  clone-depth="1" />
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email"  clone-depth="1" />
   <project path="packages/apps/Exchange" name="CyanogenMod/android_packages_apps_Exchange"  clone-depth="1" />
@@ -381,6 +390,66 @@
   <project path="packages/providers/UserDictionaryProvider" name="CyanogenMod/android_packages_providers_UserDictionaryProvider"  clone-depth="1" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="aosp44" remote="vanir" revision="kk44"  clone-depth="1" />
   <project path="packages/wallpapers/MusicVisualization" name="CyanogenMod/android_packages_wallpapers_MusicVisualization"  clone-depth="1" />
+-->
+  <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" remote="aosp" />
+  <project path="packages/apps/Bluetooth" name="SlimRoms/packages_apps_Bluetooth" remote="github" revision="kk4.4" />
+  <project path="packages/apps/Browser" name="SlimRoms/packages_apps_Browser" remote="github" revision="kk4.4" />
+  <project path="packages/apps/Calculator" name="SlimRoms/packages_apps_Calculator" remote="github" revision="kk4.4" />
+  <project path="packages/apps/Calendar" name="SlimRoms/packages_apps_Calendar" remote="github" revision="kk4.4" />
+  <project path="packages/apps/Camera" name="SlimRoms/packages_apps_Camera" remote="github" revision="kk4.4" />
+  <project path="packages/apps/Camera2" name="SlimRoms/packages_apps_Camera2" remote="github" revision="kk4.4" />
+  <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" remote="aosp" />
+  <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" remote="aosp" />
+  <project path="packages/apps/Contacts" name="SlimRoms/packages_apps_Contacts" remote="github" revision="kk4.4" />
+  <project path="packages/apps/ContactsCommon" name="SlimRoms/packages_apps_ContactsCommon" remote="github" revision="kk4.4" />
+  <project path="packages/apps/DeskClock" name="SlimRoms/packages_apps_DeskClock" remote="github" revision="kk4.4" />
+  <project path="packages/apps/Dialer" name="SlimRoms/packages_apps_Dialer" remote="github" revision="kk4.4" />
+  <project path="packages/apps/Email" name="SlimRoms/packages_apps_Email" remote="github" revision="kk4.4" />
+  <project path="packages/apps/Exchange" name="SlimRoms/packages_apps_Exchange" remote="github" revision="kk4.4" />
+  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" remote="aosp" />
+  <project path="packages/apps/Gallery2" name="SlimRoms/packages_apps_Gallery2" remote="github" revision="kk4.4" />
+  <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" remote="aosp" />
+  <project path="packages/apps/InCallUI" name="SlimRoms/packages_apps_InCallUI" remote="github" revision="kk4.4" />
+  <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" remote="aosp" />
+  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" remote="aosp" />
+  <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" remote="aosp" />
+  <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" remote="aosp" />
+  <project path="packages/apps/Mms" name="SlimRoms/packages_apps_Mms" remote="github" revision="kk4.4" />
+  <project path="packages/apps/Music" name="platform/packages/apps/Music" remote="aosp" />
+  <project path="packages/apps/MusicFX" name="SlimRoms/packages_apps_MusicFX" remote="github" revision="kk4.4" />
+  <project path="packages/apps/Nfc" name="SlimRoms/packages_apps_Nfc" remote="github" revision="kk4.4" />
+  <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" remote="aosp" />
+  <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" remote="aosp" />
+  <project path="packages/apps/Phone" name="SlimRoms/packages_apps_Phone" remote="github" revision="kk4.4" />
+  <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" remote="aosp" />
+  <project path="packages/apps/Protips" name="platform/packages/apps/Protips" remote="aosp" />
+  <project path="packages/apps/Provision" name="SlimRoms/packages_apps_Provision" remote="github" revision="kk4.4" />
+<!--  <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" /> -->
+  <project path="packages/apps/Settings" name="SlimRoms/packages_apps_Settings" remote="github" revision="kk4.4" />
+  <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" remote="aosp" />
+  <project path="packages/apps/SoundRecorder" name="SlimRoms/packages_apps_SoundRecorder" remote="github" revision="kk4.4" />
+  <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" remote="aosp" />
+  <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" remote="aosp" />
+  <project path="packages/apps/Stk" name="platform/packages/apps/Stk" remote="aosp" />
+  <project path="packages/apps/Tag" name="platform/packages/apps/Tag" remote="aosp" />
+  <project path="packages/apps/Torch" name="SlimRoms/packages_apps_Torch" remote="github" revision="kk4.4" />
+  <project path="packages/apps/UnifiedEmail" name="SlimRoms/packages_apps_UnifiedEmail" remote="github" revision="kk4.4" />
+<!--  <project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" />-->
+  <project path="packages/apps/VoiceDialer" name="SlimRoms/packages_apps_VoiceDialer" remote="github" revision="kk4.4" />
+  <project path="packages/experimental" name="platform/packages/experimental" remote="aosp" />
+  <project path="packages/inputmethods/LatinIME" name="SlimRoms/packages_inputmethods_LatinIME" remote="github" revision="kk4.4" />
+  <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" remote="aosp" />
+  <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" remote="aosp" />
+  <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
+  <project path="packages/providers/CalendarProvider" name="SlimRoms/packages_providers_CalendarProvider" remote="github" revision="kk4.4" />
+  <project path="packages/providers/ContactsProvider" name="SlimRoms/packages_providers_ContactsProvider" remote="github" revision="kk4.4" />
+  <project path="packages/providers/DownloadProvider" name="SlimRoms/packages_providers_DownloadProvider" remote="github" revision="kk4.4" />
+  <project path="packages/providers/MediaProvider" name="SlimRoms/packages_providers_MediaProvider" remote="github" revision="kk4.4" />
+<!--  <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" /> -->
+  <project path="packages/providers/TelephonyProvider" name="SlimRoms/packages_providers_TelephonyProvider" remote="github" revision="kk4.4" />
+  <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider"  remote="aosp"/>
+  <project path="packages/services/Telephony" name="SlimRoms/packages_services_Telephony" remote="github" revision="kk4.4" />
+
   <project path="pdk" name="platform/pdk" remote="aosp" revision="refs/tags/android-4.4.4_r2" groups="pdk"  clone-depth="1" />
   <project path="prebuilt" name="CyanogenMod/android_prebuilt"  clone-depth="1" />
   <project path="prebuilts/devtools" name="platform/prebuilts/devtools" remote="aosp" revision="refs/tags/android-4.4.4_r2"  clone-depth="1" />
@@ -408,7 +477,39 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2"  clone-depth="1" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2"  clone-depth="1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2"  clone-depth="1" />
+
+
+  <!-- New Additions for slim -->
+  <project path="vendor/slim" name="SlimRoms/vendor_slim" remote="github" revision="kk4.4" />
+
+  <!-- Slim OTA -->
+  <project path="packages/apps/SlimCenter" name="SlimRoms/packages_apps_SlimCenter" remote="github" revision="kk4.4" />
+
+  <!-- Slim file manager -->
+  <project path="packages/apps/SlimFileManager" name="SlimRoms/packages_apps_SlimFileManager" remote="github" revision="kk4.4" />
+
+  <!-- SlimLauncher -->
+  <project path="packages/apps/SlimLauncher" name="SlimRoms/packages_apps_SlimLauncher" remote="github" revision="kk4.4" />
+
+  <!-- DSPManager -->
+  <project path="packages/apps/DSPManager" name="SlimRoms/packages_apps_DSPManager" remote="github" revision="kk4.4" />
+
+  <!--Power Hal -->
+  <project path="hardware/cm" name="SlimRoms/hardware_cm" remote="github" revision="kk4.4" />
+
+  <!-- Slim toolchain gcc and linaro -->
+<!--  <project path="prebuilt" name="SlimRoms/android_prebuilt" remote="github" revision="kk4.4" /> -->
+
+  <!-- DashClock widget -->
+  <project path="packages/apps/DashClock" name="SlimRoms/packages_apps_DashClock" remote="github" revision="kk4.4" />
+
+  <!-- Google play services -->
+<!--  <project path="external/google/google_play_services" name="SlimRoms/android_external_google_google_play_services" remote="github" revision="kk4.4" /> -->
+
+<!--
   <project path="vendor/vanir" name="ChronoMonochrome/vendor_vanir" revision="kk44"  clone-depth="1" />
+-->
+
   <project path="device/samsung/codina" name="ChronoMonochrome/android_device_samsung_codina" revision="cm11-vanir"  clone-depth="1" />
   <project path="device/samsung/u8500-common" name="ChronoMonochrome/android_device_samsung_u8500-common" revision="cm-11.0"  clone-depth="1" />
   <project path="hardware/u8500" name="ChronoMonochrome/android_hardware_u8500" revision="cm-11.0"  clone-depth="1" />
