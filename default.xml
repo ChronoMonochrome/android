@@ -3,7 +3,8 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com" />
+           review="android-review.googlesource.com"
+           revision="refs/tags/android-4.4.4_r2" />
 
 <remote name="vanir" fetch="https://github.com/VanirAOSP/" review="gerrit.vanir.co:8080" />
 <remote name="cm" fetch="https://github.com/CyanogenMod" review="review.cyanogenmod.com" revision="cm-11.0" />
@@ -22,6 +23,11 @@
            sync-c="true"
            sync-j="4" />
 
+  <remote  name="omnirom"
+           review="gerrit.omnirom.org"
+           fetch="https://github.com/omnirom" />
+
+
   <project path="build" name="android_build" remote="sr" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -32,8 +38,13 @@
   <project path="art" name="android_art" remote="sr"  clone-depth="1" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk"  clone-depth="1" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller"  clone-depth="1" />
-  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery"  clone-depth="1" />
-  <project path="bootable/recovery-cm" name="CyanogenMod/android_bootable_recovery-cm"  clone-depth="1" />
+<!--
+  <project path="bootable/recovery" name="SlimRoms/bootable_recovery" remote="github" revision="kk4.4" />
+-->
+<!--
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-4.4"/>
+-->
+<project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery"  clone-depth="1" />
   <project path="dalvik" name="android_dalvik" remote="cm"  clone-depth="1" />
   <project path="device/common" name="CyanogenMod/android_device_common"  clone-depth="1" />
   <project path="device/generic/armv7-a-neon" name="CyanogenMod/android_device_generic_armv7-a-neon" groups="pdk"  clone-depth="1" />
@@ -317,15 +328,19 @@
 
   <project path="frameworks/opt/photoviewer" name="CyanogenMod/android_frameworks_opt_photoviewer"  clone-depth="1" />
   <project path="frameworks/opt/timezonepicker" name="CyanogenMod/android_frameworks_opt_timezonepicker"  clone-depth="1" />
+<!--
   <project path="frameworks/opt/telephony" name="CyanogenMod/android_frameworks_opt_telephony" groups="pdk"  clone-depth="1" />
   <project path="frameworks/opt/telephony-msim" name="CyanogenMod/android_frameworks_opt_telephony-msim"  clone-depth="1" />
+-->
+<project path="frameworks/opt/telephony" name="SlimRoms/frameworks_opt_telephony" remote="github" revision="kk4.4" />
   <project path="frameworks/opt/vcard" name="CyanogenMod/android_frameworks_opt_vcard"  clone-depth="1" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" remote="aosp" revision="refs/tags/android-4.4.4_r2"  clone-depth="1" />
   <project path="frameworks/rs" name="CyanogenMod/android_frameworks_rs" groups="pdk"  clone-depth="1" />
   <project path="frameworks/support" name="CyanogenMod/android_frameworks_support"  clone-depth="1" />
   <project path="frameworks/testing" name="CyanogenMod/android_frameworks_testing"  clone-depth="1" />
   <project path="frameworks/volley" name="CyanogenMod/android_frameworks_volley"  clone-depth="1" />
-  <project path="frameworks/webview" name="CyanogenMod/android_frameworks_webview"  clone-depth="1" />
+<!--  <project path="frameworks/webview" name="CyanogenMod/android_frameworks_webview"  clone-depth="1" /> -->
+  <project path="frameworks/webview" name="platform/frameworks/webview" remote="aosp" clone-depth="1" />
   <project path="frameworks/wilhelm" name="CyanogenMod/android_frameworks_wilhelm"  clone-depth="1" />
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" groups="broadcom_wlan" />
  <!-- <project path="hardware/cm" name="CyanogenMod/android_hardware_cm"  clone-depth="1" />-->
@@ -440,7 +455,7 @@
   <project path="packages/inputmethods/LatinIME" name="SlimRoms/packages_inputmethods_LatinIME" remote="github" revision="kk4.4" />
   <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" remote="aosp" />
   <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" remote="aosp" />
-  <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
+  <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" remote="aosp" />
   <project path="packages/providers/CalendarProvider" name="SlimRoms/packages_providers_CalendarProvider" remote="github" revision="kk4.4" />
   <project path="packages/providers/ContactsProvider" name="SlimRoms/packages_providers_ContactsProvider" remote="github" revision="kk4.4" />
   <project path="packages/providers/DownloadProvider" name="SlimRoms/packages_providers_DownloadProvider" remote="github" revision="kk4.4" />
@@ -528,7 +543,7 @@
   <project path="developers/demos" name="platform/developers/demos" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="developers/docs" name="platform/developers/docs" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="developers/samples/android" name="platform/developers/samples/android" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="development" name="CyanogenMod/android_development" />
+<project path="development" name="SlimRoms/android_development" remote="github" revision="kk4.4" />
   <project path="device/generic/mips" name="CyanogenMod/android_device_generic_mips" groups="pdk" />
   <project path="device/generic/x86" name="CyanogenMod/android_device_generic_x86" groups="pdk" />
   <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
@@ -538,5 +553,8 @@
   <project path="device/google/accessory/demokit" name="CyanogenMod/android_device_google_accessory_demokit" groups="device" />
   <project path="device/sample" name="CyanogenMod/android_device_sample" groups="device" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
+
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.4_r2" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.4_r2" clone-depth="1" />
 
 </manifest>
