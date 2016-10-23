@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="chrono"
+           fetch="http://github.com/ChronoMonochrome" />
+
+<project path="kernel/codina/chrono" name="Chrono_Kernel-1" remote="chrono" revision="master"  clone-depth="1"  />
+<project path="vendor/samsung/u8500-common" name="android_vendor_samsung_u8500-common" remote="chrono" revision="ulti-7.0" />
+<project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="cm-14.0" />
+<project path="hardware/u8500" name="android_hardware_u8500" remote="chrono" revision="ulti-7.0" />
+	
+<project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" />
+
+</manifest>
