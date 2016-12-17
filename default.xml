@@ -13,6 +13,10 @@
            review="android-review.googlesource.com"
            revision="refs/tags/android-7.1.0_r7"  />
 
+  <remote  name="v4a"
+            fetch="https://github.com/vipersaudio"
+            revision="refs/heads/master" />
+
   <default revision="refs/heads/cm-14.1"
            remote="github"
            sync-c="true"
@@ -32,7 +36,7 @@
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" remote="aosp"  clone-depth="1" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk"  />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk"  />
-  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk"  clone-depth="1" />
+  <project path="bootable/recovery" name="OmniROM/android_bootable_recovery" revision="android-7.1" groups="pdk"  clone-depth="1" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp"  clone-depth="1" />
   <project path="dalvik" name="CyanogenMod/android_dalvik" groups="pdk-cw-fs,pdk-fs"  clone-depth="1" />
   <project path="developers/build" name="platform/developers/build" remote="aosp"  clone-depth="1" />
@@ -404,7 +408,7 @@
   <project path="packages/apps/PackageInstaller" name="CyanogenMod/android_packages_apps_PackageInstaller" groups="pdk-fs"  clone-depth="1" />
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs"  clone-depth="1" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" remote="aosp"  clone-depth="1" />
-  <project path="packages/apps/SafetyRegulatoryInfo" name="CyanogenMod/android_packages_apps_SafetyRegulatoryInfo"  clone-depth="1" />
+ <!-- <project path="packages/apps/SafetyRegulatoryInfo" name="CyanogenMod/android_packages_apps_SafetyRegulatoryInfo"  clone-depth="1" /> -->
   <project path="packages/apps/Settings" name="CyanogenMod/android_packages_apps_Settings" groups="pdk-fs"  clone-depth="1" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" groups="pdk-fs"  clone-depth="1" />
   <project path="packages/apps/Stk" name="CyanogenMod/android_packages_apps_Stk" groups="apps_stk,pdk-fs"  clone-depth="1" />
@@ -415,6 +419,7 @@
   <project path="packages/apps/TvSettings" name="CyanogenMod/android_packages_apps_TvSettings" groups="generic_fs"  clone-depth="1" />
   <project path="packages/apps/TV" name="CyanogenMod/android_packages_apps_TV"  clone-depth="1" />
   <project path="packages/apps/UnifiedEmail" name="CyanogenMod/android_packages_apps_UnifiedEmail" groups="pdk-fs"  clone-depth="1" />
+  <project path="packages/apps/ViPER4AndroidFX" name="viper4android_fx" remote="v4a" />
   <project path="packages/experimental" name="platform/packages/experimental" remote="aosp"  clone-depth="1" />
   <project path="packages/inputmethods/LatinIME" name="CyanogenMod/android_packages_inputmethods_LatinIME" groups="pdk-fs"  clone-depth="1" />
   <project path="packages/providers/BlockedNumberProvider" name="CyanogenMod/android_packages_providers_BlockedNumberProvider" groups="pdk-fs"  clone-depth="1" />

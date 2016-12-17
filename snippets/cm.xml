@@ -41,10 +41,8 @@
 -->
   <project path="packages/apps/AudioFX" name="CyanogenMod/android_packages_apps_AudioFX" clone-depth="1" />
   <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" clone-depth="1" />
-  <project path="packages/apps/CMBugReport" name="CyanogenMod/android_packages_apps_CMBugreport" clone-depth="1" />
   <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" clone-depth="1" />
   <project path="packages/apps/CMParts" name="CyanogenMod/android_packages_apps_CMParts" clone-depth="1" />
-  <project path="packages/apps/CMUpdater" name="CyanogenMod/android_packages_apps_CMUpdater" clone-depth="1" />
   <project path="packages/apps/CMWallpapers" name="CyanogenMod/android_packages_apps_CMWallpapers" clone-depth="1" />
   <project path="packages/apps/Eleven" name="CyanogenMod/android_packages_apps_Eleven" clone-depth="1" />
   <project path="packages/apps/Exchange" name="CyanogenMod/android_packages_apps_Exchange" clone-depth="1" />
@@ -52,7 +50,6 @@
   <project path="packages/apps/Gello" name="CyanogenMod/android_packages_apps_Gello" clone-depth="1" />
   <project path="packages/apps/LockClock" name="CyanogenMod/android_packages_apps_LockClock" clone-depth="1" />
   <project path="packages/apps/Profiles" name="CyanogenMod/android_packages_apps_Profiles" clone-depth="1" />
-  <project path="packages/apps/Screencast" name="CyanogenMod/android_packages_apps_Screencast" clone-depth="1" />
   <project path="packages/apps/SetupWizard" name="CyanogenMod/android_packages_apps_SetupWizard" clone-depth="1" />
   <project path="packages/apps/Snap" name="CyanogenMod/android_packages_apps_Snap" clone-depth="1" />
   <project path="packages/apps/ThemeChooser" name="CyanogenMod/android_packages_apps_ThemeChooser" clone-depth="1" />
@@ -99,9 +96,7 @@
   <project path="hardware/qcom/audio-caf/msm8974" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8974" clone-depth="1" />
   <project path="hardware/qcom/audio-caf/msm8994" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8994" clone-depth="1" />
   <project path="hardware/qcom/audio-caf/msm8996" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8996" clone-depth="1" />
--->
   <project path="hardware/qcom/bt-caf" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" revision="cm-14.1-caf" clone-depth="1" />
-<!--
   <project path="hardware/qcom/display-caf/apq8084" name="CyanogenMod/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8084" clone-depth="1" />
   <project path="hardware/qcom/display-caf/msm8916" name="CyanogenMod/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8916" clone-depth="1" />
   <project path="hardware/qcom/display-caf/msm8937" name="CyanogenMod/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8937" clone-depth="1" />
@@ -120,14 +115,14 @@
   <project path="hardware/qcom/media-caf/msm8994" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8994" clone-depth="1" />
   <project path="hardware/qcom/media-caf/msm8996" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8996" clone-depth="1" />
   <project path="hardware/qcom/wlan-caf" name="CyanogenMod/android_hardware_qcom_wlan" groups="qcom_wlan" revision="cm-14.1-caf" clone-depth="1" />
+-->
   <project path="hardware/ril-caf" name="CyanogenMod/android_hardware_ril" groups="pdk" revision="cm-14.1-caf" clone-depth="1" />
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" clone-depth="1" />
--->
   <project path="vendor/codeaurora/telephony" name="CyanogenMod/android_vendor_codeaurora_telephony" clone-depth="1" />
   <project path="vendor/qcom/opensource/bluetooth" name="CyanogenMod/android_vendor_qcom_opensource_bluetooth" clone-depth="1" />
-<!--
   <project path="vendor/qcom/opensource/dataservices" name="CyanogenMod/android_vendor_qcom_opensource_dataservices" clone-depth="1" />
   <project path="vendor/qcom/opensource/dpm" name="CyanogenMod/android_vendor_qcom_opensource_dpm" clone-depth="1" />
   <project path="vendor/qcom/opensource/time-services" name="CyanogenMod/android_vendor_qcom_opensource_time-services" clone-depth="1" />
+<!--
 -->
 </manifest>
