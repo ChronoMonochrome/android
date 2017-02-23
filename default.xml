@@ -15,6 +15,32 @@
 	   sync-depth="1"
            fetch="https://github.com/BenzoRoms" />
 
+  <remote  name="chrono"
+           fetch="https://github.com/ChronoMonochrome" />
+
+  <remote  name="ulti"
+           fetch="https://github.com/UltimateROM"
+	   revision="ulti-6.0" />
+
+
+  <remote  name="omnirom"
+           review="gerrit.omnirom.org"
+           fetch="https://github.com/omnirom" />
+
+  <remote  name="optipop"
+           fetch="https://github.com/optipop" />
+
+  <remote  name="mickybart"
+           fetch="https://github.com/mickybart"
+           revision="refs/heads/nAOSP-6.0" />
+
+  <remote  name="mw"
+           fetch="https://github.com/MWisBest/" />
+
+  <remote  name="v4a"
+            fetch="https://github.com/vipersaudio"
+            revision="refs/heads/master" />
+
   <remote  name="github"
 	   sync-depth="1"
            fetch="https://github.com" />
@@ -444,5 +470,34 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+
+<!--
+  <project path="vendor/ulti" name="android_vendor_ulti" remote="ulti" revision="ulti-6.0"  clone-depth="1" />
+-->
+  <project path="kernel/codina/chrono" name="Chrono_Kernel-1" remote="chrono" revision="ulti-6.0"  clone-depth="1"  />
+<!--
+  <project path="kernel/codina/chrono" name="Chrono_Kernel" remote="chrono" revision="ROM"  clone-depth="1"  />
+-->
+
+  <project path="vendor/samsung/u8500-common" name="android_vendor_samsung_u8500-common" remote="chrono" revision="android-6.0"  clone-depth="1"  />
+  <project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="ulti-6.0"  clone-depth="1"  />
+  <project path="hardware/u8500" name="android_hardware_u8500" remote="chrono" revision="android-6.0"  clone-depth="1"  />
+<!-- <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.9" /> -->
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.3" name="arter97/arm-linux-androideabi-4.9" remote="github" revision="cm-12.0" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" name="arm-linux-androideabi-5.2" remote="chrono" revision="master" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="Toolchain" remote="chrono" revision="armv7a-linux-gnueabihf-5.2" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-5.3" remote="bb" revision="master" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" revision="refs/tags/android-7.0.0_r1" remote="aosp" />
+
+<!-- <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="plarform/prebuilts/linux-x86/arm/arm-linux-androideabi-4.9" remote="aosp" revision="refs/tags/android-7.0.0_r1" /> -->
+<!--
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" remote="bb" revision="master" />
+-->
+<!--
+ <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="arter97/arm-linux-androideabi-5.2" remote="chrono" revision="master" />
+-->
+<!--
+ <project path="prebuilts/ndk" name="temasek/android_prebuilt_ndk" remote="github" revision="cm-12.1" />
+-->
 
 </manifest>
