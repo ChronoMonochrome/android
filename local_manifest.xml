@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="chrono"
+           fetch="https://github.com/ChronoMonochrome"
+           revision="refs/heads/ulti-7.1.1" />
+		   
+  <remote  name="mickybart"
+           fetch="https://github.com/mickybart"
+           revision="refs/heads/nAOSP-7.1.1" />
+
+  <remote  name="v4a"
+           fetch="https://github.com/vipersaudio"
+	   revision="refs/heads/master" />
+
+  <remote  name="cm"
+           fetch="https://github.com/LineageOS"
+	   revision="refs/heads/cm-14.1" />
+
+  <remote  name="oms"
+           fetch="https://github.com/TeamSubstratum"
+           revision="refs/heads/n" />
+<!--
+  <remove-project name="device/generic/arm64" />
+  <remove-project name="device/generic/common" />
+  <remove-project name="device/generic/goldfish" />
+  <remove-project name="device/generic/goldfish-opengl" />
+  <remove-project name="device/generic/mini-emulator-arm64" />
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+  <remove-project name="device/generic/mini-emulator-x86" />
+  <remove-project name="device/generic/mini-emulator-x86_64" />
+  <remove-project name="device/generic/qemu" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+  <remove-project name="device/google/atv" />
+  <remove-project name="device/google/contexthub" /> 
+  <remove-project name="platform/hardware/akm" />
+  <remove-project name="platform/hardware/google/apf" />
+  <remove-project name="platform/hardware/intel/audio_media" />
+  <remove-project name="platform/hardware/intel/bootstub" />
+  <remove-project name="platform/hardware/intel/common/bd_prov" />
+  <remove-project name="LineageOS/android_hardware_intel_common_libmix" />
+  <remove-project name="platform/hardware/intel/common/libstagefrighthw" />
+  <remove-project name="LineageOS/android_hardware_intel_common_libva" />
+  <remove-project name="LineageOS/android_hardware_intel_common_libwsbm" />
+  <remove-project name="LineageOS/android_hardware_intel_common_omx-components" />
+  <remove-project name="LineageOS/android_hardware_intel_common_utils" />
+  <remove-project name="platform/hardware/intel/common/wrs_omxil_core" />
+  <remove-project name="LineageOS/android_hardware_intel_img_hwcomposer" />
+  <remove-project name="LineageOS/android_hardware_intel_img_psb_headers" />
+  <remove-project name="LineageOS/android_hardware_intel_img_psb_video" />
+  <remove-project name="platform/hardware/intel/sensors" />
+  <remove-project name="platform/hardware/marvell/bt" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_bootctrl" />
+  <remove-project name="LineageOS/android_hardware_qcom_bt" />
+  <remove-project name="LineageOS/android_hardware_qcom_camera" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_gps" />
+  <remove-project name="LineageOS/android_hardware_qcom_keymaster" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_hardware_qcom_wlan" />
+  <remove-project name="platform/hardware/ti/omap3" />
+  <remove-project name="platform/hardware/ti/omap4-aah" />
+  <remove-project name="LineageOS/android_hardware_ti_omap4xxx" />
+  <remove-project name="LineageOS/android_packages_apps_SafetyRegulatoryInfo" />
+ <remove-project name="LineageOS/android_packages_apps_StorageManager" /> -->
+<!--  <remove-project name="LineageOS/android_packages_providers_PartnerBookmarksProvider" />
+  <remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />
+  <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+  <remove-project name="platform/prebuilts/eclipse" />
+  <remove-project name="platform/prebuilts/eclipse-build-deps" />
+  <remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9"  />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
+  <remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9"  />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9"  />
+  <remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9"  />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
+  <remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9"  />
+  <remove-project name="platform/prebuilts/gdb/darwin-x86" />
+  <remove-project name="platform/prebuilts/go/darwin-x86" />
+  <remove-project name="platform/prebuilts/ninja/darwin-x86" />
+  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+  <remove-project name="LineageOS/android_device_qcom_sepolicy" />
+  <remove-project name="LineageOS/android_external_ebtables" />
+-->
+<!--
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_bt" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_fm" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_hardware_qcom_wlan" />
+  <remove-project path="hardware/ril-caf" />
+  <remove-project name="LineageOS/android_system_qcom" />
+-->
+<!--
+  <remove-project name="packages_apps_ResurrectionOTA" />
+  
+  <remove-project name="LineageOS/android_packages_apps_CMBugreport" />
+  <remove-project name="LineageOS/android_packages_apps_CMUpdater" />
+  <remove-project name="LineageOS/android_packages_apps_CMWallpapers" />
+  <remove-project name="LineageOS/android_packages_apps_AudioFX" />
+  <remove-project name="LineageOS/android_packages_apps_Gello" />
+  <remove-project name="LineageOS/android_packages_apps_Screencast" />
+  <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+  
+  <remove-project name="LineageOS/android_bootable_recovery" />
+  <project path="bootable/recovery" name="OmniROM/android_bootable_recovery" revision="android-7.1" groups="pdk"  clone-depth="1000" />
+
+  <remove-project name="frameworks_av" />
+  <project path="frameworks/av" name="LineageOS/android_frameworks_av" groups="pdk" sync-depth="10000" />
+ 
+  <remove-project name="platform/external/chromium-webview" />
+-->
+  <project path="external/chromium-webview" name="ghsr/android_external_chromium-webview" groups="pdk" remote="github" revision="aosp-7.0" clone-depth="1000" />
+
+  
+  <project path="kernel/codina/chrono" name="Chrono_Kernel-1" remote="chrono" revision="master"  clone-depth="1"  />
+  <project path="vendor/samsung/u8500-common" name="android_vendor_samsung_u8500-common" remote="chrono" revision="cm-14.1" sync-depth="10000" />
+  <project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="cm-14.1" sync-depth="10000" />
+  <project path="hardware/u8500" name="android_hardware_u8500" remote="chrono" revision="cm-14.1" sync-depth="10000" />
+
+  <project path="external/stlport" name="android_external_stlport" remote="mickybart" sync-depth="10000" />
+<!--
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" sync-depth="10000" />
+-->
+</manifest>

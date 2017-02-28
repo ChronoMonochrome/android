@@ -3,17 +3,22 @@
 
   <remote  name="benzo"
            fetch="https://github.com/BenzoRoms/"
-           revision="noneone"/>
+           revision="noneone"
+	   sync-depth="1" />
   <remote  name="github"
-           fetch="https://github.com" />
+           fetch="https://github.com" 
+	   sync-depth="1" />
   <remote  name="bb"
+	   sync-depth="1"
            fetch="https://bitbucket.org" />
   <remote  name="aosp"
+	   sync-depth="1"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
   <default revision="refs/tags/android-7.1.1_r14"
            remote="aosp"
            sync-c="true"
+	   sync-depth="1"
            sync-j="4" />
 
   <project path="build" name="build" groups="pdk,tradefed" remote="benzo" >
@@ -41,8 +46,10 @@
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="benzo" />
   <project path="frameworks/rs" name="frameworks_rs" groups="pdk" remote="benzo" />
   <project path="frameworks/support" name="frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="benzo" />
+<!--
   <project path="hardware/qcom/display" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="benzo" />
   <project path="hardware/qcom/keymaster" name="hardware_qcom_keymaster" groups="qcom,qcom_keymaster" remote="benzo" />
+-->
   <project path="libcore" name="libcore" groups="pdk" remote="benzo" />
   <project path="system/core" name="system_core" groups="pdk" remote="benzo" />
   <project path="system/extras" name="system_extras" groups="pdk" remote="benzo" />
@@ -53,10 +60,12 @@
   <project path="prebuilts/misc" name="prebuilts_misc" groups="pdk" remote="benzo" />
   <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" groups="pdk,linux" remote="benzo" />
   <project path="prebuilts/clang/host/linux-x86/5.0" name="xanaxdroid/dragontc-5.0" groups="pdk,linux" revision="dragon-tc" remote="bb" />
+<!--
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-6.3" name="xanaxdroid/aarch64-6.3" remote="bb" revision="linaro" clone-depth="1" />
+-->
   <project path="prebuilts/sdk/renderscript" name="prebuilts_sdk_renderscript" groups="linux,pdk,tradefed" remote="benzo" />
   <project path="prebuilts/sdk/tools/linux" name="prebuilts_sdk_tools_linux" groups="linux,pdk,tradefed" remote="benzo" />
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.3" name="aarch64-linux-android-6.3" groups="pdk,linux,arm" remote="benzo" />
+<!--  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.3" name="aarch64-linux-android-6.3" groups="pdk,linux,arm" remote="benzo" /> -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.3" name="arm-linux-androideabi-6.3" groups="pdk,linux,arm" remote="benzo" />
 
   <!-- Packages -->
@@ -120,14 +129,16 @@
   <project path="external/zlib" name="external_zlib" groups="pdk" remote="benzo" />
 
   <!-- Device and kernel -->
+<!--
   <project path="device/huawei/angler" name="device_huawei_angler" groups="device,angler,broadcom_pdk" remote="benzo" />
   <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="benzo" />
-
+-->
   <!-- Vendors -->
   <project path="vendor/benzo" name="vendor_benzo" remote="benzo" />
   <project path="vendor/addons" name="vendor_addons" remote="benzo" />
+<!--
   <project path="vendor/huawei" name="vendor_huawei_angler" remote="benzo" />
-
+-->
   <!-- AOSP -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
@@ -167,7 +178,9 @@
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="pdk-fs" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
+<!--
   <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" />
+-->
   <project path="external/cmockery" name="platform/external/cmockery" groups="pdk-fs" />
   <project path="external/conscrypt" name="platform/external/conscrypt" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/crcalc" name="platform/external/crcalc" groups="pdk-fs" />
@@ -392,6 +405,7 @@
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
+<!--
   <project path="hardware/bsp/intel" name="platform/hardware/bsp/intel" />
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
@@ -408,9 +422,11 @@
   <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" />
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors" />
+-->
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
+<!--
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
   <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk" />
@@ -426,6 +442,7 @@
   <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" />
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
+-->
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" />
@@ -447,7 +464,7 @@
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" groups="pdk-fs" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" groups="pdk-fs" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" />
-  <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" groups="pdk-fs" />
+<!--  <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" groups="pdk-fs" /> -->
   <project path="packages/apps/SafetyRegulatoryInfo" name="platform/packages/apps/SafetyRegulatoryInfo" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" />
@@ -481,12 +498,16 @@
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1" />
   <project path="prebuilts/deqp" name="platform/prebuilts/deqp" groups="pdk-fs" />
   <project path="prebuilts/devtools" name="platform/prebuilts/devtools" groups="pdk-fs" />
+<!--
   <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" groups="pdk" />
   <project path="prebuilts/eclipse-build-deps" name="platform/prebuilts/eclipse-build-deps" groups="notdefault,eclipse" />
+-->
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" />
+<!--
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" groups="pdk-fs" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="pdk,linux,x86" />
+-->
   <project path="prebuilts/gdb/linux-x86" name="platform/prebuilts/gdb/linux-x86" groups="linux" />
   <project path="prebuilts/go/linux-x86" name="platform/prebuilts/go/linux-x86" groups="linux,tradefed" />
   <project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" groups="pdk-cw-fs,pdk-fs" />
@@ -529,4 +550,5 @@
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
+ <include name="local_manifest.xml" />
 </manifest>
