@@ -21,9 +21,16 @@
 	   sync-depth="1"
            sync-j="4" />
 
+<!--
   <project path="build" name="build" groups="pdk,tradefed" remote="benzo" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+-->
+
+  <project path="build" name="android_build" groups="pdk,tradefed" remote="cm" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
   <project path="build/blueprint" name="build_blueprint" groups="pdk,tradefed" remote="benzo" />
   <project path="build/kati" name="build_kati" groups="pdk,tradefed" remote="benzo" />
   <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="benzo" >
@@ -32,7 +39,10 @@
   </project>
 
   <!-- System -->
+<!--
   <project path="art" name="art" groups="pdk" remote="benzo" />
+-->
+  <project path="art" name="android_art" groups="pdk" remote="cm" />
   <project path="bionic" name="bionic" groups="pdk" remote="benzo" />
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="benzo" />
   <project path="dalvik" name="dalvik" groups="pdk-cw-fs,pdk-fs" remote="benzo" />
@@ -43,7 +53,7 @@
   <project path="frameworks/compile/slang" name="frameworks_compile_slang" groups="pdk" remote="benzo" />
   <project path="frameworks/ex" name="frameworks_ex" groups="pdk-cw-fs,pdk-fs" remote="benzo" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="benzo" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="benzo" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="cm" />
   <project path="frameworks/rs" name="frameworks_rs" groups="pdk" remote="benzo" />
   <project path="frameworks/support" name="frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="benzo" />
 <!--
@@ -53,7 +63,10 @@
   <project path="libcore" name="libcore" groups="pdk" remote="benzo" />
   <project path="system/core" name="system_core" groups="pdk" remote="benzo" />
   <project path="system/extras" name="system_extras" groups="pdk" remote="benzo" />
+<!--
   <project path="system/media" name="system_media" groups="pdk" remote="benzo" />
+-->
+  <project path="system/media" name="android_system_media" groups="pdk" remote="cm" />
   <project path="system/netd" name="system_netd" groups="pdk" remote="benzo" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="benzo" />
   <project path="prebuilts/build-tools" name="prebuilts_build-tools" groups="pdk" remote="benzo" />
@@ -66,7 +79,10 @@
   <project path="prebuilts/sdk/renderscript" name="prebuilts_sdk_renderscript" groups="linux,pdk,tradefed" remote="benzo" />
   <project path="prebuilts/sdk/tools/linux" name="prebuilts_sdk_tools_linux" groups="linux,pdk,tradefed" remote="benzo" />
 <!--  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.3" name="aarch64-linux-android-6.3" groups="pdk,linux,arm" remote="benzo" /> -->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.3" name="arm-linux-androideabi-6.3" groups="pdk,linux,arm" remote="benzo" />
+<!--  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.3" name="arm-linux-androideabi-6.3" groups="pdk,linux,arm" remote="benzo" /> -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="Toolchain" remote="chrono" revision="armv7a-linux-gnueabihf-5.2" />
+
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="cm" groups="pdk,linux,arm" clone-depth="1" />
 
   <!-- Packages -->
   <project path="packages/apps/BenzoOTA" name="packages_apps_BenzoOTA" remote="benzo" />
@@ -79,7 +95,7 @@
   <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" groups="pdk-fs" remote="benzo" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs" remote="benzo" />
   <project path="packages/apps/LockClock" name="packages_apps_LockClock" remote="benzo" />
-  <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="github" revision="n" />
+ <!-- <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="github" revision="n" /> -->
   <project path="packages/apps/messaging" name="packages_apps_Messaging" groups="pdk-fs" remote="benzo" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="benzo" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="benzo" />
@@ -105,6 +121,8 @@
   <project path="external/compiler-rt" name="external_compiler-rt" groups="pdk" remote="benzo" />
   <project path="external/expat" name="external_expat" groups="pdk" remote="benzo" />
   <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="benzo" />
+  <project path="external/ffmpeg" name="android_external_ffmpeg" remote="cm" />
+  <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="cm" />
   <project path="external/freetype" name="external_freetype" groups="pdk" remote="benzo" />
   <project path="external/google" name="external_google" remote="benzo" />
   <project path="external/guava" name="external_guava" groups="pdk-cw-fs,pdk-fs" remote="benzo" />
@@ -134,8 +152,10 @@
   <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="benzo" />
 -->
   <!-- Vendors -->
+<!--
   <project path="vendor/benzo" name="vendor_benzo" remote="benzo" />
   <project path="vendor/addons" name="vendor_addons" remote="benzo" />
+-->
 <!--
   <project path="vendor/huawei" name="vendor_huawei_angler" remote="benzo" />
 -->
@@ -390,9 +410,12 @@
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/inputconnectioncommon" name="platform/frameworks/opt/inputconnectioncommon" groups="pdk-fs" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs,pdk-fs" />
+
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" />
-  <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-fs" />
+
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="cm" groups="pdk" />
+<!--  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="cm" groups="pdk" /> -->
   <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
@@ -443,7 +466,7 @@
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
 -->
-  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="cm" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
@@ -551,4 +574,7 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
  <include name="local_manifest.xml" />
+
+<project path="vendor/cm" name="android_vendor_cm" remote="cm" sync-depth="1" />
 </manifest>
+

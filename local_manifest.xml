@@ -130,20 +130,32 @@
   <project path="bootable/recovery" name="OmniROM/android_bootable_recovery" revision="android-7.1" groups="pdk"  clone-depth="1000" />
 
   <remove-project name="frameworks_av" />
-  <project path="frameworks/av" name="LineageOS/android_frameworks_av" groups="pdk" sync-depth="10000" />
+  <project path="frameworks/av" name="LineageOS/android_frameworks_av" groups="pdk" clone-depth="10000" />
  
   <remove-project name="platform/external/chromium-webview" />
+-->
+
+
+  <remove-project name="frameworks_av" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="cm" groups="pdk" clone-depth="10000" />
+
+
+  <remove-project name="frameworks_native" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="cm" groups="pdk" clone-depth="10000" />
+<!--
+  <remove-project name="system_core" />
+  <project path="system/core" name="android_system_core" remote="cm" groups="pdk" clone-depth="10000" />
 -->
   <project path="external/chromium-webview" name="ghsr/android_external_chromium-webview" groups="pdk" remote="github" revision="aosp-7.0" clone-depth="1000" />
 
   
   <project path="kernel/codina/chrono" name="Chrono_Kernel-1" remote="chrono" revision="master"  clone-depth="1"  />
-  <project path="vendor/samsung/u8500-common" name="android_vendor_samsung_u8500-common" remote="chrono" revision="cm-14.1" sync-depth="10000" />
-  <project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="cm-14.1" sync-depth="10000" />
-  <project path="hardware/u8500" name="android_hardware_u8500" remote="chrono" revision="cm-14.1" sync-depth="10000" />
+  <project path="vendor/samsung/u8500-common" name="android_vendor_samsung_u8500-common" remote="chrono" revision="cm-14.1" clone-depth="10000" />
+  <project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="cm-14.1" clone-depth="10000" />
+  <project path="hardware/u8500" name="android_hardware_u8500" remote="chrono" revision="cm-14.1" clone-depth="10000" />
 
-  <project path="external/stlport" name="android_external_stlport" remote="mickybart" sync-depth="10000" />
+  <project path="external/stlport" name="android_external_stlport" remote="mickybart" clone-depth="10000" />
 <!--
-  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" sync-depth="10000" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" clone-depth="10000" />
 -->
 </manifest>
