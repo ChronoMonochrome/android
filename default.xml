@@ -461,7 +461,9 @@
     <project path="system/firewalld" name="platform/system/firewalld"  sync-depth="1" />
     <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk"  sync-depth="1" />
     <project path="system/keymaster" name="platform/system/keymaster" groups="pdk"  sync-depth="1" />
+<!--
     <project path="system/media" name="platform/system/media" groups="pdk"  sync-depth="1" />
+-->
     <project path="system/nativepower" name="platform/system/nativepower"  sync-depth="1" />
     <project path="system/netd" name="platform/system/netd" groups="pdk"  sync-depth="1" />
     <project path="system/nvram" name="platform/system/nvram"  sync-depth="1" />
@@ -488,29 +490,50 @@
     <!--
         Nitrogen OS by Nitrogen Project
     -->
+<!--
     <project path="build" name="android_build" groups="pdk" remote="nos" revision="n2" >
         <copyfile src="core/root.mk" dest="Makefile" />
     </project>
+-->
+
+  <project path="build" name="LineageOS/android_build" groups="pdk,tradefed" remote="github" revision="cm-14.1" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
     <project path="build/kati" name="android_build_kati" remote="nos" revision="n2"  sync-depth="1" />
 
     <!-- Other -->
     <project path="art" name="android_art" remote="nos" revision="n2"  sync-depth="1" />
-    <project path="bionic" name="android_bionic" remote="nos" revision="n2"  sync-depth="1" />
+     <!-- <project path="bionic" name="android_bionic" remote="nos" revision="n2"  sync-depth="1" /> -->
+    <project path="bionic" name="LineageOS/android_bionic" groups="pdk" remote="github" revision="cm-14.1" />
+    <!--
     <project path="bootable/recovery" name="android_bootable_recovery" remote="nos" revision="n2"  sync-depth="1" />
-
+    -->
+    <project path="bootable/recovery" name="OmniROM/android_bootable_recovery" remote="github" revision="android-7.1" groups="pdk"  clone-depth="1" />
     <!-- Frameworks -->
+<!--
     <project path="frameworks/av" name="android_frameworks_av" remote="nos" revision="n2"  sync-depth="1000" />
+-->
+    <project path="frameworks/av" name="LineageOS/android_frameworks_av" remote="github" revision="cm-14.1" groups="pdk"  />
     <project path="frameworks/base" name="android_frameworks_base" remote="nos" revision="n2"  sync-depth="1000" />
+<!--
     <project path="frameworks/native" name="android_frameworks_native" remote="nos" revision="n2"  sync-depth="1000" />
+-->
+    <project path="frameworks/native" name="LineageOS/android_frameworks_native" remote="github" revision="cm-14.1" groups="pdk" />
+
     <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="nos" revision="n2"  sync-depth="1000" />
     <project path="frameworks/support" name="android_frameworks_support" remote="nos" revision="n2"  sync-depth="1" />
 
     <!-- System -->
     <project path="system/bt" name="android_system_bt" remote="nos" revision="n2"  sync-depth="1" />
+<!--
     <project path="system/core" name="android_system_core" remote="nos" revision="n2"  sync-depth="1" />
+-->
+    <project path="system/core" name="LineageOS/android_system_core" groups="pdk" remote="github" revision="cm-14.1"  clone-depth="1" />
     <project path="system/extras" name="android_system_extras" remote="nos" revision="n2"  sync-depth="1" />
     <project path="system/sepolicy" name="android_system_sepolicy" remote="nos" revision="n2"  sync-depth="1" />
     <project path="system/vold" name="android_system_vold" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="system/media" name="LineageOS/android_system_media" groups="pdk" remote="github" revision="cm-14.1" />
 
     <!-- Packages -->
     <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="nos" revision="n2"  sync-depth="1" />
@@ -570,10 +593,12 @@
     <project path="external/skia" name="android_external_skia" remote="nos" revision="n2"  sync-depth="1" />
 
     <!-- Nitrogen OS Vendor -->
+<!--
     <project path="vendor/nitrogen" name="android_vendor_nitrogen" remote="nos" revision="n2" >
         <linkfile src="builder.sh" dest="builder.sh" />
     </project>
-
+-->
+    <project path="vendor/cm" name="LineageOS/android_vendor_cm" remote="github" revision="cm-14.1" sync-depth="1" />
     <include name="local_manifest.xml" />
 
 </manifest>
