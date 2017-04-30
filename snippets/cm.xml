@@ -43,9 +43,9 @@
   <project path="packages/apps/Browser" name="LineageOS/android_packages_apps_Browser" clone-depth="1" />
 <!--
   <project path="packages/apps/CMBugReport" name="LineageOS/android_packages_apps_CMBugreport" clone-depth="1" />
-  <project path="packages/apps/CMParts" name="LineageOS/android_packages_apps_CMParts" clone-depth="1" />
   <project path="packages/apps/CMUpdater" name="LineageOS/android_packages_apps_CMUpdater" clone-depth="1" />
 -->
+  <project path="packages/apps/CMParts" name="LineageOS/android_packages_apps_CMParts" clone-depth="1" />
   <project path="packages/apps/CustomTiles" name="LineageOS/android_packages_apps_CustomTiles" clone-depth="1" />
   <project path="packages/apps/Eleven" name="LineageOS/android_packages_apps_Eleven" clone-depth="1" />
   <project path="packages/apps/Exchange" name="LineageOS/android_packages_apps_Exchange" clone-depth="1" />
