@@ -39,12 +39,15 @@
   <project path="hardware/ti/wlan" name="LineageOS/android_hardware_ti_wlan" clone-depth="1" />
   <project path="hardware/ti/wpan" name="LineageOS/android_hardware_ti_wpan" clone-depth="1" />
 -->
+<!--
   <project path="packages/apps/AudioFX" name="LineageOS/android_packages_apps_AudioFX" clone-depth="1" />
   <project path="packages/apps/Browser" name="LineageOS/android_packages_apps_Browser" clone-depth="1" />
+-->
 <!--
   <project path="packages/apps/CMBugReport" name="LineageOS/android_packages_apps_CMBugreport" clone-depth="1" />
   <project path="packages/apps/CMUpdater" name="LineageOS/android_packages_apps_CMUpdater" clone-depth="1" />
 -->
+<!--
   <project path="packages/apps/CMParts" name="LineageOS/android_packages_apps_CMParts" clone-depth="1" />
   <project path="packages/apps/CustomTiles" name="LineageOS/android_packages_apps_CustomTiles" clone-depth="1" />
   <project path="packages/apps/Eleven" name="LineageOS/android_packages_apps_Eleven" clone-depth="1" />
@@ -65,17 +68,21 @@
   <project path="packages/services/LiveLockScreenService" name="LineageOS/android_packages_services_LiveLockScreenService" clone-depth="1" />
   <project path="packages/services/ThemeManagerService" name="LineageOS/android_packages_services_ThemeManagerService" clone-depth="1" />
   <project path="packages/services/WeatherService" name="LineageOS/android_packages_services_WeatherService" clone-depth="1" />
+-->
 <!--
   <project path="packages/themes/HexoLibre" name="LineageOS/android_packages_themes_HexoLibre" groups="themes" clone-depth="1" />
 -->
+<!--
   <project path="prebuilts/cmsdk" name="LineageOS/android_prebuilts_cmsdk" clone-depth="1"  />
+-->
   <project path="system/extras/su" name="LineageOS/android_system_extras_su" clone-depth="1" />
   <project path="vendor/cm" name="LineageOS/android_vendor_cm" clone-depth="1" />
+<!--
   <project path="vendor/cmsdk" name="LineageOS/cm_platform_sdk" clone-depth="1" />
   <project path="vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider" name="LineageOS/android_packages_apps_OpenWeatherMapProvider" clone-depth="1" />
   <project path="vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider" name="LineageOS/android_packages_apps_WundergroundWeatherProvider" clone-depth="1" />
   <project path="vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider" name="LineageOS/android_packages_apps_YahooWeatherProvider" clone-depth="1" />
-
+-->
   <!-- CodeAurora additions -->
   <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" clone-depth="1" />
   <project path="external/ant-wireless/ant_native" name="LineageOS/android_external_ant-wireless_ant_native" clone-depth="1" />
@@ -131,6 +138,7 @@
   <project path="vendor/qcom/opensource/time-services" name="LineageOS/android_vendor_qcom_opensource_time-services" clone-depth="1" />
 
   <!-- Infrastructure -->
+<!--
   <project path="lineage/ansible" name="LineageOS/ansible" groups="infra" revision="master" clone-depth="1" />
   <project path="lineage/crowdin" name="LineageOS/cm_crowdin" groups="infra" revision="master" clone-depth="1" />
   <project path="lineage/cve" name="LineageOS/cve_tracker" groups="infra" revision="master" clone-depth="1" />
@@ -140,4 +148,5 @@
   <project path="lineage/updater" name="LineageOS/lineageos_updater" groups="infra" revision="master" clone-depth="1" />
   <project path="lineage/website" name="LineageOS/www" groups="infra" revision="master" clone-depth="1" />
   <project path="lineage/wiki" name="LineageOS/lineage_wiki" groups="infra" revision="master" clone-depth="1" />
+-->
 </manifest>
