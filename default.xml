@@ -13,6 +13,15 @@
            review="android-review.googlesource.com"
            revision="refs/tags/android-7.1.2_r2" />
 
+  <remote name="nos"
+        fetch="https://github.com/nitrogen-project"
+        sync-j="16" />
+
+  <remote name="ulti"
+        fetch="https://github.com/UltimateROM"
+        sync-j="16" 
+	revision="ulti-7.1" />
+
   <default revision="refs/heads/cm-14.1"
            remote="github"
            sync-c="true"
@@ -311,7 +320,9 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="frameworks/av" name="LineageOS/android_frameworks_av" groups="pdk" clone-depth="1" />
+<!--
   <project path="frameworks/base" name="LineageOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+-->
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" clone-depth="1" />
@@ -330,12 +341,18 @@
   <project path="frameworks/opt/inputconnectioncommon" name="platform/frameworks/opt/inputconnectioncommon" groups="pdk-fs" remote="aosp" clone-depth="1" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" remote="aosp" clone-depth="1" />
+<!--
   <project path="frameworks/opt/net/ims" name="LineageOS/android_frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" clone-depth="1" />
+-->
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
+<!--
   <project path="frameworks/opt/net/wifi" name="LineageOS/android_frameworks_opt_net_wifi" groups="pdk" clone-depth="1" />
+-->
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="frameworks/opt/setupwizard" name="LineageOS/android_frameworks_opt_setupwizard" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+<!--
   <project path="frameworks/opt/telephony" name="LineageOS/android_frameworks_opt_telephony" groups="pdk" clone-depth="1" />
+-->
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="frameworks/opt/vcard" name="LineageOS/android_frameworks_opt_vcard" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" remote="aosp" clone-depth="1" />
@@ -389,6 +406,7 @@
   <project path="libcore" name="LineageOS/android_libcore" groups="pdk" clone-depth="1" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" remote="aosp" clone-depth="1" />
+<!--
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="packages/apps/Bluetooth" name="LineageOS/android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
   <project path="packages/apps/Calendar" name="LineageOS/android_packages_apps_Calendar" groups="pdk-fs" clone-depth="1" />
@@ -446,6 +464,7 @@
   <project path="packages/services/Telecomm" name="LineageOS/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
   <project path="packages/services/Telephony" name="LineageOS/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
   <project path="packages/wallpapers/LivePicker" name="LineageOS/android_packages_wallpapers_LivePicker" groups="pdk-fs" clone-depth="1" />
+-->
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="platform_testing" name="platform/platform_testing" groups="pdk-fs,pdk-cw-fs,cts" remote="aosp" clone-depth="1" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1" remote="aosp"  />
@@ -509,7 +528,9 @@
   <project path="system/netd" name="LineageOS/android_system_netd" groups="pdk" clone-depth="1" />
   <project path="system/nvram" name="platform/system/nvram" remote="aosp" clone-depth="1" />
   <project path="system/security" name="LineageOS/android_system_security" groups="pdk" clone-depth="1" />
+<!--
   <project path="system/sepolicy" name="LineageOS/android_system_sepolicy" groups="pdk" clone-depth="1" />
+-->
   <project path="system/tools/aidl" name="LineageOS/android_system_tools_aidl" groups="pdk" clone-depth="1" />
   <project path="system/tpm" name="platform/system/tpm" remote="aosp" clone-depth="1" />
   <project path="system/update_engine" name="platform/system/update_engine" groups="pdk" remote="aosp" clone-depth="1" />
@@ -529,6 +550,103 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" clone-depth="1" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" remote="aosp" clone-depth="1" />
+
+
+  <project path="frameworks/base" name="android_frameworks_base" remote="ulti" revision="nitro-7.1"  sync-depth="1000" />
+    <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" remote="aosp" groups="frameworks_ims,pdk-cw-fs,pdk-fs"  sync-depth="1" />
+    <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" remote="aosp" groups="pdk"  sync-depth="1" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ulti" sync-depth="1000" />
+
+    <!-- Packages -->
+    <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="ulti"  sync-depth="1" />
+    <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="ulti" sync-depth="1" />
+
+
+    <!-- Apps -->
+    <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/DaylightHeaderNitrogen" name="DaylightHeaderNitrogen" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/DUI" name="android_packages_apps_DUI" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/Eleven" name="android_packages_apps_Eleven" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless"  sync-depth="1" />
+    <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/MusicFX" name="android_packages_apps_MusicFX" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/NitrogenOTA" name="android_packages_apps_NitrogenOTA" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/NitrogenSettings" name="android_packages_apps_NitrogenSettings" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/NitrogenWallpapers" name="android_packages_apps_NitrogenWallpapers" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/apps/Terminal" name="android_packages_apps_Terminal" remote="nos" revision="n2"  sync-depth="1" />
+
+    <!-- External -->
+    <project path="external/android-snackbar" name="android_external_android-snackbar" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="external/DUtils" name="android_external_DUtils" remote="nos" revision="n2"  sync-depth="1" />
+   
+   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/Browser2" name="platform/packages/apps/Browser2"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/CarrierConfig" name="platform/packages/apps/CarrierConfig" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs,pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/DevCamera" name="platform/packages/apps/DevCamera" groups="pdk"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/Email" name="platform/packages/apps/Email" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/Phone" name="platform/packages/apps/Phone" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/Protips" name="platform/packages/apps/Protips" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/SafetyRegulatoryInfo" name="platform/packages/apps/SafetyRegulatoryInfo"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/StorageManager" name="platform/packages/apps/StorageManager"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/Tag" name="platform/packages/apps/Tag" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/Test/connectivity" name="platform/packages/apps/Test/connectivity"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" groups="generic_fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/TV" name="platform/packages/apps/TV"  sync-depth="1" remote="aosp" />
+    <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/experimental" name="platform/packages/experimental"  sync-depth="1" remote="aosp" />
+    <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/providers/BlockedNumberProvider" name="platform/packages/providers/BlockedNumberProvider" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/providers/BookmarkProvider" name="platform/packages/providers/BookmarkProvider" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs,pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/providers/CallLogProvider" name="platform/packages/providers/CallLogProvider" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" groups="pdk-cw-fs,pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" groups="pdk-cw-fs,pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" groups="pdk-cw-fs,pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs,pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/services/Car" name="platform/packages/services/Car" groups="adp8064,pdk-cw-fs,pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/services/Mms" name="platform/packages/services/Mms" groups="pdk-cw-fs,pdk-fs"  sync-depth="1" remote="aosp" />
+    <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs"  sync-depth="1" remote="aosp" />
+     
 
   <include name="snippets/cm.xml" />
   <include name="local_manifest.xml" />
