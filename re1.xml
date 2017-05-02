@@ -1,0 +1,16 @@
+<remove-project name="art" />
+<remove-project name="bionic" />
+<remove-project name="bootable/recovery" />
+<remove-project name="external/libselinux" />
+<remove-project name="frameworks/av" />
+<remove-project name="frameworks/base" />
+<remove-project name="frameworks/opt/net/ims" />
+<remove-project name="frameworks/opt/telephony" />
+<remove-project name="frameworks/opt/net/voip" />
+<remove-project name="frameworks/opt/net/wifi" />
+<remove-project name="hardware/libhardware" />
+<remove-project name="hardware/libhardware_legacy" />
+<remove-project name="hardware/ril" />
+<remove-project name="system/core" />
+<remove-project name="system/extras" />
+<remove-project name="system/vold" />
