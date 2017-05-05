@@ -528,9 +528,7 @@
   <project path="system/netd" name="LineageOS/android_system_netd" groups="pdk" clone-depth="1" />
   <project path="system/nvram" name="platform/system/nvram" remote="aosp" clone-depth="1" />
   <project path="system/security" name="LineageOS/android_system_security" groups="pdk" clone-depth="1" />
-<!--
   <project path="system/sepolicy" name="LineageOS/android_system_sepolicy" groups="pdk" clone-depth="1" />
--->
   <project path="system/tools/aidl" name="LineageOS/android_system_tools_aidl" groups="pdk" clone-depth="1" />
   <project path="system/tpm" name="platform/system/tpm" remote="aosp" clone-depth="1" />
   <project path="system/update_engine" name="platform/system/update_engine" groups="pdk" remote="aosp" clone-depth="1" />
@@ -558,7 +556,7 @@
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ulti" sync-depth="1000" />
 
     <!-- Packages -->
-    <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="nos" revision="n2"  sync-depth="1" />
+    <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" remote="aosp"  sync-depth="1" />
     <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="nos" revision="n2"  sync-depth="1" />
     <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="ulti"  sync-depth="1" />
     <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="ulti" sync-depth="1" />
