@@ -35,6 +35,10 @@
 <!--
   <project path="external/chromium-webview" name="ghsr/android_external_chromium-webview" groups="pdk" remote="github" revision="aosp-7.0" clone-depth="1000" />
 -->
+<!--
+  <project path="external/ffmpeg" name="LineageOS/android_external_ffmpeg" remote="github" clone-depth="1" />
+  <project path="external/stagefright-plugins" name="LineageOS/android_external_stagefright-plugins" remote="github" clone-depth="1" />
+-->
   <project path="external/stlport" name="android_external_stlport" remote="mickybart" clone-depth="10000" />
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" clone-depth="10000" />
 
@@ -43,7 +47,7 @@
  
   <project path="kernel/codina/chrono" name="Chrono_Kernel-1" remote="chrono" revision="master"  clone-depth="1"  />
   <project path="vendor/samsung/u8500-common" name="android_vendor_samsung_u8500-common" remote="chrono" revision="cm-14.1" clone-depth="10000" />
-  <project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="cm-14.1" clone-depth="10000" />
+  <project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="omni-7.1" clone-depth="10000" />
   <project path="hardware/u8500" name="android_hardware_u8500" remote="chrono" revision="cm-14.1" clone-depth="10000" />
 
 </manifest>

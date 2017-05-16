@@ -48,6 +48,7 @@
   <remove-project name="platform/external/flac" />
   <remove-project name="platform/external/guava" />
   <remove-project name="platform/external/jhead" />
+  <remove-project name="platform/external/ipsec-tools" />
   <remove-project name="platform/external/libexif" />
   <remove-project name="platform/external/libnfc-nci" />
   <remove-project name="platform/external/libpng" />
@@ -138,11 +139,13 @@
 
   <remove-project name="platform/platform_testing" />
 
+  <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/extras" />
   <remove-project name="platform/system/media" />
   <remove-project name="platform/system/netd" />
   <remove-project name="platform/system/vold" />
   <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/system/keymaster" />
 
 </manifest>

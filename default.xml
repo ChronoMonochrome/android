@@ -541,6 +541,7 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" clone-depth="1" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" groups="pdk" clone-depth="1" />
 
+
   <!-- OmniROM -->
   <include name="omni-default.xml" />
   <include name="local_manifest.xml" />
