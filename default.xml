@@ -471,4 +471,5 @@
 	<project path="system/webservd" name="platform/system/webservd" />
 	<project path="test/vts" name="platform/test/vts" groups="vts,pdk" />
 	<project path="toolchain/binutils" name="toolchain/binutils" />
+	<project path="vendor/moto" name="proprietary_vendor_moto" remote="mw" groups="vendor,moto,shamu" />
 </manifest>
