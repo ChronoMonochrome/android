@@ -3,10 +3,14 @@
 
 	<remote name="aosp"
 	        fetch="https://android.googlesource.com/"
-	        review="https://android-review.googlesource.com/" />
+	        review="https://android-review.googlesource.com/"
+	        revision="refs/tags/android-7.1.2_r17" />
 
-	<default revision="refs/tags/android-7.1.2_r17"
-	         remote="aosp"
+	<remote name="mw"
+	        fetch="https://github.com/MWisBest/"
+	        revision="refs/heads/aosp-7.1" />
+
+	<default remote="aosp"
 	         sync-j="4" />
 
 
@@ -37,6 +41,7 @@
 	<project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
 	<project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
 	<project path="device/generic/qemu" name="device/generic/qemu" groups="pdk" />
+	<project path="device/moto/shamu" name="android_device_moto_shamu" remote="mw" groups="device,shamu" />
 	<project path="device/sample" name="device/sample" groups="pdk" />
 	<project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
 	<project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -343,6 +348,7 @@
 	<project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom,pdk" />
 	<project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan,pdk" />
 	<project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
+	<project path="kernel/moto/shamu" name="android_kernel_moto_shamu" remote="mw" groups="kernel,shamu" />
 	<project path="libcore" name="platform/libcore" groups="pdk" />
 	<project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
 	<project path="ndk" name="platform/ndk" groups="generic_fs" />
