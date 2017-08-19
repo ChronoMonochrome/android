@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="chrono"
+           fetch="https://github.com/ChronoMonochrome"
+           revision="refs/heads/ulti-7.1.1" />
+
+  <remote  name="ulti"
+           fetch="https://github.com/UltimateROM"
+           revision="refs/heads/ulti-7.1.1" />
+
+  <remote  name="omnirom"
+           fetch="https://github.com/omnirom"
+           review="gerrit.omnirom.org" />
+		   
+  <remote  name="mickybart"
+           fetch="https://github.com/mickybart"
+           revision="refs/heads/nAOSP-7.1.1" />
+
+  <remote  name="v4a"
+           fetch="https://github.com/vipersaudio"
+	   revision="refs/heads/master" />
+
+  <remote  name="cm"
+           fetch="https://github.com/LineageOS"
+	   revision="refs/heads/cm-14.1" />
+
+  <remote  name="oms"
+           fetch="https://github.com/TeamSubstratum"
+           revision="refs/heads/n" />
+
+
+
+ 	<project path="frameworks/av" name="android_frameworks_av" remote="ulti" revision="ulti-7.1" groups="pdk" clone-depth="1" />
+	<project path="frameworks/native" name="android_frameworks_native" remote="ulti" revision="ulti-7.1" groups="pdk" clone-depth="1" />
+	<project path="hardware/libhardware" name="android_hardware_libhardware" remote="omnirom" revision="android-7.1" groups="pdk" clone-depth="1" />
+	<project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="omnirom" revision="android-7.1" groups="pdk" clone-depth="1" />
+	<project path="system/bt" name="android_system_bt" remote="cm" groups="pdk" clone-depth="1" />
+	<project path="system/core" name="android_system_core" remote="ulti" revision="ulti-7.1" groups="pdk" clone-depth="1" />
+	<project path="system/media" name="android_system_media" groups="pdk" remote="cm" clone-depth="1" />
+	<project path="system/netd" name="android_system_netd" groups="pdk" remote="omnirom" revision="android-7.1" clone-depth="1" />
+
+
+<!--
+  <remove-project name="frameworks_av" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="cm" groups="pdk" clone-depth="10000" />
+
+
+  <remove-project name="frameworks_native" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="cm" groups="pdk" clone-depth="10000" />
+-->
+<!--
+  <remove-project name="system_core" />
+  <project path="system/core" name="android_system_core" remote="cm" groups="pdk" clone-depth="10000" />
+-->
+<!--
+  <project path="external/chromium-webview" name="ghsr/android_external_chromium-webview" groups="pdk" remote="github" revision="aosp-7.0" clone-depth="1000" />
+-->
+<!--
+  <project path="external/ffmpeg" name="LineageOS/android_external_ffmpeg" remote="github" clone-depth="1" />
+  <project path="external/stagefright-plugins" name="LineageOS/android_external_stagefright-plugins" remote="github" clone-depth="1" />
+-->
+  <project path="external/stlport" name="android_external_stlport" remote="mickybart" clone-depth="10000" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" clone-depth="10000" />
+
+  
+  <project path="hardware/ril" name="android_hardware_ril" remote="cm" groups="pdk" /> 
+ 
+  <project path="kernel/codina/chrono" name="Chrono_Kernel-1" remote="chrono" revision="master"  clone-depth="1"  />
+  <project path="vendor/samsung/u8500-common" name="android_vendor_samsung_u8500-common" remote="chrono" revision="cm-14.1" clone-depth="10000" />
+  <project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="omni-7.1" clone-depth="10000" />
+  <project path="hardware/u8500" name="android_hardware_u8500" remote="chrono" revision="cm-14.1" clone-depth="10000" />
+
+</manifest>
