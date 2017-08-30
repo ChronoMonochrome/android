@@ -3,6 +3,10 @@
   <remote  name="chrono"
            fetch="https://github.com/ChronoMonochrome"
            revision="refs/heads/ulti-7.1.1" />
+
+  <remote  name="ulti"
+           fetch="https://github.com/UltimateROM"
+           revision="refs/heads/ulti-7.1" />
 		   
   <remote  name="mickybart"
            fetch="https://github.com/mickybart"
@@ -20,25 +24,10 @@
            fetch="https://github.com/TeamSubstratum"
            revision="refs/heads/n" />
 
-<!--
-  <remove-project name="frameworks_av" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="cm" groups="pdk" clone-depth="10000" />
+<!-- 3rd -->
+  <project path="external/koush/Superuser" name="android_external_koush_Superuser" remote="mickybart" revision="nAOSP-6.0" />
+  <project path="external/koush/Widgets" name="android_external_koush_Widgets" remote="mickybart" revision="nAOSP-6.0" />
 
-
-  <remove-project name="frameworks_native" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="cm" groups="pdk" clone-depth="10000" />
--->
-<!--
-  <remove-project name="system_core" />
-  <project path="system/core" name="android_system_core" remote="cm" groups="pdk" clone-depth="10000" />
--->
-<!--
-  <project path="external/chromium-webview" name="ghsr/android_external_chromium-webview" groups="pdk" remote="github" revision="aosp-7.0" clone-depth="1000" />
--->
-<!--
-  <project path="external/ffmpeg" name="LineageOS/android_external_ffmpeg" remote="github" clone-depth="1" />
-  <project path="external/stagefright-plugins" name="LineageOS/android_external_stagefright-plugins" remote="github" clone-depth="1" />
--->
   <project path="external/stlport" name="android_external_stlport" remote="mickybart" clone-depth="10000" />
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" clone-depth="10000" />
 
