@@ -13,7 +13,6 @@
   <!--<project path="external/koush/ion" name="LineageOS/ion" clone-depth="1" />-->
   <project path="external/libncurses" name="LineageOS/android_external_libncurses" clone-depth="1" />
   <project path="external/libnfc-nxp" name="LineageOS/android_external_libnfc-nxp" clone-depth="1" />
-  <!--<project path="external/libphonenumbergoogle" name="LineageOS/android_external_libphonenumbergoogle" clone-depth="1" />
   <project path="external/libtar" name="LineageOS/android_external_libtar" clone-depth="1" />
   <project path="external/libtruezip" name="LineageOS/android_external_libtruezip" clone-depth="1" />
   <project path="external/lzo" name="LineageOS/android_external_lzo" clone-depth="1" />-->
