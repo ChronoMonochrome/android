@@ -17,9 +17,11 @@
 	         sync-j="4" />
 
 
+<!--
 	<project path="build" name="android_build" remote="mw" groups="pdk" >
 		<copyfile src=" core/root.mk" dest="Makefile" />
 	</project>
+-->
 	<project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" clone-depth="1" />
 	<project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" clone-depth="1" />
 	<project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
@@ -27,9 +29,11 @@
 		<linkfile src="bootstrap.bash" dest="bootstrap.bash" />
 	</project>
 	<project path="abi/cpp" name="platform/abi/cpp" groups="pdk" clone-depth="1" />
+<!--
 	<project path="art" name="platform/art" groups="pdk" clone-depth="1" />
 	<project path="bionic" name="platform/bionic" groups="pdk" clone-depth="1" />
 	<project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" clone-depth="1" />
+-->
 	<project path="compatibility/cdd" name="platform/compatibility/cdd" groups="pdk" clone-depth="1" />
 	<project path="cts" name="platform/cts" groups=" cts,pdk-cw-fs,pdk-fs" clone-depth="1" />
 	<project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
@@ -305,8 +309,8 @@
 	<project path="external/zxing" name="platform/external/zxing" groups="pdk" clone-depth="1" />
 <!--
 	<project path="frameworks/av" name="platform/frameworks/av" groups="pdk" clone-depth="1" />
--->
 	<project path="frameworks/base" name="android_frameworks_base" remote="mw" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+-->
 	<project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" clone-depth="1" />
 	<project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" clone-depth="1" />
 	<project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" clone-depth="1" />
@@ -329,10 +333,16 @@
 	<project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" clone-depth="1" />
 	<project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" clone-depth="1" />
 	<project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+<!--
 	<project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" clone-depth="1" />
+-->
 	<project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
 	<project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+<!--
 	<project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" clone-depth="1" />
+	<project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ulti" revision="ulti-7.1" groups="pdk" clone-depth="1" />
+-->
+
 	<project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
 	<project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
 	<project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" clone-depth="1" />
@@ -430,8 +440,10 @@
 	<project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
 <!--
 	<project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" groups="pdk-fs" clone-depth="1" />
--->
 	<project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+-->
+	<project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="ulti" revision="ulti-7.1" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+
 	<project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" groups="pdk-fs" clone-depth="1" />
 	<project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
 	<project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" groups="pdk-fs" clone-depth="1" />
@@ -439,8 +451,11 @@
 	<project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" groups="pdk-fs" clone-depth="1" />
 	<project path="packages/services/Car" name="platform/packages/services/Car" groups="adp8064,pdk-cw-fs,pdk-fs" clone-depth="1" />
 	<project path="packages/services/Mms" name="platform/packages/services/Mms" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+<!--
 	<project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
-	<project path="packages/services/Telephony" name="platform/packages/services/Telephony" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+	<project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="ulti" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+-->
+
 	<project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" clone-depth="1" />
 	<project path="pdk" name="platform/pdk" groups="pdk" clone-depth="1" />
 	<project path="platform_testing" name="platform/platform_testing" groups="pdk-fs,pdk-cw-fs,cts" clone-depth="1" />
@@ -476,8 +491,8 @@
 	<project path="system/connectivity/shill" name="platform/system/connectivity/shill" clone-depth="1" />
 <!--
 	<project path="system/core" name="android_system_core" remote="mw" groups="pdk" clone-depth="1" />
--->
 	<project path="system/extras" name="android_system_extras" remote="mw" groups="pdk" clone-depth="1" />
+-->
 	<project path="system/firewalld" name="platform/system/firewalld" clone-depth="1" />
 	<project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" clone-depth="1" />
 	<project path="system/keymaster" name="platform/system/keymaster" groups="pdk" clone-depth="1" />
@@ -494,13 +509,15 @@
 	<project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk" clone-depth="1" />
 	<project path="system/tpm" name="platform/system/tpm" clone-depth="1" />
 	<project path="system/update_engine" name="platform/system/update_engine" groups="pdk" clone-depth="1" />
+<!--
 	<project path="system/vold" name="platform/system/vold" groups="pdk" clone-depth="1" />
+-->
 	<project path="system/weaved" name="platform/system/weaved" clone-depth="1" />
 	<project path="system/webservd" name="platform/system/webservd" clone-depth="1" />
 	<project path="test/vts" name="platform/test/vts" groups="vts,pdk" clone-depth="1" />
 	<project path="toolchain/binutils" name="toolchain/binutils" clone-depth="1" />
-	<project path="vendor/fml" name="android_vendor_fml" remote="mw" clone-depth="1" />
 <!--
+	<project path="vendor/fml" name="android_vendor_fml" remote="mw" clone-depth="1" />
 	<project path="vendor/moto" name="proprietary_vendor_moto" remote="mw" groups="vendor,moto,shamu" clone-depth="1" />
 -->
 	<include name="local_manifest.xml" />
