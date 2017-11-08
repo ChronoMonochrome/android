@@ -46,7 +46,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash"  />
   </project>
   <project path="external/boringssl" name="android_external_boringssl" remote="ulti" />
-  <project path="external/busybox" name="android_external_busybox" remote="omnirom" revision="android-8.0" />
+  <project path="external/busybox" name="android_external_busybox" remote="ulti" />
   <project path="external/libphonenumber" name="android_external_libphonenumber" remote="ulti" />
   <project path="external/minijail" name="android_external_minijail" remote="ulti" />
   <project path="external/selinux" name="android_external_selinux" remote="ulti" />
