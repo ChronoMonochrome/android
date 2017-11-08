@@ -14,8 +14,8 @@
   <project path="external/libncurses" name="LineageOS/android_external_libncurses" clone-depth="1" />
   <project path="external/libnfc-nxp" name="LineageOS/android_external_libnfc-nxp" clone-depth="1" />
   <project path="external/libtar" name="LineageOS/android_external_libtar" clone-depth="1" />
-  <project path="external/libtruezip" name="LineageOS/android_external_libtruezip" clone-depth="1" />
-  <project path="external/lzo" name="LineageOS/android_external_lzo" clone-depth="1" />-->
+  <!--<project path="external/libtruezip" name="LineageOS/android_external_libtruezip" clone-depth="1" />-->
+  <!--<project path="external/lzo" name="LineageOS/android_external_lzo" clone-depth="1" />-->
   <project path="external/nano" name="LineageOS/android_external_nano" clone-depth="1" />
   <project path="external/ntfs-3g" name="LineageOS/android_external_ntfs-3g" clone-depth="1" />
   <!--<project path="external/p7zip" name="LineageOS/android_external_p7zip" clone-depth="1" /> -->
@@ -55,7 +55,9 @@
   <project path="packages/services/WeatherService" name="LineageOS/android_packages_services_WeatherService" clone-depth="1" />
   <project path="prebuilts/cmsdk" name="LineageOS/android_prebuilts_cmsdk" clone-depth="1" clone-depth="1" />
   <project path="system/extras/su" name="LineageOS/android_system_extras_su" clone-depth="1" />-->
+<!--
   <project path="vendor/lineage" name="LineageOS/android_vendor_lineage" clone-depth="1" />
+-->
   <!--<project path="vendor/cmsdk" name="LineageOS/cm_platform_sdk" clone-depth="1" />
   <project path="vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider" name="LineageOS/android_packages_apps_OpenWeatherMapProvider" clone-depth="1" />
   <project path="vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider" name="LineageOS/android_packages_apps_WundergroundWeatherProvider" clone-depth="1" />
