@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="chrono"
+           fetch="https://github.com/ChronoMonochrome"
+           revision="refs/heads/ulti-7.1.1" />
+
+  <remote  name="ulti"
+           fetch="https://github.com/UltimateROM"
+	   revision="refs/heads/cm-15.1" />
+		   
+  <remote  name="mickybart"
+           fetch="https://github.com/mickybart"
+           revision="refs/heads/nAOSP-7.1.1" />
+
+  <remote  name="v4a"
+           fetch="https://github.com/vipersaudio"
+	   revision="refs/heads/master" />
+
+  <remote  name="cm"
+           fetch="https://github.com/LineageOS"
+	   revision="refs/heads/lineage-15.0" />
+
+  <remote  name="omnirom"
+           fetch="https://github.com/OmniROM"
+	   revision="refs/heads/android-8.0" />
+
+  <remote  name="oms"
+           fetch="https://github.com/TeamSubstratum"
+           revision="refs/heads/n" />
+
+  <project path="art" name="android_art" remote="ulti" />
+  <project path="bionic" name="android_bionic" remote="ulti" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="ulti" groups="pdk-cw-fs"/>
+  <project path="build/make" name="android_build" remote="ulti" >
+    <copyfile src="core/root.mk" dest="Makefile"  />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"  />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"  />
+    <linkfile src="core" dest="build/core"  />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh"  />
+    <linkfile src="target" dest="build/target"  />
+    <linkfile src="tools" dest="build/tools"  />
+  </project>
+
+  <project path="build/soong" name="android_build_soong" remote="ulti" >
+    <linkfile src="root.bp" dest="Android.bp"  />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash"  />
+  </project>
+  <project path="external/boringssl" name="android_external_boringssl" remote="ulti" />
+  <project path="external/busybox" name="android_external_busybox" remote="ulti" />
+  <project path="external/jemalloc" name="android_external_jemalloc" groups="pdk" remote="ulti" />
+<!--
+  <project path="external/libphonenumber" name="android_external_libphonenumber" remote="ulti" />
+-->
+  <project path="external/minijail" name="android_external_minijail" remote="ulti" />
+  <project path="external/selinux" name="android_external_selinux" remote="ulti" />
+  <project path="external/stlport" name="android_external_stlport" remote="ulti" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="ulti" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="ulti" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="ulti" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ulti" />
+<!--
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="ulti" />
+-->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="ulti" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="ulti" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="ulti" groups="pdk" /> 
+<!--
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="ulti" />
+  <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="ulti" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="ulti" />
+  <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" remote="ulti" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ulti" />
+  <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="ulti" />
+  <project path="packages/services/Mms" name="android_packages_services_Mms" remote="ulti" />
+-->
+<!--
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="ulti" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="ulti" />
+-->
+<!--
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="ulti" />
+-->
+  <project path="system/core" name="android_system_core" remote="ulti" />
+  <project path="system/extras" name="android_system_extras" remote="ulti" />
+  <project path="system/keymaster" name="android_system_keymaster" remote="ulti" />
+  <project path="system/media" name="android_system_media" remote="ulti" />
+  <project path="system/netd" name="android_system_netd" remote="ulti" />
+  <project path="system/security" name="android_system_security" remote="ulti" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="ulti" />
+  <project path="system/vold" name="android_system_vold" remote="ulti" />
+<!--
+  <project path="vendor/lineage" name="android_vendor_ulti" remote="ulti" />
+-->
+  <project path="kernel/codina/chrono" name="Chrono_Kernel-1" remote="chrono" revision="master"  clone-depth="1"  />
+  <project path="vendor/samsung/u8500-common" name="android_vendor_samsung_u8500-common" remote="chrono" revision="cm-15.0" clone-depth="10000" />
+  <project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="cm-15.0" clone-depth="10000" />
+  <project path="hardware/u8500" name="android_hardware_u8500" remote="chrono" revision="cm-15.0" clone-depth="10000" />
+
+</manifest>

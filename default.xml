@@ -19,7 +19,7 @@
            sync-j="4" />
 
   <!-- AOSP Projects -->
-
+<!--
   <project path="build/make" name="LineageOS/android_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -29,8 +29,10 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+-->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" clone-depth="1" />
   <project path="build/kati" name="LineageOS/android_build_kati" groups="pdk,tradefed" clone-depth="1" />
+<!--
   <project path="build/soong" name="LineageOS/android_build_soong" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
@@ -38,6 +40,7 @@
   <project path="art" name="platform/art" groups="pdk" remote="aosp" />
   <project path="bionic" name="LineageOS/android_bionic" groups="pdk" />
   <project path="bootable/recovery" name="LineageOS/android_bootable_recovery" groups="pdk" />
+-->
   <project path="compatibility/cdd" name="platform/compatibility/cdd" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
@@ -90,7 +93,9 @@
   <project path="external/bart" name="platform/external/bart" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk" remote="aosp" clone-depth="1" />
+<!--
   <project path="external/boringssl" name="platform/external/boringssl" groups="pdk" remote="aosp" clone-depth="1" />
+-->
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/brotli" name="platform/external/brotli" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" remote="aosp" clone-depth="1" />
@@ -100,7 +105,7 @@
   <project path="external/cblas" name="platform/external/cblas" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" remote="aosp" clone-depth="1" />
-  <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" clone-depth="1" />
+  <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="external/clang" name="platform/external/clang" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/cmockery" name="platform/external/cmockery" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" remote="aosp" clone-depth="1" />
@@ -173,7 +178,9 @@
   <project path="external/javassist" name="platform/external/javassist" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/jcommander" name="platform/external/jcommander" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/jdiff" name="platform/external/jdiff" groups="pdk" remote="aosp" clone-depth="1" />
+<!--
   <project path="external/jemalloc" name="platform/external/jemalloc" groups="pdk" remote="aosp" />
+-->
   <project path="external/jline" name="platform/external/jline" groups="pdk,tradefed,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="external/jmdns" name="platform/external/jmdns" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/jsilver" name="platform/external/jsilver" groups="pdk" remote="aosp" clone-depth="1" />
@@ -245,7 +252,9 @@
   <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="external/messageformat" name="platform/external/messageformat" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/Microsoft-GSL" name="platform/external/Microsoft-GSL" groups="pdk" remote="aosp" clone-depth="1" />
+<!--
   <project path="external/minijail" name="platform/external/minijail" groups="pdk" remote="aosp" clone-depth="1" />
+-->
   <project path="external/mksh" name="LineageOS/android_external_mksh" groups="pdk" clone-depth="1" />
   <project path="external/mmc-utils" name="platform/external/mmc-utils" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/mockftpserver" name="platform/external/mockftpserver" groups="pdk" remote="aosp" clone-depth="1" />
@@ -290,7 +299,9 @@
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/seccomp-tests" name="platform/external/seccomp-tests" groups="pdk" remote="aosp" clone-depth="1" />
+<!--
   <project path="external/selinux" name="LineageOS/android_external_selinux" groups="pdk" clone-depth="1" />
+-->
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" remote="aosp" clone-depth="1" />
   <project path="external/shflags" name="platform/external/shflags" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" remote="aosp" clone-depth="1" />
@@ -345,8 +356,10 @@
   <project path="external/zlib" name="LineageOS/android_external_zlib" groups="pdk" clone-depth="1" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" remote="aosp" clone-depth="1" />
+<!--
   <project path="frameworks/av" name="LineageOS/android_frameworks_av" groups="pdk" />
   <project path="frameworks/base" name="LineageOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+-->
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" clone-depth="1" />
@@ -357,7 +370,9 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
+<!--
   <project path="frameworks/native" name="LineageOS/android_frameworks_native" groups="pdk" />
+-->
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" remote="aosp" clone-depth="1" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
@@ -373,7 +388,9 @@
   <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
+<!--
   <project path="frameworks/opt/telephony" name="LineageOS/android_frameworks_opt_telephony" groups="pdk" clone-depth="1" />
+-->
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" remote="aosp" clone-depth="1" />
@@ -402,11 +419,15 @@
   <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel,pdk" remote="aosp" clone-depth="1" />
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel,pdk" remote="aosp" clone-depth="1" />
 -->
+<!--
   <project path="hardware/interfaces" name="LineageOS/android_hardware_interfaces" groups="pdk" clone-depth="1" />
+-->
 <!--
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense,pdk" remote="aosp" clone-depth="1" />
 -->
+<!--
   <project path="hardware/libhardware" name="LineageOS/android_hardware_libhardware" groups="pdk" clone-depth="1" />
+-->
   <project path="hardware/libhardware_legacy" name="LineageOS/android_hardware_libhardware_legacy" groups="pdk" clone-depth="1" />
 <!--
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt,pdk" remote="aosp" clone-depth="1" />
@@ -420,7 +441,9 @@
   <project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk" clone-depth="1" />
   <project path="hardware/qcom/wlan" name="LineageOS/android_hardware_qcom_wlan" groups="qcom_wlan,pdk" clone-depth="1" />
 -->
+<!--
   <project path="hardware/ril" name="LineageOS/android_hardware_ril" groups="pdk" clone-depth="1" />
+-->
   <project path="kernel/tests" name="kernel/tests" remote="aosp" clone-depth="1" />
   <project path="libcore" name="platform/libcore" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" remote="aosp" clone-depth="1" />
@@ -498,18 +521,18 @@
   <project path="packages/wallpapers/LivePicker" name="LineageOS/android_packages_wallpapers_LivePicker" groups="pdk-fs" clone-depth="1" />
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="platform_testing" name="platform/platform_testing" groups="pdk-fs,pdk-cw-fs,cts" remote="aosp" clone-depth="1" />
-  <project path="prebuilts/abi-dumps/ndk" name="platform/prebuilts/abi-dumps/ndk" groups="pdk-fs" clone-depth="1" />
-  <project path="prebuilts/abi-dumps/vndk" name="platform/prebuilts/abi-dumps/vndk" groups="pdk-fs" clone-depth="1" />
-  <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1" />
-  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/checkcolor" name="platform/prebuilts/checkcolor" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/checkstyle" name="platform/prebuilts/checkstyle" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/abi-dumps/ndk" name="platform/prebuilts/abi-dumps/ndk" groups="pdk-fs" remote="aosp" clone-depth="1" />
+  <project path="prebuilts/abi-dumps/vndk" name="platform/prebuilts/abi-dumps/vndk" groups="pdk-fs" remote="aosp" clone-depth="1" />
+  <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" remote="aosp" clone-depth="1" />
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk" remote="aosp" clone-depth="1" />
+  <project path="prebuilts/checkcolor" name="platform/prebuilts/checkcolor" groups="pdk" remote="aosp" clone-depth="1" />
+  <project path="prebuilts/checkstyle" name="platform/prebuilts/checkstyle" groups="pdk" remote="aosp" clone-depth="1" />
 <!--
   <project path="prebuilts/clang/host/darwin-x86" name="platform/prebuilts/clang/host/darwin-x86" groups="pdk,darwin" clone-depth="1" />
 -->
-  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/deqp" name="platform/prebuilts/deqp" groups="pdk-fs" clone-depth="1" />
-  <project path="prebuilts/devtools" name="platform/prebuilts/devtools" groups="pdk-fs" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" remote="aosp" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/deqp" name="platform/prebuilts/deqp" groups="pdk-fs" remote="aosp" clone-depth="1" />
+  <project path="prebuilts/devtools" name="platform/prebuilts/devtools" remote="aosp" groups="pdk-fs" clone-depth="1" />
 <!--
   <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,darwin,arm" clone-depth="1" />
   <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" groups="pdk,darwin,arm" clone-depth="1" />
@@ -518,63 +541,73 @@
   <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" groups="pdk,darwin,x86" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" />
 -->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" groups="pdk,linux,arm" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="aosp" groups="pdk,linux,arm" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" remote="aosp" groups="pdk,linux" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" remote="aosp" groups="pdk,linux" clone-depth="1" />
 <!--
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" groups="pdk-fs" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" />
   <project path="prebuilts/gdb/darwin-x86" name="platform/prebuilts/gdb/darwin-x86" groups="darwin" clone-depth="1" />
 -->
-  <project path="prebuilts/gdb/linux-x86" name="platform/prebuilts/gdb/linux-x86" groups="linux" clone-depth="1" />
+  <project path="prebuilts/gdb/linux-x86" name="platform/prebuilts/gdb/linux-x86" groups="linux" remote="aosp" clone-depth="1" />
 <!--
   <project path="prebuilts/go/darwin-x86" name="platform/prebuilts/go/darwin-x86" groups="darwin,pdk,tradefed" clone-depth="1" />
 -->
-  <project path="prebuilts/go/linux-x86" name="platform/prebuilts/go/linux-x86" groups="linux,pdk,tradefed" clone-depth="1" />
-  <project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
-  <project path="prebuilts/jdk/jdk8" name="platform/prebuilts/jdk/jdk8" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/libs/libedit" name="platform/prebuilts/libs/libedit" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
-  <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
-  <project path="prebuilts/maven_repo/bumptech" name="platform/prebuilts/maven_repo/bumptech" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
-  <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/go/linux-x86" name="platform/prebuilts/go/linux-x86" groups="linux,pdk,tradefed" remote="aosp" clone-depth="1" />
+  <project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
+  <project path="prebuilts/jdk/jdk8" name="platform/prebuilts/jdk/jdk8" groups="pdk" remote="aosp" clone-depth="1" />
+  <project path="prebuilts/libs/libedit" name="platform/prebuilts/libs/libedit" remote="aosp" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+  <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" remote="aosp" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+  <project path="prebuilts/maven_repo/bumptech" name="platform/prebuilts/maven_repo/bumptech" remote="aosp" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+  <project path="prebuilts/misc" name="platform/prebuilts/misc" remote="aosp" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" remote="aosp" groups="pdk" clone-depth="1" />
 <!--
-  <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin,pdk,pdk-cw-fs,pdk-fs" clone-depth="1" />
+  <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" remote="aosp" groups="darwin,pdk,pdk-cw-fs,pdk-fs" clone-depth="1" />
 -->
-  <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs" clone-depth="1" />
-  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" clone-depth="1" />
+  <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" remote="aosp" groups="linux,pdk,pdk-cw-fs,pdk-fs" clone-depth="1" />
+  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" remote="aosp" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" groups="pdk,tools" clone-depth="1" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="system/bt" name="LineageOS/android_system_bt" groups="pdk" clone-depth="1" />
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="system/chre" name="platform/system/chre" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="system/connectivity/wifilogd" name="platform/system/connectivity/wifilogd" groups="pdk" remote="aosp" clone-depth="1" />
+<!--
   <project path="system/core" name="LineageOS/android_system_core" groups="pdk" clone-depth="1" />
   <project path="system/extras" name="LineageOS/android_system_extras" groups="pdk" clone-depth="1" />
+-->
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="system/hwservicemanager" name="platform/system/hwservicemanager" groups="pdk" remote="aosp" clone-depth="1" />
+<!--
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" remote="aosp" clone-depth="1" />
+-->
   <project path="system/libfmq" name="platform/system/libfmq" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="system/libhidl" name="LineageOS/android_system_libhidl" groups="pdk" clone-depth="1" />
   <project path="system/libhwbinder" name="platform/system/libhwbinder" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="system/libufdt" name="platform/system/libufdt" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="system/libvintf" name="platform/system/libvintf" groups="pdk" remote="aosp" clone-depth="1" />
+<!--
   <project path="system/media" name="LineageOS/android_system_media" groups="pdk" clone-depth="1" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" remote="aosp" clone-depth="1" />
+-->
   <project path="system/nfc" name="LineageOS/android_system_nfc" groups="pdk" clone-depth="1" />
   <project path="system/nvram" name="platform/system/nvram" groups="pdk" remote="aosp" clone-depth="1" />
+<!--
   <project path="system/security" name="platform/system/security" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="system/sepolicy" name="LineageOS/android_system_sepolicy" groups="pdk" clone-depth="1" />
+-->
   <project path="system/timezone" name="platform/system/timezone" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="system/tools/aidl" name="LineageOS/android_system_tools_aidl" groups="pdk" clone-depth="1" />
   <project path="system/tools/hidl" name="LineageOS/android_system_tools_hidl" groups="pdk" clone-depth="1" />
   <project path="system/tpm" name="platform/system/tpm" remote="aosp" clone-depth="1" />
   <project path="system/update_engine" name="platform/system/update_engine" groups="pdk" remote="aosp" clone-depth="1" />
+<!--
   <project path="system/vold" name="LineageOS/android_system_vold" groups="pdk" clone-depth="1" />
+-->
   <project path="test/framework" name="platform/test/framework" groups="vts,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="test/sts" name="platform/test/sts" groups="sts,pdk" remote="aosp" clone-depth="1" />
   <project path="test/vts" name="platform/test/vts" groups="vts,pdk-fs" remote="aosp" clone-depth="1" />
@@ -591,7 +624,7 @@
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" remote="aosp" clone-depth="1" />
   <project path="tools/build" name="platform/tools/build" groups="notdefault,tools" remote="aosp" clone-depth="1" />
   <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" remote="aosp" clone-depth="1" />
-  <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" clone-depth="1" />
+  <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" remote="aosp" clone-depth="1" />
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" remote="aosp" clone-depth="1" />
   <project path="tools/loganalysis" name="platform/tools/loganalysis" groups="nopresubmit,pdk,tradefed" remote="aosp" clone-depth="1" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" remote="aosp" clone-depth="1" />
@@ -603,6 +636,7 @@
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" remote="aosp" clone-depth="1" />
 
   <include name="snippets/lineage.xml" clone-depth="1" />
+  <include name="local_manifest.xml" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" clone-depth="1" />
 
