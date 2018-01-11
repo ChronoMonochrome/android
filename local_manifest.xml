@@ -54,6 +54,7 @@
   <project path="external/stlport" name="android_external_stlport" remote="ulti" />
   <project path="frameworks/av" name="android_frameworks_av" remote="ulti" />
   <project path="frameworks/base" name="android_frameworks_base" remote="ulti" />
+  <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" remote="ulti" groups="pdk" clone-depth="1" />
   <project path="frameworks/native" name="android_frameworks_native" remote="ulti" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ulti" />
   <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="ulti" />
