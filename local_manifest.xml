@@ -55,9 +55,7 @@
   <project path="external/selinux" name="android_external_selinux" remote="ulti" />
   <project path="external/stlport" name="android_external_stlport" remote="ulti" revision="cm-15.0" />
   <project path="frameworks/av" name="android_frameworks_av" remote="ulti" />
-<!--
   <project path="frameworks/base" name="android_frameworks_base" remote="ulti" />
--->
   <project path="frameworks/native" name="android_frameworks_native" remote="ulti" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ulti" />
 <!--
