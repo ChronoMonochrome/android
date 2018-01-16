@@ -11,7 +11,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-8.1.0_r1" />
+           revision="refs/tags/android-8.1.0_r4" />
 
   <default revision="refs/heads/staging/lineage-15.1"
            remote="github"
@@ -43,7 +43,7 @@
 -->
   <project path="compatibility/cdd" name="platform/compatibility/cdd" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
-  <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
+  <project path="dalvik" name="LineageOS/android_dalvik" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
   <project path="developers/build" name="platform/developers/build" groups="developers" remote="aosp" clone-depth="1" />
   <project path="development" name="LineageOS/android_development" groups="developers,pdk-cw-fs,pdk-fs" clone-depth="1" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk" remote="aosp" clone-depth="1" />
@@ -520,7 +520,8 @@
   <project path="packages/services/Telephony" name="LineageOS/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
   <project path="packages/wallpapers/LivePicker" name="LineageOS/android_packages_wallpapers_LivePicker" groups="pdk-fs" clone-depth="1" />
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp" clone-depth="1" />
-  <project path="platform_testing" name="platform/platform_testing" groups="pdk-fs,pdk-cw-fs,cts" remote="aosp" clone-depth="1" />
+  <project path="platform_testing" name="LineageOS/android_platform_testing" groups="pdk-fs,pdk-cw-fs,cts" clone-depth="1" />
+
   <project path="prebuilts/abi-dumps/ndk" name="platform/prebuilts/abi-dumps/ndk" groups="pdk-fs" remote="aosp" clone-depth="1" />
   <project path="prebuilts/abi-dumps/vndk" name="platform/prebuilts/abi-dumps/vndk" groups="pdk-fs" remote="aosp" clone-depth="1" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" remote="aosp" clone-depth="1" />
@@ -604,7 +605,7 @@
   <project path="system/tools/aidl" name="LineageOS/android_system_tools_aidl" groups="pdk" clone-depth="1" />
   <project path="system/tools/hidl" name="LineageOS/android_system_tools_hidl" groups="pdk" clone-depth="1" />
   <project path="system/tpm" name="platform/system/tpm" remote="aosp" clone-depth="1" />
-  <project path="system/update_engine" name="platform/system/update_engine" groups="pdk" remote="aosp" clone-depth="1" />
+  <project path="system/update_engine" name="LineageOS/android_system_update_engine" groups="pdk" clone-depth="1" />
 <!--
   <project path="system/vold" name="LineageOS/android_system_vold" groups="pdk" clone-depth="1" />
 -->
