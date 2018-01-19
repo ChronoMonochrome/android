@@ -88,9 +88,7 @@
   <project path="system/security" name="android_system_security" remote="ulti" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="ulti" />
   <project path="system/vold" name="android_system_vold" remote="ulti" />
-<!--
   <project path="vendor/lineage" name="android_vendor_ulti" remote="ulti" />
--->
   <project path="kernel/codina/chrono" name="Chrono_Kernel-1" remote="chrono" revision="master"  clone-depth="1"  />
   <project path="vendor/samsung/u8500-common" name="android_vendor_samsung_u8500-common" remote="chrono" revision="cm-15.0" clone-depth="10000" />
   <project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="cm-15.0" clone-depth="10000" />
