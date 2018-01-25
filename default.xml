@@ -582,8 +582,8 @@
 -->
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" groups="pdk" remote="aosp" clone-depth="1" />
-  <project path="system/hwservicemanager" name="platform/system/hwservicemanager" groups="pdk" remote="aosp" clone-depth="1" />
 <!--
+  <project path="system/hwservicemanager" name="platform/system/hwservicemanager" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" remote="aosp" clone-depth="1" />
 -->
   <project path="system/libfmq" name="platform/system/libfmq" groups="pdk" remote="aosp" clone-depth="1" />
