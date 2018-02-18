@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <project path="android" name="android_manifest" remote="ulti" />
+ <project path="art" name="android_art" remote="ulti" groups="pdk" />
+ <project path="bootable/recovery" name="android_bootable_recovery" remote="ulti" groups="pdk" />
+ <project path="bionic" name="android_bionic" remote="ulti" groups="pdk" />
+ <project path="build" name="android_build" remote="ulti" revision="ulti-6.0" groups="pdk" >
+  <copyfile src="core/root.mk" dest="Makefile" />
+ </project>
+ <!-- <project path="external/sepolicy" name="platform/external/sepolicy" remote="aosp" revision="refs/tags/android-6.0.0_r1" groups="pdk" clone-depth="1" /> -->
+ <project path="frameworks/av" name="android_frameworks_av" remote="ulti" groups="pdk" />
+ <project path="frameworks/native" name="android_frameworks_native" remote="ulti" groups="pdk" clone-depth="1" />
+ <project path="frameworks/base" name="android_frameworks_base" remote="ulti" revision="ulti-6.0" groups="pdk-cw-fs,pdk-fs" />
+ <project path="frameworks/opt/cards" name="frameworks_opt_cards" remote="ulti" revision="marshmallow" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+ <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" clone-depth="1" remote="aosp" />
+ <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" clone-depth="1" remote="aosp" />
+ <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" clone-depth="1" remote="aosp" />
+ <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" groups="pdk"  remote="ulti" />
+ <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ulti" revision="ulti-6.0" />
+
+ <project path="external/boringssl" name="android_external_boringssl" remote="ulti" groups="pdk" clone-depth="1" />
+ <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" clone-depth="10000" />
+ <project path="external/toolbox" name="CyanogenMod/android_external_toolbox" remote="github" revision="cm-13.0" clone-depth="10000" />
+ <project path="external/chromium-webview" name="android_external_chromium-webview" remote="ulti" clone-depth="1"  />
+ <project path="external/libpng" name="android_external_libpng" groups="pdk" remote="ulti" clone-depth="1" />
+ <project path="external/jhead" name="android_external_jhead" groups="pdk" remote="ulti" clone-depth="1" />
+ <project path="external/mtools" name="android_external_mtools" remote="ulti" clone-depth="1" />
+ <project path="external/vixl" name="android_external_vixl" groups="pdk" remote="ulti" clone-depth="1" />
+ <project path="external/webrtc" name="android_external_webrtc" groups="pdk" remote="ulti" clone-depth="1" />
+ <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="ulti" clone-depth="1" />
+ <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="ulti" clone-depth="1" />
+
+ <project path="hardware/libhardware" name="android_hardware_libhardware" remote="ulti" groups="pdk" />
+<!--
+ <project path="hardware/ril" name="android_hardware_ril" remote="chrono" revision="ulti-6.0" />
+-->
+ <project path="libcore" name="android_libcore" groups="pdk" remote="ulti" clone-depth="1" />
+ <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" groups="pdk-fs" remote="ulti" clone-depth="1" />
+ <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="ulti" groups="pdk-fs" clone-depth="1" />
+ <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" clone-depth="1"  remote="ulti" />
+ <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" clone-depth="1"  remote="ulti" />
+
+ <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" clone-depth="1" remote="aosp" />
+
+<!--
+ <project path="packages/apps/Bluetooth" name="CyanogenMod/android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+-->
+ <project path="packages/apps/Browser" name="platform/packages/apps/Browser" groups="pdk-fs" clone-depth="1" remote="aosp" />
+ <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="ulti" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+ <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" groups="pdk-fs" clone-depth="1" remote="aosp" />
+ <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" groups="pdk-fs" clone-depth="1" remote="aosp" />
+
+<!--
+ <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" groups="pdk-fs" clone-depth="1" remote="aosp" revision="refs/tags/android-5.1.1_r38" />
+-->
+ <project path="packages/apps/CarrierConfig" name="platform/packages/apps/CarrierConfig" groups="pdk-fs" clone-depth="1" remote="aosp" />
+ <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs,pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/ContactsCommon" name="platform/packages/apps/ContactsCommon" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+<!--
+ <project path="packages/apps/Email" name="platform/packages/apps/Email" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+-->
+ <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+<!--
+ <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+-->
+ <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/Messaging" name="platform/packages/apps/Messaging" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/Eleven" name="android_packages_apps_Eleven" remote="cm" clone-depth="1" />
+<!--
+ <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+-->
+ <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" groups="pdk-fs" clone-depth="1"  remote="ulti" />
+ <project path="packages/apps/PerformanceControl" name="android_packages_apps_PerformanceControl" clone-depth="1" remote="ulti" revision="android-6.0" />
+
+ <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" groups="pdk-cw-fs,pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/Settings" name="android_packages_apps_Settings"  remote="ulti" />
+ <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+<!--
+ <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+-->
+ <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/Stk" name="platform/packages/apps/Stk" groups="apps_stk,pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/Tag" name="platform/packages/apps/Tag" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+<!--
+ <project path="packages/apps/Terminal" name="platform/packages/apps/Terminal" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+-->
+ <project path="packages/experimental" name="platform/packages/experimental" clone-depth="1"  remote="aosp" />
+ <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/providers/BookmarkProvider" name="platform/packages/providers/BookmarkProvider" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs,pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/providers/CallLogProvider" name="platform/packages/providers/CallLogProvider" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" groups="pdk-cw-fs,pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" groups="pdk-cw-fs,pdk-fs" clone-depth="1"  remote="aosp" />
+<!--
+ <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+-->
+ <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" groups="pdk-cw-fs,pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs,pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/services/Mms" name="platform/packages/services/Mms" groups="pdk-cw-fs,pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="ulti" />
+
+ <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" clone-depth="1" />
+ <project path="system/core" name="android_system_core" remote="ulti" clone-depth="1" />
+ <project path="external/koush/Superuser" name="android_external_koush_Superuser" remote="ulti" />
+ <project path="external/koush/Widgets" name="android_external_koush_Widgets" remote="mickybart" />
+ <project path="external/stlport" name="platform/external/stlport" groups="pdk" remote="aosp" revision="refs/tags/android-5.1.1_r36" />
+ <project path="packages/apps/ViPER4AndroidFX" name="viper4android_fx" remote="v4a" />
+
+ <project path="system/bt" name="android_system_bt" remote="ulti" groups="pdk" clone-depth="1" />
+ <project path="system/extras" name="android_system_extras" remote="ulti" groups="pdk" clone-depth="1" />
+ <project path="system/keymaster" name="android_system_keymaster" remote="ulti" groups="pdk" clone-depth="1" />
+ <project path="system/media" name="android_system_media" remote="ulti" groups="pdk" clone-depth="1" />
+ <project path="system/vold" name="android_system_vold" remote="ulti" groups="pdk" clone-depth="1" />
+
+<!--
+ <project path="packages/apps/STweaks" name="AOSP-JF-MM/STweaks" remote="github" revision="aosp-6.0" />
+-->
+
+<!--
+ <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm"  remote="aosp" clone-depth="1" />
+-->
+<!--
+ <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" revision="refs/tags/android-4.4.4_r2" groups="pdk,linux,arm"  remote="aosp" clone-depth="1" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm"  remote="aosp" clone-depth="1" />
+-->
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm"  remote="aosp" clone-depth="1" revision="refs/tags/android-5.1.1_r35" />
+<!--
+ <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux"  remote="aosp" clone-depth="1" />
+ <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux"  remote="aosp" clone-depth="1" />
+-->
+<!--
+ <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" groups="pdk-fs" clone-depth="1" />
+ <project path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" groups="pdk,linux,mips" clone-depth="1" />
+ <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" />
+-->
+ <project path="prebuilts/ndk-lp" name="platform/prebuilts/ndk" groups="pdk"  remote="aosp" clone-depth="1" revision="refs/tags/android-5.1.1_r35" />
+ <project path="vendor/ulti" name="android_vendor_ulti" remote="ulti" revision="ulti-6.0" clone-depth="1" />
+ <project path="kernel/codina/chrono" name="Chrono_Kernel-1" remote="chrono" revision="ulti-6.0" clone-depth="1" />
+<!--
+ <project path="kernel/codina/chrono" name="Chrono_Kernel" remote="chrono" revision="ROM" clone-depth="1" />
+-->
+
+ <project path="vendor/samsung/u8500-common" name="android_vendor_samsung_u8500-common" remote="chrono" revision="android-6.0" clone-depth="1" />
+ <project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="ulti-6.0" clone-depth="1" />
+ <project path="hardware/u8500" name="android_hardware_u8500" remote="chrono" revision="android-6.0" clone-depth="1" />
+<!-- <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.9" /> -->
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.3" name="arter97/arm-linux-androideabi-4.9" remote="github" revision="cm-12.0" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" name="arm-linux-androideabi-5.2" remote="chrono" revision="master" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="Toolchain" remote="chrono" revision="armv7a-linux-gnueabihf-5.2" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-5.3" remote="bitbucket" revision="master" />
+<!--
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
+-->
+<!--
+ <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="arter97/arm-linux-androideabi-5.2" remote="chrono" revision="master" />
+-->
+<!--
+ <project path="prebuilts/ndk" name="temasek/android_prebuilt_ndk" remote="github" revision="cm-12.1" />
+-->
+
+  <project name="UltimateROM/android_device_lge_w7" path="device/lge/w7" remote="github" revision="cm-13.0" />
+  <project name="UltimateROM/android_device_lge_msm8226-common" path="device/lge/msm8226-common" remote="github" revision="cm-13.0" />
+  <project name="UltimateROM/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-13.0" />
+  <project name="UltimateROM/android_kernel_lge_msm8226" path="kernel/lge/msm8226" remote="github" revision="cm-13.0" />
+  <project name="UltimateROM/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="cm-13.0" />
+</manifest>
