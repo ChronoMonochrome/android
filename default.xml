@@ -609,6 +609,7 @@
  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ulti" revision="ulti-6.0" />
 
  <project path="external/boringssl" name="android_external_boringssl" remote="ulti" groups="pdk" clone-depth="1" />
+ <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" clone-depth="10000" />
  <project path="external/chromium-webview" name="android_external_chromium-webview" remote="ulti" clone-depth="1"  />
  <project path="external/libpng" name="android_external_libpng" groups="pdk" remote="ulti" clone-depth="1" />
  <project path="external/jhead" name="android_external_jhead" groups="pdk" remote="ulti" clone-depth="1" />
