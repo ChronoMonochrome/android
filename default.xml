@@ -610,9 +610,11 @@
 
  <project path="external/boringssl" name="android_external_boringssl" remote="ulti" groups="pdk" clone-depth="1" />
  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" clone-depth="10000" />
+ <project path="external/toolbox" name="CyanogenMod/android_external_toolbox" remote="github" revision="cm-13.0" clone-depth="10000" />
  <project path="external/chromium-webview" name="android_external_chromium-webview" remote="ulti" clone-depth="1"  />
  <project path="external/libpng" name="android_external_libpng" groups="pdk" remote="ulti" clone-depth="1" />
  <project path="external/jhead" name="android_external_jhead" groups="pdk" remote="ulti" clone-depth="1" />
+ <project path="external/mtools" name="android_external_mtools" remote="ulti" clone-depth="1" />
  <project path="external/vixl" name="android_external_vixl" groups="pdk" remote="ulti" clone-depth="1" />
  <project path="external/webrtc" name="android_external_webrtc" groups="pdk" remote="ulti" clone-depth="1" />
  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="ulti" clone-depth="1" />
