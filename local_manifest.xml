@@ -56,6 +56,7 @@
   <project path="external/minijail" name="android_external_minijail" remote="ulti" />
   <project path="external/selinux" name="android_external_selinux" remote="ulti" />
   <project path="external/stlport" name="android_external_stlport" remote="ulti" revision="cm-15.0" />
+  <project path="external/toybox" name="android_external_toybox" remote="ulti" groups="pdk" clone-depth="1" />
   <project path="frameworks/av" name="android_frameworks_av" remote="ulti" />
   <project path="frameworks/base" name="android_frameworks_base" remote="ulti" />
   <project path="frameworks/native" name="android_frameworks_native" remote="ulti" />
@@ -93,8 +94,8 @@
   <project path="system/vold" name="android_system_vold" remote="ulti" />
   <project path="vendor/lineage" name="android_vendor_ulti" remote="ulti" />
   <project path="kernel/codina/chrono" name="Chrono_Kernel-1" remote="chrono" revision="master"  clone-depth="1"  />
-  <project path="vendor/samsung/u8500-common" name="android_vendor_samsung_u8500-common" remote="chrono" revision="cm-15.0" clone-depth="10000" />
-  <project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="cm-15.0" clone-depth="10000" />
-  <project path="hardware/u8500" name="android_hardware_u8500" remote="chrono" revision="cm-15.0" clone-depth="10000" />
+  <project path="vendor/samsung/u8500-common" name="android_vendor_samsung_u8500-common" remote="chrono" revision="cm-15.1" clone-depth="10000" />
+  <project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="cm-15.1" clone-depth="10000" />
+  <project path="hardware/u8500" name="android_hardware_u8500" remote="chrono" revision="cm-15.1" clone-depth="10000" />
 
 </manifest>
