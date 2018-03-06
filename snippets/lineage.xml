@@ -3,7 +3,7 @@
 
   <!-- LineageOS additions -->
   <project path="android" name="LineageOS/android" />
-  <project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" />
+  <!--<project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" />-->
   <project path="external/bash" name="LineageOS/android_external_bash" />
   <project path="external/exfat" name="LineageOS/android_external_exfat" />
   <!--<project path="external/ffmpeg" name="LineageOS/android_external_ffmpeg" />-->
@@ -19,7 +19,7 @@
   <project path="external/pigz" name="LineageOS/android_external_pigz" />
   <project path="external/rsync" name="LineageOS/android_external_rsync" />
   <!--<project path="external/stagefright-plugins" name="LineageOS/android_external_stagefright-plugins" />-->
-  <project path="external/unrar" name="LineageOS/android_external_unrar" />
+  <!--<project path="external/unrar" name="LineageOS/android_external_unrar" />-->
   <project path="external/vim" name="LineageOS/android_external_vim" />
   <!--<project path="external/yaffs2" name="LineageOS/android_external_yaffs2" />-->
   <project path="external/zip" name="LineageOS/android_external_zip" />
@@ -37,7 +37,7 @@
   <project path="lineage-sdk/samples/weatherproviderservice/YahooWeatherProvider" name="LineageOS/android_packages_apps_YahooWeatherProvider" />
   <project path="packages/apps/AppDrawer" name="LineageOS/android_packages_apps_AppDrawer" />
   <project path="packages/apps/AudioFX" name="LineageOS/android_packages_apps_AudioFX" />
-  <project path="packages/apps/Eleven" name="LineageOS/android_packages_apps_Eleven" />
+  <!--<project path="packages/apps/Eleven" name="LineageOS/android_packages_apps_Eleven" />-->
   <!--<project path="packages/apps/Exchange" name="LineageOS/android_packages_apps_Exchange" />-->
   <project path="packages/apps/FMRadio" name="LineageOS/android_packages_apps_FMRadio" />
   <project path="packages/apps/Jelly" name="LineageOS/android_packages_apps_Jelly" />
@@ -46,7 +46,7 @@
   <project path="packages/apps/LockClock" name="LineageOS/android_packages_apps_LockClock" />
   <project path="packages/apps/Profiles" name="LineageOS/android_packages_apps_Profiles" />
   <project path="packages/apps/Recorder" name="LineageOS/android_packages_apps_Recorder" />
-  <project path="packages/apps/SetupWizard" name="LineageOS/android_packages_apps_SetupWizard" />
+<!--<project path="packages/apps/SetupWizard" name="LineageOS/android_packages_apps_SetupWizard" />-->
   <project path="packages/apps/Snap" name="LineageOS/android_packages_apps_Snap" />
   <project path="packages/apps/Trebuchet" name="LineageOS/android_packages_apps_Trebuchet" />
   <!--<project path="packages/apps/Updater" name="LineageOS/android_packages_apps_Updater" />-->

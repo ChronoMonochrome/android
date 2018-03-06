@@ -46,7 +46,8 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash"  />
   </project>
 
-  <project path="external/avb" name="android_external_avb" groups="pdk" remote="ulti" />
+  <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="ulti" />
+<!--  <project path="external/avb" name="android_external_avb" groups="pdk" remote="ulti" /> -->
   <project path="external/boringssl" name="android_external_boringssl" remote="ulti" />
   <project path="external/busybox" name="android_external_busybox" remote="ulti" revision="cm-15.0" />
   <project path="external/jemalloc" name="android_external_jemalloc" groups="pdk" remote="ulti" />
