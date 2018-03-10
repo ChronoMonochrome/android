@@ -59,11 +59,9 @@
  <project path="packages/apps/ContactsCommon" name="platform/packages/apps/ContactsCommon" groups="pdk-fs" clone-depth="1"  remote="aosp" />
  <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" groups="pdk-fs" clone-depth="1"  remote="aosp" />
  <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" groups="pdk-fs" clone-depth="1"  remote="aosp" />
+ <project path="packages/apps/Email" name="LineageOS/android_packages_apps_Email" groups="pdk-fs" clone-depth="1" />
 <!--
- <project path="packages/apps/Email" name="platform/packages/apps/Email" groups="pdk-fs" clone-depth="1"  remote="aosp" />
--->
  <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" groups="pdk-fs" clone-depth="1"  remote="aosp" />
-<!--
  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" clone-depth="1"  remote="aosp" />
 -->
  <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" clone-depth="1"  remote="aosp" />
@@ -93,6 +91,8 @@
 <!--
  <project path="packages/apps/Terminal" name="platform/packages/apps/Terminal" groups="pdk-fs" clone-depth="1"  remote="aosp" />
 -->
+ <project path="packages/apps/UnifiedEmail" name="LineageOS/android_packages_apps_UnifiedEmail" groups="pdk-fs" clone-depth="1" />
+
  <project path="packages/experimental" name="platform/packages/experimental" clone-depth="1"  remote="aosp" />
  <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" groups="pdk-fs" clone-depth="1"  remote="aosp" />
  <project path="packages/providers/BookmarkProvider" name="platform/packages/providers/BookmarkProvider" groups="pdk-fs" clone-depth="1"  remote="aosp" />
@@ -150,8 +150,11 @@
  <project path="kernel/codina/chrono" name="Chrono_Kernel" remote="chrono" revision="ROM" clone-depth="1" />
 -->
 
+ <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="github" revision="refs/heads/cm-13.0" />
+
  <project path="vendor/samsung/u8500-common" name="android_vendor_samsung_u8500-common" remote="chrono" revision="android-6.0" clone-depth="1" />
  <project path="device/samsung/codina" name="android_device_samsung_codina" remote="chrono" revision="ulti-6.0" clone-depth="1" />
+ <project path="device/samsung/janice" name="android_device_samsung_janice" remote="chrono" revision="ulti-6.0" clone-depth="1" />
  <project path="hardware/u8500" name="android_hardware_u8500" remote="chrono" revision="android-6.0" clone-depth="1" />
 <!-- <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.9" /> -->
  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.3" name="arter97/arm-linux-androideabi-4.9" remote="github" revision="cm-12.0" />

@@ -57,7 +57,9 @@
 <remove-project name="packages/apps/Email" />
 <remove-project name="packages/apps/ExactCalculator" />
 <remove-project name="packages/apps/Exchange" />
-<remove-project name="packages/apps/FMRadio" />
+-->
+<!-- <remove-project name="packages/apps/FMRadio" /> -->
+<!--
 <remove-project name="packages/apps/Gallery2" />
 <remove-project name="packages/apps/Gello" />
 <remove-project name="packages/apps/HTMLViewer" />

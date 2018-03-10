@@ -212,6 +212,7 @@
 
  <project path="libnativehelper" name="LineageOS/android_libnativehelper" groups="pdk" />
  <project path="system/netd" name="LineageOS/android_system_netd" groups="pdk" />
+ <project path="system/qcom" name="LineageOS/android_system_qcom" groups="qcom" />
  <project path="system/security" name="LineageOS/android_system_security" groups="pdk" />
 
 <!-- END LINEAGEOS -->
