@@ -55,11 +55,6 @@
  <remote name="private"
       fetch="ssh://git@github.com" />
 
- <default revision="refs/heads/cm-13.0"
-      remote="github"
-      sync-c="true"
-      sync-j="4" />
-
  <remote name="github"
       fetch=".."
       review="review.lineageos.org" />
